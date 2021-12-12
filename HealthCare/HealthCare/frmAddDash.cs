@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmAddDash : Form
     {
@@ -19,37 +19,37 @@ namespace Health_Street
             ShowData();
             rowCount();
 
-            if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
-            {
-                 SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
-                if (reader1.Read())
-                {
-                    lblAddmitionOfficer.Text = "Hi, " + reader1[2].ToString();
+            //if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
+            //{
+            //     SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+            //    if (reader1.Read())
+            //    {
+            //        lblAddmitionOfficer.Text = "Hi, " + reader1[2].ToString();
 
-                }
-            }
+            //    }
+            //}
         }
 
         private void rowCount()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT Room_Availability FROM ROOM WHERE Room_Availability='YES'");
+            //dt = SQLConnectionManager.getdata("SELECT Room_Availability FROM ROOM WHERE Room_Availability='YES'");
             lblSoledRoom.Text = "+" + dt.Rows.Count.ToString();
 
             DataTable dt2 = new DataTable();
-            dt2 = SQLConnectionManager.getdata("SELECT Room_Availability FROM ROOM WHERE Room_Availability='NO'");
+            //dt2 = SQLConnectionManager.getdata("SELECT Room_Availability FROM ROOM WHERE Room_Availability='NO'");
             lblAvailbaleRoom.Text = "+" + dt2.Rows.Count.ToString();
         }
 
         private void ShowData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM ROOM");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM ROOM");
             dgvRoom.AutoGenerateColumns = false;
             dgvRoom.DataSource = dt;
 
             DataTable dt2 = new DataTable();
-            dt2 = SQLConnectionManager.getdata("SELECT * FROM WARD");
+            //dt2 = SQLConnectionManager.getdata("SELECT * FROM WARD");
             dgvWard.AutoGenerateColumns = false;
             dgvWard.DataSource = dt2;
         }

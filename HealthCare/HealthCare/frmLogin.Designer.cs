@@ -34,6 +34,7 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaTextBox1 = new Guna.UI.WinForms.GunaTextBox();
             this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -82,12 +83,31 @@
             this.gunaLabel1.Text = resources.GetString("gunaLabel1.Text");
             this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // gunaTextBox1
+            // 
+            this.gunaTextBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.gunaTextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.gunaTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.gunaTextBox1.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.gunaTextBox1.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.gunaTextBox1.FocusedForeColor = System.Drawing.SystemColors.Control;
+            this.gunaTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaTextBox1.ForeColor = System.Drawing.Color.Gainsboro;
+            this.gunaTextBox1.Location = new System.Drawing.Point(631, 402);
+            this.gunaTextBox1.Name = "gunaTextBox1";
+            this.gunaTextBox1.PasswordChar = '\0';
+            this.gunaTextBox1.SelectedText = "";
+            this.gunaTextBox1.Size = new System.Drawing.Size(329, 38);
+            this.gunaTextBox1.TabIndex = 2;
+            this.gunaTextBox1.Text = "gunaTextBox1";
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1067, 836);
+            this.Controls.Add(this.gunaTextBox1);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -106,6 +126,7 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox btnClose;
         private Guna.UI.WinForms.GunaLabel gunaLabel1;
+        private Guna.UI.WinForms.GunaTextBox gunaTextBox1;
     }
 }
 

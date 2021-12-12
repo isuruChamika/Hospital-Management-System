@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmChangePassword : Form
     {
@@ -269,12 +269,12 @@ namespace Health_Street
             else
             {
 
-                int i = SQLConnectionManager.insrtUpdteDelt("UPDATE LOG_IN_USER SET First_Name = '" + txtFirstName.Text + "',Surname = '" + txtLastName.Text + "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
-                int j = SQLConnectionManager.insrtUpdteDelt("UPDATE ACCOUNT SET Login_Password = '"+txtComfirmPassword.Text+"',E_mail='"+txtGmail.Text+ "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
-                if (i == 1 && j==1)
-                {
-                    MessageBox.Show("SUCESSFULL");
-                }
+                //int i = SQLConnectionManager.insrtUpdteDelt("UPDATE LOG_IN_USER SET First_Name = '" + txtFirstName.Text + "',Surname = '" + txtLastName.Text + "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+                //int j = SQLConnectionManager.insrtUpdteDelt("UPDATE ACCOUNT SET Login_Password = '"+txtComfirmPassword.Text+"',E_mail='"+txtGmail.Text+ "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+                //if (i == 1 && j==1)
+                //{
+                //    MessageBox.Show("SUCESSFULL");
+                //}
             }
         }
 

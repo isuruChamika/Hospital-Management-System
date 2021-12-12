@@ -29,9 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.elips = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // elips
@@ -42,11 +45,12 @@
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.guna2Panel1.Controls.Add(this.gunaLabel1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(450, 836);
+            this.guna2Panel1.Size = new System.Drawing.Size(543, 836);
             this.guna2Panel1.TabIndex = 0;
             // 
             // btnClose
@@ -55,6 +59,7 @@
             this.btnClose.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
             this.btnClose.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.btnClose.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.Parent = this.btnClose;
             this.btnClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
             this.btnClose.Location = new System.Drawing.Point(987, 0);
@@ -64,6 +69,17 @@
             this.btnClose.Size = new System.Drawing.Size(79, 43);
             this.btnClose.TabIndex = 1;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
+            this.gunaLabel1.ForeColor = System.Drawing.Color.LightGray;
+            this.gunaLabel1.Location = new System.Drawing.Point(54, 186);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(435, 183);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = resources.GetString("gunaLabel1.Text");
+            this.gunaLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmLogin
             // 
@@ -78,6 +94,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -87,6 +104,7 @@
         private Bunifu.Framework.UI.BunifuElipse elips;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2ControlBox btnClose;
+        private Guna.UI.WinForms.GunaLabel gunaLabel1;
     }
 }
 

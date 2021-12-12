@@ -69,6 +69,18 @@
     <Compile Include="frmADaddPatient.Designer.cs">
       <DependentUpon>frmADaddPatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddDash.Designer.cs">
+      <DependentUpon>frmAddDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddmitionOfficer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddmitionOfficer.Designer.cs">
+      <DependentUpon>frmAddmitionOfficer.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBillingOfficer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +100,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmADaddPatient.resx">
       <DependentUpon>frmADaddPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddDash.resx">
+      <DependentUpon>frmAddDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddmitionOfficer.resx">
+      <DependentUpon>frmAddmitionOfficer.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBillingOfficer.resx">
       <DependentUpon>frmBillingOfficer.cs</DependentUpon>

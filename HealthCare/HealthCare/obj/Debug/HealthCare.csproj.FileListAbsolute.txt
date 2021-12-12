@@ -12,3 +12,4 @@ E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\H
 E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.csproj.CopyComplete
 E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.exe
 E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.pdb
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.frmBillingOfficer.resources

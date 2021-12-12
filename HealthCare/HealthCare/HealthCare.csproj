@@ -87,6 +87,12 @@
     <Compile Include="frmAddOutPatients.Designer.cs">
       <DependentUpon>frmAddOutPatients.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmBilAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBilAdd.Designer.cs">
+      <DependentUpon>frmBilAdd.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBillingOfficer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddOutPatients.resx">
       <DependentUpon>frmAddOutPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBilAdd.resx">
+      <DependentUpon>frmBilAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBillingOfficer.resx">
       <DependentUpon>frmBillingOfficer.cs</DependentUpon>

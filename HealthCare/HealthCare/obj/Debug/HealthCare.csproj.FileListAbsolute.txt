@@ -1,0 +1,14 @@
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\HealthCare.exe.config
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\HealthCare.exe
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\HealthCare.pdb
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\Bunifu_UI_v1.5.3.dll
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\Guna.UI.dll
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\Guna.UI2.dll
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.csprojAssemblyReference.cache
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.frmLogin.resources
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.Properties.Resources.resources
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.csproj.GenerateResource.cache
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.csproj.CoreCompileInputs.cache
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.csproj.CopyComplete
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.exe
+E:\C# PROJECTS\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.pdb

@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmAddmitionOfficer : Form
     {
-        clsOpnChild chFrmObj = new clsOpnChild();
+        //clsOpnChild chFrmObj = new clsOpnChild();
         public frmAddmitionOfficer()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace Health_Street
         {
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
-            chFrmObj.openChild(new frmAddDash(), pnlPhrChild);
+            //chFrmObj.openChild(new frmAddDash(), pnlPhrChild);
         }
 
 
@@ -64,23 +64,23 @@ namespace Health_Street
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmAddDash(), pnlPhrChild);
+            //chFrmObj.openChild(new frmAddDash(), pnlPhrChild);
         }
 
         private void btnMed_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
+            //chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
         }
 
         private void btnPchas_Click(object sender, EventArgs e)
         {
             this.btnAdmitPatient.Checked = true;
-            chFrmObj.openChild(new frmADaddmitPatient(), pnlPhrChild);
+            //chFrmObj.openChild(new frmADaddmitPatient(), pnlPhrChild);
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmSettings(), pnlPhrChild);
+            //chFrmObj.openChild(new frmSettings(), pnlPhrChild);
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -107,11 +107,11 @@ namespace Health_Street
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            if (HSMessageBox.Show("ARE YOU SURE TO EXIT?", "QUESTION", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
-            {
-                this.Hide();
-                new frmLogin().Show();
-            }
+            //if (HSMessageBox.Show("ARE YOU SURE TO EXIT?", "QUESTION", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            //{
+            //    this.Hide();
+            //    new frmLogin().Show();
+            //}
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace HealthCare
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         /// Required designer variable.
@@ -29,12 +29,30 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            this.elips = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.SuspendLayout();
+            // 
+            // elips
+            // 
+            this.elips.ElipseRadius = 5;
+            this.elips.TargetControl = this;
+            // 
+            // frmLogin
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 836);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private Bunifu.Framework.UI.BunifuElipse elips;
     }
 }
 

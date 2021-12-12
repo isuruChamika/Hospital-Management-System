@@ -26,5 +26,10 @@ namespace HealthCare
         {
             Application.Exit();
         }
+
+        private void pnlLeft_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

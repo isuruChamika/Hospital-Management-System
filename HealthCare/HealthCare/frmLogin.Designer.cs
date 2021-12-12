@@ -44,10 +44,12 @@
             this.drag2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlLeft.SuspendLayout();
             this.pnlRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // elips
@@ -58,13 +60,15 @@
             // pnlLeft
             // 
             this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.pnlLeft.Controls.Add(this.gunaPictureBox4);
             this.pnlLeft.Controls.Add(this.gunaLabel1);
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlLeft.Name = "pnlLeft";
             this.pnlLeft.ShadowDecoration.Parent = this.pnlLeft;
-            this.pnlLeft.Size = new System.Drawing.Size(543, 836);
+            this.pnlLeft.Size = new System.Drawing.Size(543, 827);
             this.pnlLeft.TabIndex = 0;
+            this.pnlLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLeft_Paint);
             // 
             // gunaLabel1
             // 
@@ -91,7 +95,7 @@
             this.pnlRight.Location = new System.Drawing.Point(543, 0);
             this.pnlRight.Name = "pnlRight";
             this.pnlRight.ShadowDecoration.Parent = this.pnlRight;
-            this.pnlRight.Size = new System.Drawing.Size(524, 836);
+            this.pnlRight.Size = new System.Drawing.Size(524, 827);
             this.pnlRight.TabIndex = 1;
             // 
             // txtUsername
@@ -155,7 +159,7 @@
             this.txtPassword.ForeColor = System.Drawing.Color.Gainsboro;
             this.txtPassword.Location = new System.Drawing.Point(128, 572);
             this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PasswordChar = '●';
             this.txtPassword.Radius = 18;
             this.txtPassword.SelectedText = "";
             this.txtPassword.Size = new System.Drawing.Size(299, 48);
@@ -231,12 +235,23 @@
             this.gunaPictureBox2.TabIndex = 8;
             this.gunaPictureBox2.TabStop = false;
             // 
+            // gunaPictureBox4
+            // 
+            this.gunaPictureBox4.BaseColor = System.Drawing.Color.White;
+            this.gunaPictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox4.Image")));
+            this.gunaPictureBox4.Location = new System.Drawing.Point(32, 405);
+            this.gunaPictureBox4.Name = "gunaPictureBox4";
+            this.gunaPictureBox4.Size = new System.Drawing.Size(478, 428);
+            this.gunaPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaPictureBox4.TabIndex = 1;
+            this.gunaPictureBox4.TabStop = false;
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
-            this.ClientSize = new System.Drawing.Size(1067, 836);
+            this.ClientSize = new System.Drawing.Size(1067, 827);
             this.Controls.Add(this.pnlRight);
             this.Controls.Add(this.pnlLeft);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -249,6 +264,7 @@
             this.pnlRight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -269,6 +285,7 @@
         private Bunifu.Framework.UI.BunifuDragControl drag2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
+        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox4;
     }
 }
 

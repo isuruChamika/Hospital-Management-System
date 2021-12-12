@@ -81,6 +81,12 @@
     <Compile Include="frmAddmitionOfficer.Designer.cs">
       <DependentUpon>frmAddmitionOfficer.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAddOutPatients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddOutPatients.Designer.cs">
+      <DependentUpon>frmAddOutPatients.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBillingOfficer.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,6 +112,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddmitionOfficer.resx">
       <DependentUpon>frmAddmitionOfficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddOutPatients.resx">
+      <DependentUpon>frmAddOutPatients.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmBillingOfficer.resx">
       <DependentUpon>frmBillingOfficer.cs</DependentUpon>

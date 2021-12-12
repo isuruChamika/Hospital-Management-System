@@ -194,7 +194,7 @@
             // txtReason
             // 
             this.txtReason.BackColor = System.Drawing.Color.Transparent;
-            this.txtReason.BaseColor = System.Drawing.Color.White;
+            this.txtReason.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtReason.BorderColor = System.Drawing.Color.Silver;
             this.txtReason.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtReason.FocusedBaseColor = System.Drawing.Color.White;
@@ -217,7 +217,7 @@
             // txtAge
             // 
             this.txtAge.BackColor = System.Drawing.Color.Transparent;
-            this.txtAge.BaseColor = System.Drawing.Color.White;
+            this.txtAge.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtAge.BorderColor = System.Drawing.Color.Silver;
             this.txtAge.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAge.FocusedBaseColor = System.Drawing.Color.White;
@@ -249,7 +249,7 @@
             // txtGuardianTP
             // 
             this.txtGuardianTP.BackColor = System.Drawing.Color.Transparent;
-            this.txtGuardianTP.BaseColor = System.Drawing.Color.White;
+            this.txtGuardianTP.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtGuardianTP.BorderColor = System.Drawing.Color.Silver;
             this.txtGuardianTP.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGuardianTP.FocusedBaseColor = System.Drawing.Color.White;
@@ -270,7 +270,7 @@
             // txtGuardianNic
             // 
             this.txtGuardianNic.BackColor = System.Drawing.Color.Transparent;
-            this.txtGuardianNic.BaseColor = System.Drawing.Color.White;
+            this.txtGuardianNic.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtGuardianNic.BorderColor = System.Drawing.Color.Silver;
             this.txtGuardianNic.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGuardianNic.FocusedBaseColor = System.Drawing.Color.White;
@@ -291,7 +291,7 @@
             // txtPatientName
             // 
             this.txtPatientName.BackColor = System.Drawing.Color.Transparent;
-            this.txtPatientName.BaseColor = System.Drawing.Color.White;
+            this.txtPatientName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtPatientName.BorderColor = System.Drawing.Color.Silver;
             this.txtPatientName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPatientName.FocusedBaseColor = System.Drawing.Color.White;
@@ -388,9 +388,9 @@
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(425, 204);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(439, 217);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(173, 169);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(159, 156);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 12;
             this.gunaPictureBox1.TabStop = false;
@@ -399,7 +399,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(645, 936);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel7);

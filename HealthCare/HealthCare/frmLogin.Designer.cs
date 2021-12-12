@@ -58,6 +58,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
             this.btnClose.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
+            this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.Parent = this.btnClose;

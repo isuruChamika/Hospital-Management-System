@@ -102,6 +102,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTheme.BackgroundImage")));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -127,7 +128,7 @@
             // gunaGroupBox2
             // 
             this.gunaGroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox2.Controls.Add(this.gunaLabel15);
@@ -337,7 +338,7 @@
             // 
             // txtNic
             // 
-            this.txtNic.BaseColor = System.Drawing.Color.White;
+            this.txtNic.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtNic.BorderColor = System.Drawing.Color.Silver;
             this.txtNic.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNic.FocusedBaseColor = System.Drawing.Color.White;
@@ -355,7 +356,7 @@
             // 
             // txtRelationship
             // 
-            this.txtRelationship.BaseColor = System.Drawing.Color.White;
+            this.txtRelationship.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtRelationship.BorderColor = System.Drawing.Color.Silver;
             this.txtRelationship.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRelationship.FocusedBaseColor = System.Drawing.Color.White;
@@ -373,7 +374,7 @@
             // 
             // txtTpNumber
             // 
-            this.txtTpNumber.BaseColor = System.Drawing.Color.White;
+            this.txtTpNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtTpNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtTpNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTpNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -391,7 +392,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.BaseColor = System.Drawing.Color.White;
+            this.txtAddress.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtAddress.BorderColor = System.Drawing.Color.Silver;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
@@ -409,7 +410,7 @@
             // 
             // txtName
             // 
-            this.txtName.BaseColor = System.Drawing.Color.White;
+            this.txtName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtName.BorderColor = System.Drawing.Color.Silver;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.FocusedBaseColor = System.Drawing.Color.White;
@@ -471,7 +472,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.lblWard);
@@ -625,7 +626,7 @@
             this.rdBtnF.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.rdBtnF.Location = new System.Drawing.Point(131, 283);
             this.rdBtnF.Name = "rdBtnF";
-            this.rdBtnF.Size = new System.Drawing.Size(104, 27);
+            this.rdBtnF.Size = new System.Drawing.Size(75, 20);
             this.rdBtnF.TabIndex = 4;
             this.rdBtnF.Text = "Female";
             this.rdBtnF.CheckedChanged += new System.EventHandler(this.rdBtnF_CheckedChanged);
@@ -639,7 +640,7 @@
             this.rdBtnM.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.rdBtnM.Location = new System.Drawing.Point(33, 283);
             this.rdBtnM.Name = "rdBtnM";
-            this.rdBtnM.Size = new System.Drawing.Size(79, 27);
+            this.rdBtnM.Size = new System.Drawing.Size(59, 20);
             this.rdBtnM.TabIndex = 4;
             this.rdBtnM.Text = "Male";
             this.rdBtnM.CheckedChanged += new System.EventHandler(this.rdBtnM_CheckedChanged);
@@ -647,7 +648,7 @@
             // cmbRoom
             // 
             this.cmbRoom.BackColor = System.Drawing.Color.Transparent;
-            this.cmbRoom.BaseColor = System.Drawing.Color.White;
+            this.cmbRoom.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.cmbRoom.BorderColor = System.Drawing.Color.Silver;
             this.cmbRoom.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbRoom.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -666,7 +667,7 @@
             // cmbWard
             // 
             this.cmbWard.BackColor = System.Drawing.Color.Transparent;
-            this.cmbWard.BaseColor = System.Drawing.Color.White;
+            this.cmbWard.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.cmbWard.BorderColor = System.Drawing.Color.Silver;
             this.cmbWard.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbWard.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -685,7 +686,7 @@
             // cmbSpecialist
             // 
             this.cmbSpecialist.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSpecialist.BaseColor = System.Drawing.Color.White;
+            this.cmbSpecialist.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.cmbSpecialist.BorderColor = System.Drawing.Color.Silver;
             this.cmbSpecialist.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbSpecialist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -704,7 +705,7 @@
             // cmbBlood
             // 
             this.cmbBlood.BackColor = System.Drawing.Color.Transparent;
-            this.cmbBlood.BaseColor = System.Drawing.Color.White;
+            this.cmbBlood.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.cmbBlood.BorderColor = System.Drawing.Color.Silver;
             this.cmbBlood.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbBlood.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -722,7 +723,7 @@
             // 
             // dtpDOF
             // 
-            this.dtpDOF.BaseColor = System.Drawing.Color.White;
+            this.dtpDOF.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dtpDOF.BorderColor = System.Drawing.Color.Silver;
             this.dtpDOF.CustomFormat = null;
             this.dtpDOF.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
@@ -855,7 +856,7 @@
             // 
             // txtSurname
             // 
-            this.txtSurname.BaseColor = System.Drawing.Color.White;
+            this.txtSurname.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtSurname.BorderColor = System.Drawing.Color.Silver;
             this.txtSurname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSurname.FocusedBaseColor = System.Drawing.Color.White;
@@ -873,7 +874,7 @@
             // 
             // txtMiddleName
             // 
-            this.txtMiddleName.BaseColor = System.Drawing.Color.White;
+            this.txtMiddleName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtMiddleName.BorderColor = System.Drawing.Color.Silver;
             this.txtMiddleName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMiddleName.FocusedBaseColor = System.Drawing.Color.White;
@@ -891,7 +892,7 @@
             // 
             // txtReson
             // 
-            this.txtReson.BaseColor = System.Drawing.Color.White;
+            this.txtReson.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtReson.BorderColor = System.Drawing.Color.Silver;
             this.txtReson.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtReson.FocusedBaseColor = System.Drawing.Color.White;
@@ -910,7 +911,7 @@
             // 
             // txtFirstname
             // 
-            this.txtFirstname.BaseColor = System.Drawing.Color.White;
+            this.txtFirstname.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtFirstname.BorderColor = System.Drawing.Color.Silver;
             this.txtFirstname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstname.FocusedBaseColor = System.Drawing.Color.White;

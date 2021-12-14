@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmSettingsAccount
     {
@@ -72,7 +72,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.lblSname);
             this.gunaGroupBox1.Controls.Add(this.lblMname);
@@ -106,7 +106,7 @@
             // 
             this.lblSname.AutoSize = true;
             this.lblSname.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblSname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblSname.ForeColor = System.Drawing.Color.LightGray;
             this.lblSname.Location = new System.Drawing.Point(658, 83);
             this.lblSname.Name = "lblSname";
             this.lblSname.Size = new System.Drawing.Size(97, 25);
@@ -117,7 +117,7 @@
             // 
             this.lblMname.AutoSize = true;
             this.lblMname.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblMname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblMname.ForeColor = System.Drawing.Color.LightGray;
             this.lblMname.Location = new System.Drawing.Point(337, 83);
             this.lblMname.Name = "lblMname";
             this.lblMname.Size = new System.Drawing.Size(131, 25);
@@ -128,7 +128,7 @@
             // 
             this.lblGmail.AutoSize = true;
             this.lblGmail.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblGmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblGmail.ForeColor = System.Drawing.Color.LightGray;
             this.lblGmail.Location = new System.Drawing.Point(17, 452);
             this.lblGmail.Name = "lblGmail";
             this.lblGmail.Size = new System.Drawing.Size(63, 25);
@@ -139,7 +139,7 @@
             // 
             this.lblAddress.AutoSize = true;
             this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblAddress.ForeColor = System.Drawing.Color.LightGray;
             this.lblAddress.Location = new System.Drawing.Point(17, 375);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(83, 25);
@@ -150,7 +150,7 @@
             // 
             this.lblTpNumber.AutoSize = true;
             this.lblTpNumber.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblTpNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblTpNumber.ForeColor = System.Drawing.Color.LightGray;
             this.lblTpNumber.Location = new System.Drawing.Point(17, 296);
             this.lblTpNumber.Name = "lblTpNumber";
             this.lblTpNumber.Size = new System.Drawing.Size(182, 25);
@@ -161,7 +161,7 @@
             // 
             this.lblGender.AutoSize = true;
             this.lblGender.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblGender.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblGender.ForeColor = System.Drawing.Color.LightGray;
             this.lblGender.Location = new System.Drawing.Point(17, 227);
             this.lblGender.Name = "lblGender";
             this.lblGender.Size = new System.Drawing.Size(78, 25);
@@ -172,7 +172,7 @@
             // 
             this.lblDof.AutoSize = true;
             this.lblDof.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblDof.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblDof.ForeColor = System.Drawing.Color.LightGray;
             this.lblDof.Location = new System.Drawing.Point(17, 166);
             this.lblDof.Name = "lblDof";
             this.lblDof.Size = new System.Drawing.Size(128, 25);
@@ -183,7 +183,7 @@
             // 
             this.lblFname.AutoSize = true;
             this.lblFname.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblFname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblFname.ForeColor = System.Drawing.Color.LightGray;
             this.lblFname.Location = new System.Drawing.Point(17, 83);
             this.lblFname.Name = "lblFname";
             this.lblFname.Size = new System.Drawing.Size(107, 25);
@@ -313,7 +313,7 @@
             // gunaGroupBox2
             // 
             this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox2.Controls.Add(this.Salary);
             this.gunaGroupBox2.Controls.Add(this.lblSalary);
@@ -345,7 +345,7 @@
             // 
             this.lblSalary.AutoSize = true;
             this.lblSalary.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblSalary.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblSalary.ForeColor = System.Drawing.Color.LightGray;
             this.lblSalary.Location = new System.Drawing.Point(9, 168);
             this.lblSalary.Name = "lblSalary";
             this.lblSalary.Size = new System.Drawing.Size(67, 25);
@@ -356,7 +356,7 @@
             // 
             this.lblDesignation.AutoSize = true;
             this.lblDesignation.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.lblDesignation.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(45)))), ((int)(((byte)(54)))));
+            this.lblDesignation.ForeColor = System.Drawing.Color.LightGray;
             this.lblDesignation.Location = new System.Drawing.Point(9, 86);
             this.lblDesignation.Name = "lblDesignation";
             this.lblDesignation.Size = new System.Drawing.Size(119, 25);
@@ -377,7 +377,7 @@
             // gunaGroupBox3
             // 
             this.gunaGroupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox3.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox3.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox3.Controls.Add(this.pbProfile);
             this.gunaGroupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -393,7 +393,7 @@
             // 
             // pbProfile
             // 
-            this.pbProfile.BaseColor = System.Drawing.Color.White;
+            this.pbProfile.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pbProfile.Location = new System.Drawing.Point(34, 49);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.Size = new System.Drawing.Size(245, 209);
@@ -454,6 +454,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1677, 589);
             this.Controls.Add(this.gunaGroupBox3);
             this.Controls.Add(this.gunaGroupBox2);
@@ -461,7 +462,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmSettingsAccount";
             this.Text = "frmDctSettingsAccount";
-            //this.Load += new System.EventHandler(this.frmDctSettingsAccount_Load);
+            this.Load += new System.EventHandler(this.frmSettingsAccount_Load);
             this.gunaGroupBox1.ResumeLayout(false);
             this.gunaGroupBox1.PerformLayout();
             this.gunaGroupBox2.ResumeLayout(false);

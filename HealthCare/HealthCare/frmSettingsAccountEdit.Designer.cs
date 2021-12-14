@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmSettingsAccountEdit
     {
@@ -87,7 +87,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.btnCancel);
             this.gunaGroupBox1.Controls.Add(this.btnSave);
@@ -273,7 +273,7 @@
             // 
             // dtpDateofBirth
             // 
-            this.dtpDateofBirth.BaseColor = System.Drawing.Color.White;
+            this.dtpDateofBirth.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dtpDateofBirth.BorderColor = System.Drawing.Color.Silver;
             this.dtpDateofBirth.CustomFormat = null;
             this.dtpDateofBirth.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
@@ -324,7 +324,7 @@
             // 
             // txtSurname
             // 
-            this.txtSurname.BaseColor = System.Drawing.Color.White;
+            this.txtSurname.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtSurname.BorderColor = System.Drawing.Color.Silver;
             this.txtSurname.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSurname.FocusedBaseColor = System.Drawing.Color.White;
@@ -342,7 +342,7 @@
             // 
             // txtMiddleName
             // 
-            this.txtMiddleName.BaseColor = System.Drawing.Color.White;
+            this.txtMiddleName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtMiddleName.BorderColor = System.Drawing.Color.Silver;
             this.txtMiddleName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtMiddleName.FocusedBaseColor = System.Drawing.Color.White;
@@ -360,7 +360,7 @@
             // 
             // txtGmail
             // 
-            this.txtGmail.BaseColor = System.Drawing.Color.White;
+            this.txtGmail.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtGmail.BorderColor = System.Drawing.Color.Silver;
             this.txtGmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGmail.FocusedBaseColor = System.Drawing.Color.White;
@@ -378,7 +378,7 @@
             // 
             // txtTpNumber
             // 
-            this.txtTpNumber.BaseColor = System.Drawing.Color.White;
+            this.txtTpNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtTpNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtTpNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTpNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -407,7 +407,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.BaseColor = System.Drawing.Color.White;
+            this.txtAddress.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtAddress.BorderColor = System.Drawing.Color.Silver;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
@@ -447,7 +447,7 @@
             // 
             // txtFirstName
             // 
-            this.txtFirstName.BaseColor = System.Drawing.Color.White;
+            this.txtFirstName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtFirstName.BorderColor = System.Drawing.Color.Silver;
             this.txtFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstName.FocusedBaseColor = System.Drawing.Color.White;
@@ -521,7 +521,7 @@
             // gunaGroupBox2
             // 
             this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox2.Controls.Add(this.txtSalary);
             this.gunaGroupBox2.Controls.Add(this.lblSalary);
@@ -542,7 +542,7 @@
             // 
             // txtSalary
             // 
-            this.txtSalary.BaseColor = System.Drawing.Color.White;
+            this.txtSalary.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtSalary.BorderColor = System.Drawing.Color.Silver;
             this.txtSalary.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSalary.FocusedBaseColor = System.Drawing.Color.White;
@@ -580,7 +580,7 @@
             // 
             // txtDesignation
             // 
-            this.txtDesignation.BaseColor = System.Drawing.Color.White;
+            this.txtDesignation.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtDesignation.BorderColor = System.Drawing.Color.Silver;
             this.txtDesignation.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDesignation.FocusedBaseColor = System.Drawing.Color.White;
@@ -621,7 +621,7 @@
             // gunaGroupBox3
             // 
             this.gunaGroupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox3.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox3.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox3.Controls.Add(this.btnImage);
             this.gunaGroupBox3.Controls.Add(this.pbProfile);
@@ -654,7 +654,7 @@
             // 
             // pbProfile
             // 
-            this.pbProfile.BaseColor = System.Drawing.Color.White;
+            this.pbProfile.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pbProfile.Location = new System.Drawing.Point(34, 49);
             this.pbProfile.Name = "pbProfile";
             this.pbProfile.Size = new System.Drawing.Size(245, 209);
@@ -715,6 +715,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1330, 589);
             this.Controls.Add(this.gunaGroupBox3);
             this.Controls.Add(this.gunaGroupBox2);

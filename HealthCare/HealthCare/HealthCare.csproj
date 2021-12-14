@@ -111,11 +111,233 @@
     <Compile Include="frmChangePassword.Designer.cs">
       <DependentUpon>frmChangePassword.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmChanlAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChanlAdd.Designer.cs">
+      <DependentUpon>frmChanlAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChanlAddCust.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChanlAddCust.Designer.cs">
+      <DependentUpon>frmChanlAddCust.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChanlDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChanlDash.Designer.cs">
+      <DependentUpon>frmChanlDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChanlingOfficer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChanlingOfficer.Designer.cs">
+      <DependentUpon>frmChanlingOfficer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmCustomer.Designer.cs">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDctDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDctDash.Designer.cs">
+      <DependentUpon>frmDctDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDctInpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDctInpatient.Designer.cs">
+      <DependentUpon>frmDctInpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDctPatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDctPatient.Designer.cs">
+      <DependentUpon>frmDctPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDoctor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDoctor.Designer.cs">
+      <DependentUpon>frmDoctor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgetPassword.Designer.cs">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmGuardian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuardian.Designer.cs">
+      <DependentUpon>frmGuardian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabAdd.Designer.cs">
+      <DependentUpon>frmLabAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabAddOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabAddOut.Designer.cs">
+      <DependentUpon>frmLabAddOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabDash.Designer.cs">
+      <DependentUpon>frmLabDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLaboratory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLaboratory.Designer.cs">
+      <DependentUpon>frmLaboratory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabSmplInpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabSmplInpatient.Designer.cs">
+      <DependentUpon>frmLabSmplInpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLabSmplOutpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLabSmplOutpatient.Designer.cs">
+      <DependentUpon>frmLabSmplOutpatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageError.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageError.Designer.cs">
+      <DependentUpon>frmMessageError.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMessageQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMessageQuestion.Designer.cs">
+      <DependentUpon>frmMessageQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNewPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNewPassword.Designer.cs">
+      <DependentUpon>frmNewPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOfficer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOfficer.Designer.cs">
+      <DependentUpon>frmOfficer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmOrganization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmOrganization.Designer.cs">
+      <DependentUpon>frmOrganization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPatientDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPatientDetails.Designer.cs">
+      <DependentUpon>frmPatientDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPharmacy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPharmacy.Designer.cs">
+      <DependentUpon>frmPharmacy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPharSupplierAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPharSupplierAdd.Designer.cs">
+      <DependentUpon>frmPharSupplierAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhrDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhrDash.Designer.cs">
+      <DependentUpon>frmPhrDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhrMdcn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhrMdcn.Designer.cs">
+      <DependentUpon>frmPhrMdcn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhrMedAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhrMedAdd.Designer.cs">
+      <DependentUpon>frmPhrMedAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhrSplr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhrSplr.Designer.cs">
+      <DependentUpon>frmPhrSplr.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanAdd.Designer.cs">
+      <DependentUpon>frmScanAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanAddOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanAddOut.Designer.cs">
+      <DependentUpon>frmScanAddOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanInpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanInpatient.Designer.cs">
+      <DependentUpon>frmScanInpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScannRoomDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScannRoomDash.Designer.cs">
+      <DependentUpon>frmScannRoomDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanOutpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanOutpatient.Designer.cs">
+      <DependentUpon>frmScanOutpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmScanRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmScanRoom.Designer.cs">
+      <DependentUpon>frmScanRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettingsAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettingsAccount.Designer.cs">
+      <DependentUpon>frmSettingsAccount.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,8 +368,119 @@
     <EmbeddedResource Include="frmChangePassword.resx">
       <DependentUpon>frmChangePassword.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmChanlAdd.resx">
+      <DependentUpon>frmChanlAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChanlAddCust.resx">
+      <DependentUpon>frmChanlAddCust.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChanlDash.resx">
+      <DependentUpon>frmChanlDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChanlingOfficer.resx">
+      <DependentUpon>frmChanlingOfficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmCustomer.resx">
+      <DependentUpon>frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDctDash.resx">
+      <DependentUpon>frmDctDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDctInpatient.resx">
+      <DependentUpon>frmDctInpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDctPatient.resx">
+      <DependentUpon>frmDctPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDoctor.resx">
+      <DependentUpon>frmDoctor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgetPassword.resx">
+      <DependentUpon>frmForgetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmGuardian.resx">
+      <DependentUpon>frmGuardian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabAdd.resx">
+      <DependentUpon>frmLabAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabAddOut.resx">
+      <DependentUpon>frmLabAddOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabDash.resx">
+      <DependentUpon>frmLabDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLaboratory.resx">
+      <DependentUpon>frmLaboratory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabSmplInpatient.resx">
+      <DependentUpon>frmLabSmplInpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLabSmplOutpatient.resx">
+      <DependentUpon>frmLabSmplOutpatient.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageError.resx">
+      <DependentUpon>frmMessageError.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMessageQuestion.resx">
+      <DependentUpon>frmMessageQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNewPassword.resx">
+      <DependentUpon>frmNewPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOfficer.resx">
+      <DependentUpon>frmOfficer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmOrganization.resx">
+      <DependentUpon>frmOrganization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPatientDetails.resx">
+      <DependentUpon>frmPatientDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPharmacy.resx">
+      <DependentUpon>frmPharmacy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPharSupplierAdd.resx">
+      <DependentUpon>frmPharSupplierAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhrDash.resx">
+      <DependentUpon>frmPhrDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhrMdcn.resx">
+      <DependentUpon>frmPhrMdcn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhrMedAdd.resx">
+      <DependentUpon>frmPhrMedAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhrSplr.resx">
+      <DependentUpon>frmPhrSplr.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanAdd.resx">
+      <DependentUpon>frmScanAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanAddOut.resx">
+      <DependentUpon>frmScanAddOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanInpatient.resx">
+      <DependentUpon>frmScanInpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScannRoomDash.resx">
+      <DependentUpon>frmScannRoomDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanOutpatient.resx">
+      <DependentUpon>frmScanOutpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmScanRoom.resx">
+      <DependentUpon>frmScanRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettingsAccount.resx">
+      <DependentUpon>frmSettingsAccount.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

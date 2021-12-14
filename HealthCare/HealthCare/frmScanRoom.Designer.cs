@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmScanRoom
     {
@@ -64,6 +64,7 @@
             // 
             // pnlPhr
             // 
+            this.pnlPhr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pnlPhr.Controls.Add(this.pnlPhrChild);
             this.pnlPhr.Controls.Add(this.pnlPhrLeft);
             this.pnlPhr.Controls.Add(this.btnMinimize);
@@ -82,7 +83,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlPhrChild.BackColor = System.Drawing.Color.Transparent;
-            this.pnlPhrChild.BaseColor = System.Drawing.SystemColors.Control;
+            this.pnlPhrChild.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlPhrChild.Location = new System.Drawing.Point(321, 48);
             this.pnlPhrChild.Name = "pnlPhrChild";
             this.pnlPhrChild.Size = new System.Drawing.Size(1176, 827);

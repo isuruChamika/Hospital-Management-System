@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmSettingsLogin
     {
@@ -62,7 +62,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.lblPassword);
             this.gunaGroupBox1.Controls.Add(this.lblOldpassword);
@@ -167,7 +167,7 @@
             // 
             // txtCofirmPassword
             // 
-            this.txtCofirmPassword.BaseColor = System.Drawing.Color.White;
+            this.txtCofirmPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtCofirmPassword.BorderColor = System.Drawing.Color.DarkGray;
             this.txtCofirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtCofirmPassword.FocusedBaseColor = System.Drawing.Color.White;
@@ -185,7 +185,7 @@
             // 
             // txtUsername
             // 
-            this.txtUsername.BaseColor = System.Drawing.Color.White;
+            this.txtUsername.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtUsername.BorderColor = System.Drawing.Color.DarkGray;
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtUsername.FocusedBaseColor = System.Drawing.Color.White;
@@ -203,7 +203,7 @@
             // 
             // txtNewPassword
             // 
-            this.txtNewPassword.BaseColor = System.Drawing.Color.White;
+            this.txtNewPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtNewPassword.BorderColor = System.Drawing.Color.DarkGray;
             this.txtNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPassword.FocusedBaseColor = System.Drawing.Color.White;
@@ -221,7 +221,7 @@
             // 
             // txtOldPassword
             // 
-            this.txtOldPassword.BaseColor = System.Drawing.Color.White;
+            this.txtOldPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtOldPassword.BorderColor = System.Drawing.Color.DarkGray;
             this.txtOldPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtOldPassword.FocusedBaseColor = System.Drawing.Color.White;
@@ -330,6 +330,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1438, 531);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.btnSubmit);

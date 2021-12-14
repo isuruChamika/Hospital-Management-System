@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmPharSupplierAdd
     {
@@ -66,6 +66,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -106,7 +107,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.gunaLabel4);
@@ -162,7 +163,7 @@
             // 
             // txtManufaCountry
             // 
-            this.txtManufaCountry.BaseColor = System.Drawing.Color.White;
+            this.txtManufaCountry.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtManufaCountry.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtManufaCountry.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtManufaCountry.FocusedBaseColor = System.Drawing.Color.White;
@@ -179,7 +180,7 @@
             // 
             // txtManufaCompany
             // 
-            this.txtManufaCompany.BaseColor = System.Drawing.Color.White;
+            this.txtManufaCompany.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtManufaCompany.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtManufaCompany.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtManufaCompany.FocusedBaseColor = System.Drawing.Color.White;
@@ -207,7 +208,7 @@
             // 
             // txtManufaRegNumber
             // 
-            this.txtManufaRegNumber.BaseColor = System.Drawing.Color.White;
+            this.txtManufaRegNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtManufaRegNumber.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtManufaRegNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtManufaRegNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -363,7 +364,7 @@
             // 
             // txtSuppName
             // 
-            this.txtSuppName.BaseColor = System.Drawing.Color.White;
+            this.txtSuppName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtSuppName.BorderColor = System.Drawing.Color.Silver;
             this.txtSuppName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtSuppName.FocusedBaseColor = System.Drawing.Color.White;

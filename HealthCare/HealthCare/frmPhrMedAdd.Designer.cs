@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmPhrMedAdd
     {
@@ -66,6 +66,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -106,7 +107,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.gunaLabel4);
@@ -162,7 +163,7 @@
             // 
             // txtStorePlace
             // 
-            this.txtStorePlace.BaseColor = System.Drawing.Color.White;
+            this.txtStorePlace.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtStorePlace.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtStorePlace.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtStorePlace.FocusedBaseColor = System.Drawing.Color.White;
@@ -179,7 +180,7 @@
             // 
             // txtTradeNumber
             // 
-            this.txtTradeNumber.BaseColor = System.Drawing.Color.White;
+            this.txtTradeNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtTradeNumber.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtTradeNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTradeNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -207,7 +208,7 @@
             // 
             // txtDrugPrice
             // 
-            this.txtDrugPrice.BaseColor = System.Drawing.Color.White;
+            this.txtDrugPrice.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtDrugPrice.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtDrugPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDrugPrice.FocusedBaseColor = System.Drawing.Color.White;
@@ -363,7 +364,7 @@
             // 
             // txtDrugName
             // 
-            this.txtDrugName.BaseColor = System.Drawing.Color.White;
+            this.txtDrugName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtDrugName.BorderColor = System.Drawing.Color.Silver;
             this.txtDrugName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDrugName.FocusedBaseColor = System.Drawing.Color.White;

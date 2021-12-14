@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmPhrMdcn : Form
     {
@@ -25,15 +25,15 @@ namespace Health_Street
         private void showData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
             dgvMedicine.AutoGenerateColumns = false;
             dgvMedicine.DataSource = dt;
         }
 
-        private void frm_insertUpdate(object sender, frmPhrMedAdd.UpdateEvenetArgs args)
-        {
-            showData();
-        }
+        //private void frm_insertUpdate(object sender, frmPhrMedAdd.UpdateEvenetArgs args)
+        //{
+        //    showData();
+        //}
 
         private void frmPhrMdcn_Load(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM PHARMACY_MEDICINES WHERE Pharmacy_Invoice_Number LIKE '" + txtSearch.text + "%' OR Drug_Code LIKE '" + txtSearch.text + "%' OR Quantity LIKE '" + txtSearch.text + "%' OR Number_Of_Days LIKE '" + txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM PHARMACY_MEDICINES WHERE Pharmacy_Invoice_Number LIKE '" + txtSearch.text + "%' OR Drug_Code LIKE '" + txtSearch.text + "%' OR Quantity LIKE '" + txtSearch.text + "%' OR Number_Of_Days LIKE '" + txtSearch.text + "%'");
             dgvMedicine.AutoGenerateColumns = false;
             dgvMedicine.DataSource = dt;
         }
@@ -55,9 +55,9 @@ namespace Health_Street
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmPhrMedAdd frm = new frmPhrMedAdd();
-            frm.UpdateEvenetHanler += frm_insertUpdate;
-            new Health_Street.frmTranceparentBG(frm);
+            //frmPhrMedAdd frm = new frmPhrMedAdd();
+            //frm.UpdateEvenetHanler += frm_insertUpdate;
+            //new Health_Street.frmTranceparentBG(frm);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -69,14 +69,14 @@ namespace Health_Street
                 {
                     string drugId = dgr.Cells[2].Value.ToString();
 
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM DRUG WHERE Drug_Code = '" + drugId + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM DRUG WHERE Drug_Code = '" + drugId + "'");
                     c += 1;
                 }
             }
             showData();
             if (n == 1)
             {
-                HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

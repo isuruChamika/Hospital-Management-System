@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmPhrDash : Form
     {
@@ -17,15 +17,15 @@ namespace Health_Street
         {
             InitializeComponent();
             show();
-            if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
-            {
-                SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
-                if (reader1.Read())
-                {
-                    lblPharmacy.Text = "Hi, " + reader1[2].ToString();
+            //if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
+            //{
+            //    SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+            //    if (reader1.Read())
+            //    {
+            //        lblPharmacy.Text = "Hi, " + reader1[2].ToString();
 
-                }
-            }
+            //    }
+            //}
 
             rowCountMedicinet();
             rowCountSupplier();
@@ -34,25 +34,25 @@ namespace Health_Street
         private void rowCountMedicinet()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
             lblMedicine.Text = "+" + dt.Rows.Count.ToString();
         }
         private void rowCountSupplier()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER");
             lblSupplier.Text = "+" + dt.Rows.Count.ToString();
         }
 
         private void show()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
             dgvMedicine.AutoGenerateColumns = false;
             dgvMedicine.DataSource = dt;
 
             DataTable dt2 = new DataTable();
-            dt2 = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER");
+            //dt2 = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER");
             dgvSupplier.AutoGenerateColumns = false;
             dgvSupplier.DataSource = dt2;
         }

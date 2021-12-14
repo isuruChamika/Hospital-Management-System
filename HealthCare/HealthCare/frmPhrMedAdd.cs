@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using System.Web.Services.Description;
+//using System.Web.Services.Description;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmPhrMedAdd : Form
     {
@@ -110,17 +110,17 @@ namespace Health_Street
             else
             {
 
-                int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO DRUG VALUES('" + txtDrugName.Text + "','" + txtTradeNumber.Text + "','" + txtStorePlace.Text + "','" + txtDrugPrice.Text + "')");
+                //int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO DRUG VALUES('" + txtDrugName.Text + "','" + txtTradeNumber.Text + "','" + txtStorePlace.Text + "','" + txtDrugPrice.Text + "')");
 
-                if (i == 1)
-                {
-                    HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("DATA ADDED UNSUCCESSFULL", "ERROR");
-                }
-                insert();
+                //if (i == 1)
+                //{
+                //    HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //}
+                //else
+                //{
+                //    MessageBox.Show("DATA ADDED UNSUCCESSFULL", "ERROR");
+                //}
+                //insert();
 
 
             }

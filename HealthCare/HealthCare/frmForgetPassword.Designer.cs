@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmForgetPassword
     {
@@ -63,7 +63,7 @@
             // 
             // pnlDrag
             // 
-            this.pnlDrag.BackColor = System.Drawing.Color.White;
+            this.pnlDrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlDrag.Controls.Add(this.btnClose);
             this.pnlDrag.Controls.Add(this.lblCode);
             this.pnlDrag.Controls.Add(this.txtResetCode);
@@ -114,7 +114,7 @@
             // 
             // txtResetCode
             // 
-            this.txtResetCode.BaseColor = System.Drawing.Color.White;
+            this.txtResetCode.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtResetCode.BorderColor = System.Drawing.Color.DarkGray;
             this.txtResetCode.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtResetCode.FocusedBaseColor = System.Drawing.Color.White;
@@ -200,7 +200,7 @@
             // 
             // txtGmail
             // 
-            this.txtGmail.BackColor = System.Drawing.Color.White;
+            this.txtGmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtGmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGmail.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtGmail.Font = new System.Drawing.Font("Segoe UI", 10F);

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmDctPatient : Form
     {
@@ -29,7 +29,7 @@ namespace Health_Street
         private void shoData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT");
             dgvPatient.AutoGenerateColumns = false;
             dgvPatient.DataSource = dt;
         }
@@ -49,7 +49,7 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT WHERE Guardian_NIC LIKE '"+ txtSearch.text + "%' OR Patient_Name LIKE '"+ txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT WHERE Guardian_NIC LIKE '"+ txtSearch.text + "%' OR Patient_Name LIKE '"+ txtSearch.text + "%'");
             dgvPatient.DataSource = dt;
 
         }
@@ -59,7 +59,7 @@ namespace Health_Street
             frmAddOutPatients frmadd = new frmAddOutPatients(/*this*/);
             frmadd.UpdateEvenetHanler += frm_UpdateEventHandler;
 
-            new Health_Street.frmTranceparentBG(frmadd);
+            //new Health_Street.frmTranceparentBG(frmadd);
         }
 
         private void pnlTheme_Paint(object sender, PaintEventArgs e)
@@ -76,14 +76,14 @@ namespace Health_Street
             {
                 if(Convert.ToBoolean(dgr.Cells[0].Value)==true)
                 {
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_PATIENT WHERE Out_Patient_Id_Number = '" + dgr.Cells[1].Value.ToString() + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_PATIENT WHERE Out_Patient_Id_Number = '" + dgr.Cells[1].Value.ToString() + "'");
                     c += 1;
                 }
             }
             shoData();
             if (n == 1)
             {
-                HSMessageBox.Show(c + " DATA DELETED SUCCESFULL", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + " DATA DELETED SUCCESFULL", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
 

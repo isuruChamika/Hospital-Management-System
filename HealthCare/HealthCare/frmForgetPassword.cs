@@ -11,7 +11,7 @@ using System.Windows.Forms;
 using System.Net;
 using System.Net.Mail;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmForgetPassword : Form
     {
@@ -56,43 +56,43 @@ namespace Health_Street
             }
             else
             {
-                if (SQLConnectionManager.chek("SELECT * FROM ACCOUNT WHERE E_mail = '" + txtGmail.Text + "'") == 1)
-                {
-                    Random rand = new Random();
-                    resetCode = (rand.Next(999999)).ToString();
+                //if (SQLConnectionManager.chek("SELECT * FROM ACCOUNT WHERE E_mail = '" + txtGmail.Text + "'") == 1)
+                //{
+                //    Random rand = new Random();
+                //    resetCode = (rand.Next(999999)).ToString();
 
-                    MailMessage message = new MailMessage("health.street20@gmail.com", txtGmail.Text);
-                    message.Subject = "Forgotten Password Code";
-                    message.Body = "Your Password reset Code \n"+resetCode;
+                //    MailMessage message = new MailMessage("health.street20@gmail.com", txtGmail.Text);
+                //    message.Subject = "Forgotten Password Code";
+                //    message.Body = "Your Password reset Code \n"+resetCode;
 
-                    SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
-                    smtp.UseDefaultCredentials = false;
-                    smtp.EnableSsl = true;
+                //    SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587);
+                //    smtp.UseDefaultCredentials = false;
+                //    smtp.EnableSsl = true;
 
-                    NetworkCredential nc = new NetworkCredential("health.street20@gmail.com", "health@street");
-                    smtp.Credentials = nc;
-                    try
-                    {
-                        smtp.Send(message);
-                        MessageBox.Show("send");
-                        txtResetCode.Enabled = true;
-                        lblCode.ForeColor = Color.FromArgb(105, 105, 105);
-                        txtResetCode.BorderColor = Color.FromArgb(169, 169, 169);
-                        txtResetCode.FocusedBorderColor = Color.FromArgb(50, 144, 156);
-                    }
-                    catch(SmtpException)
-                    {
-                        MessageBox.Show("ERROR");
-                    }
-                    catch(Exception)
-                    {
+                //    NetworkCredential nc = new NetworkCredential("health.street20@gmail.com", "health@street");
+                //    smtp.Credentials = nc;
+                //    try
+                //    {
+                //        smtp.Send(message);
+                //        MessageBox.Show("send");
+                //        txtResetCode.Enabled = true;
+                //        lblCode.ForeColor = Color.FromArgb(105, 105, 105);
+                //        txtResetCode.BorderColor = Color.FromArgb(169, 169, 169);
+                //        txtResetCode.FocusedBorderColor = Color.FromArgb(50, 144, 156);
+                //    }
+                //    catch(SmtpException)
+                //    {
+                //        MessageBox.Show("ERROR");
+                //    }
+                //    catch(Exception)
+                //    {
 
-                    }
-                }
-                else
-                {
-                    MessageBox.Show("DOESN'T MATCH");
-                }
+                //    }
+                //}
+                //else
+                //{
+                //    MessageBox.Show("DOESN'T MATCH");
+                //}
             }
         }
 
@@ -121,7 +121,7 @@ namespace Health_Street
                 txtResetCode.BorderColor = Color.Gainsboro;
                 lblResetCode.ResetText();
                 this.Hide();
-                new frmNewPassword().Show();
+                //new frmNewPassword().Show();
             }
         }
     }

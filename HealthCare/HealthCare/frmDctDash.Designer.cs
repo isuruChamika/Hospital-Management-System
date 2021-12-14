@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmDctDash
     {
@@ -58,6 +58,7 @@
             // pnlThemeDash
             // 
             this.pnlThemeDash.AutoScroll = true;
+            this.pnlThemeDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlThemeDash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlThemeDash.BackgroundImage")));
             this.pnlThemeDash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlThemeDash.Controls.Add(this.gunaShadowPanel2);
@@ -74,7 +75,7 @@
             // 
             this.gunaShadowPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel9);
             this.gunaShadowPanel2.Controls.Add(this.lblOutpatient);
             this.gunaShadowPanel2.Location = new System.Drawing.Point(854, 8);
@@ -112,7 +113,7 @@
             // 
             this.gunaShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel8);
             this.gunaShadowPanel1.Controls.Add(this.lblInpatient);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(626, 8);

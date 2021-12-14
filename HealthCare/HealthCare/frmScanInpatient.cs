@@ -22,15 +22,15 @@ namespace Health_Street
             showData();
         }
 
-        private void frm_updater(object sender, frmScanAdd.UpdateEvenetArgs args)
-        {
-            showData();
-        }
+        //private void frm_updater(object sender, frmScanAdd.UpdateEvenetArgs args)
+        //{
+        //    showData();
+        //}
 
         private void showData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_SCAN");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_SCAN");
             dgvInScan.AutoGenerateColumns = false;
             dgvInScan.DataSource = dt;
         }
@@ -43,7 +43,7 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_SCAN WHERE In_Patient_Scan_No LIKE '" + txtSearch.text + "%' OR Admission_Number LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%' ");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_SCAN WHERE In_Patient_Scan_No LIKE '" + txtSearch.text + "%' OR Admission_Number LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%' ");
             dgvInScan.DataSource = dt;
         }
 
@@ -54,9 +54,9 @@ namespace Health_Street
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmScanAdd frm = new frmScanAdd();
-            frm.UpdateEvenetHanler += frm_updater;
-            new Health_Street.frmTranceparentBG(frm);
+            //frmScanAdd frm = new frmScanAdd();
+            //frm.UpdateEvenetHanler += frm_updater;
+            //new Health_Street.frmTranceparentBG(frm);
 
         }
 
@@ -69,14 +69,14 @@ namespace Health_Street
                 {
                     string sId = dgr.Cells[1].Value.ToString();
 
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT_SCAN WHERE In_Patient_Scan_No = '" + sId + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT_SCAN WHERE In_Patient_Scan_No = '" + sId + "'");
                     c += 1;
                 }
             }
             showData();
             if (n == 1)
             {
-                HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

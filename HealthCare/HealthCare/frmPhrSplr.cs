@@ -25,14 +25,14 @@ namespace Health_Street
         private void showData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER,DRUG_ORDER");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER,DRUG_ORDER");
             dgvSupplier.AutoGenerateColumns = false;
             dgvSupplier.DataSource = dt;
         }
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER,DRUG_ORDER WHERE DRUG_SUPPLIER.Supplier_Id LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Supplier_Name LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Manufacture_Company LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Manufacture_Country LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Manufacture_Reg_Number LIKE '" + txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM DRUG_SUPPLIER,DRUG_ORDER WHERE DRUG_SUPPLIER.Supplier_Id LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Supplier_Name LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Manufacture_Company LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Manufacture_Country LIKE '" + txtSearch.text + "%' OR DRUG_SUPPLIER.Manufacture_Reg_Number LIKE '" + txtSearch.text + "%'");
             dgvSupplier.DataSource = dt;
         }
 
@@ -46,16 +46,16 @@ namespace Health_Street
 
         }
 
-        private void frm_insertUpdate(object sender, frmPharSupplierAdd.UpdateEvenetArgs args)
-        {
-            showData();
-        }
+        //private void frm_insertUpdate(object sender, frmPharSupplierAdd.UpdateEvenetArgs args)
+        //{
+        //    showData();
+        //}
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmPharSupplierAdd frm = new frmPharSupplierAdd();
-            frm.UpdateEvenetHanler += frm_insertUpdate;
-            new Health_Street.frmTranceparentBG(frm);
+            //frmPharSupplierAdd frm = new frmPharSupplierAdd();
+            //frm.UpdateEvenetHanler += frm_insertUpdate;
+            //new Health_Street.frmTranceparentBG(frm);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -67,14 +67,14 @@ namespace Health_Street
                 {
                     string suppId =  dgr.Cells[1].Value.ToString();
 
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM DRUG_SUPPLIER WHERE Supplier_Id = '" + suppId + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM DRUG_SUPPLIER WHERE Supplier_Id = '" + suppId + "'");
                     c += 1;
                 }
             }
             showData();
             if (n == 1)
             {
-                HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

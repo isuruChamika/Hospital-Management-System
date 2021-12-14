@@ -8,11 +8,11 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using System.Web.Services.Description;
+//using System.Web.Services.Description;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmScanAddOut : Form
     {
@@ -59,75 +59,75 @@ namespace Health_Street
         [Obsolete]
         private void btnPSave_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtPatientId.Text) && string.IsNullOrEmpty(txtXrayPath.Text))
-            {
-                IdNumber();
-                txtPatientId.Focus();
-            }
-            else if (!(txtPatientId.Text == SQLConnectionManager.getValue("SELECT * FROM OUT_PATIENT", txtPatientId.Text, 0, 0)))
-            {
-                IdNumber();
-                lblApNumber.Text = "*Can't Find";
-            }
-            else if (string.IsNullOrEmpty(txtXrayPath.Text))
-            {
-                IdNumber();
-                txtPatientId.Focus();
-            }
-            else
-            {
-                byte[] image = null;
-                if (flag)
-                {
+            //if (string.IsNullOrEmpty(txtPatientId.Text) && string.IsNullOrEmpty(txtXrayPath.Text))
+            //{
+            //    IdNumber();
+            //    txtPatientId.Focus();
+            //}
+            //else if (!(txtPatientId.Text == SQLConnectionManager.getValue("SELECT * FROM OUT_PATIENT", txtPatientId.Text, 0, 0)))
+            //{
+            //    IdNumber();
+            //    lblApNumber.Text = "*Can't Find";
+            //}
+            //else if (string.IsNullOrEmpty(txtXrayPath.Text))
+            //{
+            //    IdNumber();
+            //    txtPatientId.Focus();
+            //}
+            //else
+            //{
+            //    byte[] image = null;
+            //    if (flag)
+            //    {
 
-                    FileStream fstream = new FileStream(txtXrayPath.Text, FileMode.Open, FileAccess.Read);
-                    BinaryReader br = new BinaryReader(fstream);
-                    image = br.ReadBytes((int)fstream.Length);
-                }
-                else
-                {
-                    image = null;
-                }
+            //        FileStream fstream = new FileStream(txtXrayPath.Text, FileMode.Open, FileAccess.Read);
+            //        BinaryReader br = new BinaryReader(fstream);
+            //        image = br.ReadBytes((int)fstream.Length);
+            //    }
+            //    else
+            //    {
+            //        image = null;
+            //    }
 
-                int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO OUT_PATIENT_SCAN VALUES('" + Convert.ToInt32(txtPatientId.Text) + "','@image',SYSDATETIME(),SYSDATETIME(),'"+txtDctName.Text+"')", "@image", image);
+            //    int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO OUT_PATIENT_SCAN VALUES('" + Convert.ToInt32(txtPatientId.Text) + "','@image',SYSDATETIME(),SYSDATETIME(),'"+txtDctName.Text+"')", "@image", image);
 
-                if (i == 1)
-                {
-                    HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("DATA ADDED UNSUCCESSFULL", "ERROR");
-                }
-                insert();
+            //    if (i == 1)
+            //    {
+            //        HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("DATA ADDED UNSUCCESSFULL", "ERROR");
+            //    }
+            //    insert();
 
 
-            }
+            //}
         }
 
         string dct;
         private void txtApNumber_TextChanged(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(txtPatientId.Text))
-            {
-                txtPatientId.BorderColor = Color.Silver;
-                txtPatientId.FocusedBorderColor = Color.FromArgb(33, 96, 104);
-                lblApNumber.ResetText();
-                if (txtPatientId.Text == SQLConnectionManager.getValue("SELECT * FROM OUT_PATIENT", txtPatientId.Text, 0, 0))
-                {
-                    txtPatientId.BorderColor = Color.Silver;
-                    txtPatientId.FocusedBorderColor = Color.FromArgb(33, 96, 104);
-                    lblApNumber.ResetText();
-                    dct  = SQLConnectionManager.getValue("SELECT * FROM OUT_PATIENT", txtPatientId.Text, 0, 8);
-                    txtDctName.Text = SQLConnectionManager.getValue("SELECT * FROM SPECIALIST_DOCTOR", dct, 1, 4);
-                }
-                else
-                {
-                    IdNumber();
-                    lblApNumber.Text = "*Can't Find";
-                    txtDctName.ResetText();
-                }
-            }
+            //if (!string.IsNullOrEmpty(txtPatientId.Text))
+            //{
+            //    txtPatientId.BorderColor = Color.Silver;
+            //    txtPatientId.FocusedBorderColor = Color.FromArgb(33, 96, 104);
+            //    lblApNumber.ResetText();
+            //    if (txtPatientId.Text == SQLConnectionManager.getValue("SELECT * FROM OUT_PATIENT", txtPatientId.Text, 0, 0))
+            //    {
+            //        txtPatientId.BorderColor = Color.Silver;
+            //        txtPatientId.FocusedBorderColor = Color.FromArgb(33, 96, 104);
+            //        lblApNumber.ResetText();
+            //        dct  = SQLConnectionManager.getValue("SELECT * FROM OUT_PATIENT", txtPatientId.Text, 0, 8);
+            //        txtDctName.Text = SQLConnectionManager.getValue("SELECT * FROM SPECIALIST_DOCTOR", dct, 1, 4);
+            //    }
+            //    else
+            //    {
+            //        IdNumber();
+            //        lblApNumber.Text = "*Can't Find";
+            //        txtDctName.ResetText();
+            //    }
+            //}
         }
 
 

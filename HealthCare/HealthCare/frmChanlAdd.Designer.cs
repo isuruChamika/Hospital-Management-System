@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmChanlAdd
     {
@@ -36,6 +36,7 @@
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.btnPSave = new Guna.UI.WinForms.GunaAdvenceButton();
             this.lblTPnumber = new Guna.UI.WinForms.GunaLabel();
+            this.lblSessionDate = new Guna.UI.WinForms.GunaLabel();
             this.lblSpecialist = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
             this.lblTime = new Guna.UI.WinForms.GunaLabel();
@@ -61,7 +62,6 @@
             this.txtApNumber = new Guna.UI.WinForms.GunaTextBox();
             this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
-            this.lblSessionDate = new Guna.UI.WinForms.GunaLabel();
             this.pnlTheme.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -74,6 +74,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -114,7 +115,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.btnPSave);
@@ -197,6 +198,16 @@
             this.lblTPnumber.Name = "lblTPnumber";
             this.lblTPnumber.Size = new System.Drawing.Size(0, 20);
             this.lblTPnumber.TabIndex = 6;
+            // 
+            // lblSessionDate
+            // 
+            this.lblSessionDate.AutoSize = true;
+            this.lblSessionDate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSessionDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.lblSessionDate.Location = new System.Drawing.Point(22, 235);
+            this.lblSessionDate.Name = "lblSessionDate";
+            this.lblSessionDate.Size = new System.Drawing.Size(0, 20);
+            this.lblSessionDate.TabIndex = 6;
             // 
             // lblSpecialist
             // 
@@ -294,7 +305,7 @@
             // 
             // txtTpNumber
             // 
-            this.txtTpNumber.BaseColor = System.Drawing.Color.White;
+            this.txtTpNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtTpNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtTpNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTpNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -334,7 +345,7 @@
             // cmbSpecialist
             // 
             this.cmbSpecialist.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSpecialist.BaseColor = System.Drawing.Color.White;
+            this.cmbSpecialist.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.cmbSpecialist.BorderColor = System.Drawing.Color.Silver;
             this.cmbSpecialist.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbSpecialist.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -352,7 +363,7 @@
             // 
             // dtpSessionDate
             // 
-            this.dtpSessionDate.BaseColor = System.Drawing.Color.White;
+            this.dtpSessionDate.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dtpSessionDate.BorderColor = System.Drawing.Color.Silver;
             this.dtpSessionDate.CustomFormat = null;
             this.dtpSessionDate.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
@@ -386,7 +397,7 @@
             // 
             // txtHsptlFee
             // 
-            this.txtHsptlFee.BaseColor = System.Drawing.Color.White;
+            this.txtHsptlFee.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtHsptlFee.BorderColor = System.Drawing.Color.Silver;
             this.txtHsptlFee.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtHsptlFee.FocusedBaseColor = System.Drawing.Color.White;
@@ -448,7 +459,7 @@
             // 
             // txtPatientName
             // 
-            this.txtPatientName.BaseColor = System.Drawing.Color.White;
+            this.txtPatientName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtPatientName.BorderColor = System.Drawing.Color.Silver;
             this.txtPatientName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPatientName.FocusedBaseColor = System.Drawing.Color.White;
@@ -466,7 +477,7 @@
             // 
             // txtDctFee
             // 
-            this.txtDctFee.BaseColor = System.Drawing.Color.White;
+            this.txtDctFee.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtDctFee.BorderColor = System.Drawing.Color.Silver;
             this.txtDctFee.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDctFee.FocusedBaseColor = System.Drawing.Color.White;
@@ -484,7 +495,7 @@
             // 
             // txtApNumber
             // 
-            this.txtApNumber.BaseColor = System.Drawing.Color.White;
+            this.txtApNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtApNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtApNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtApNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -509,16 +520,6 @@
             this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
             this.Animate.Interval = 800;
             this.Animate.TargetControl = this;
-            // 
-            // lblSessionDate
-            // 
-            this.lblSessionDate.AutoSize = true;
-            this.lblSessionDate.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSessionDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.lblSessionDate.Location = new System.Drawing.Point(22, 235);
-            this.lblSessionDate.Name = "lblSessionDate";
-            this.lblSessionDate.Size = new System.Drawing.Size(0, 20);
-            this.lblSessionDate.TabIndex = 6;
             // 
             // frmChanlAdd
             // 

@@ -206,7 +206,7 @@
             // txtComfirmPassword
             // 
             this.txtComfirmPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtComfirmPassword.BaseColor = System.Drawing.Color.White;
+            this.txtComfirmPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtComfirmPassword.BorderColor = System.Drawing.Color.Silver;
             this.txtComfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtComfirmPassword.FocusedBaseColor = System.Drawing.Color.White;
@@ -228,7 +228,7 @@
             // txtNewPassword
             // 
             this.txtNewPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtNewPassword.BaseColor = System.Drawing.Color.White;
+            this.txtNewPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtNewPassword.BorderColor = System.Drawing.Color.Silver;
             this.txtNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNewPassword.FocusedBaseColor = System.Drawing.Color.White;
@@ -261,7 +261,7 @@
             // txtGmail
             // 
             this.txtGmail.BackColor = System.Drawing.Color.Transparent;
-            this.txtGmail.BaseColor = System.Drawing.Color.White;
+            this.txtGmail.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtGmail.BorderColor = System.Drawing.Color.Silver;
             this.txtGmail.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtGmail.FocusedBaseColor = System.Drawing.Color.White;
@@ -282,7 +282,7 @@
             // txtLastName
             // 
             this.txtLastName.BackColor = System.Drawing.Color.Transparent;
-            this.txtLastName.BaseColor = System.Drawing.Color.White;
+            this.txtLastName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtLastName.BorderColor = System.Drawing.Color.Silver;
             this.txtLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtLastName.FocusedBaseColor = System.Drawing.Color.White;
@@ -303,7 +303,7 @@
             // txtFirstName
             // 
             this.txtFirstName.BackColor = System.Drawing.Color.Transparent;
-            this.txtFirstName.BaseColor = System.Drawing.Color.White;
+            this.txtFirstName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtFirstName.BorderColor = System.Drawing.Color.Silver;
             this.txtFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtFirstName.FocusedBaseColor = System.Drawing.Color.White;
@@ -411,7 +411,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(645, 884);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel7);

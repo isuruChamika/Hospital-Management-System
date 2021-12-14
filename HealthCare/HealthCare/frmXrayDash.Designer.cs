@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmXrayDash
     {
@@ -53,14 +53,14 @@
             this.Issue_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Issue_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.lblOutpatients = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.lblInpatients = new Guna.UI.WinForms.GunaLabel();
             this.pnlBanner = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.lblXrayOfficer = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaff)).BeginInit();
@@ -79,6 +79,7 @@
             // gunaPanel1
             // 
             this.gunaPanel1.AutoScroll = true;
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
             this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel1.Controls.Add(this.gunaGroupBox2);
@@ -119,7 +120,7 @@
             this.dgvStaff.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStaff.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvStaff.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvStaff.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvStaff.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvStaff.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStaff.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStaff.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -173,7 +174,7 @@
             this.dgvStaff.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvStaff.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvStaff.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvStaff.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvStaff.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvStaff.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvStaff.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.dgvStaff.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -258,7 +259,7 @@
             this.dgvXray.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvXray.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvXray.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvXray.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvXray.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvXray.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvXray.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvXray.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -308,7 +309,7 @@
             this.dgvXray.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvXray.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvXray.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvXray.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvXray.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvXray.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvXray.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.dgvXray.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -355,7 +356,7 @@
             // gunaShadowPanel2
             // 
             this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel5);
             this.gunaShadowPanel2.Controls.Add(this.lblOutpatients);
             this.gunaShadowPanel2.Location = new System.Drawing.Point(997, 19);
@@ -366,6 +367,17 @@
             this.gunaShadowPanel2.ShadowShift = 10;
             this.gunaShadowPanel2.Size = new System.Drawing.Size(249, 247);
             this.gunaShadowPanel2.TabIndex = 6;
+            // 
+            // gunaLabel5
+            // 
+            this.gunaLabel5.AutoSize = true;
+            this.gunaLabel5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaLabel5.Location = new System.Drawing.Point(19, 114);
+            this.gunaLabel5.Name = "gunaLabel5";
+            this.gunaLabel5.Size = new System.Drawing.Size(227, 102);
+            this.gunaLabel5.TabIndex = 0;
+            this.gunaLabel5.Text = "Outpatient \r\n   X-Rays";
             // 
             // lblOutpatients
             // 
@@ -381,7 +393,7 @@
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel1);
             this.gunaShadowPanel1.Controls.Add(this.lblInpatients);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(723, 19);
@@ -392,6 +404,17 @@
             this.gunaShadowPanel1.ShadowShift = 10;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(249, 247);
             this.gunaShadowPanel1.TabIndex = 7;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(25, 113);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(198, 102);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "Inpatient \r\n X-Rays";
             // 
             // lblInpatients
             // 
@@ -440,28 +463,6 @@
             this.lblXrayOfficer.Size = new System.Drawing.Size(163, 28);
             this.lblXrayOfficer.TabIndex = 0;
             this.lblXrayOfficer.Text = "Hi, Welcome";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(25, 113);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(198, 102);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "Inpatient \r\n X-Rays";
-            // 
-            // gunaLabel5
-            // 
-            this.gunaLabel5.AutoSize = true;
-            this.gunaLabel5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.gunaLabel5.Location = new System.Drawing.Point(19, 114);
-            this.gunaLabel5.Name = "gunaLabel5";
-            this.gunaLabel5.Size = new System.Drawing.Size(227, 102);
-            this.gunaLabel5.TabIndex = 0;
-            this.gunaLabel5.Text = "Outpatient \r\n   X-Rays";
             // 
             // frmXrayDash
             // 

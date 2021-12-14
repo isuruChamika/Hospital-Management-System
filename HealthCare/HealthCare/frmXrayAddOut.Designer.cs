@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmXrayAddOut
     {
@@ -62,6 +62,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -102,7 +103,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.pctbXray);
@@ -294,7 +295,7 @@
             // 
             // txtXrayPath
             // 
-            this.txtXrayPath.BaseColor = System.Drawing.Color.White;
+            this.txtXrayPath.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtXrayPath.BorderColor = System.Drawing.Color.Silver;
             this.txtXrayPath.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtXrayPath.Enabled = false;
@@ -312,7 +313,7 @@
             // 
             // txtPatientId
             // 
-            this.txtPatientId.BaseColor = System.Drawing.Color.White;
+            this.txtPatientId.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtPatientId.BorderColor = System.Drawing.Color.Silver;
             this.txtPatientId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPatientId.FocusedBaseColor = System.Drawing.Color.White;

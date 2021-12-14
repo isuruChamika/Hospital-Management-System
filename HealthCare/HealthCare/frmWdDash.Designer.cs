@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmWdDash
     {
@@ -53,17 +53,17 @@
             this.Specialist_Doctor_Id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.lblWards = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.lblRooms = new Guna.UI.WinForms.GunaLabel();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.lblPatient = new Guna.UI.WinForms.GunaLabel();
             this.pnlBanner = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.lblBillOfficer = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel1.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRooms)).BeginInit();
@@ -81,6 +81,7 @@
             // 
             // gunaPanel1
             // 
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
             this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel1.Controls.Add(this.gunaGroupBox2);
@@ -95,6 +96,7 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(1296, 809);
             this.gunaPanel1.TabIndex = 10;
+            this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             // 
             // gunaGroupBox2
             // 
@@ -124,7 +126,7 @@
             this.dgvRooms.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvRooms.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvRooms.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvRooms.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvRooms.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvRooms.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvRooms.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvRooms.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -176,7 +178,7 @@
             this.dgvRooms.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvRooms.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvRooms.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvRooms.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvRooms.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvRooms.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvRooms.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.dgvRooms.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -262,7 +264,7 @@
             this.dgvPatient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvPatient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvPatient.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvPatient.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvPatient.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvPatient.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvPatient.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -311,7 +313,7 @@
             this.dgvPatient.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvPatient.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvPatient.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvPatient.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvPatient.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvPatient.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvPatient.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.dgvPatient.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -358,7 +360,7 @@
             // gunaShadowPanel3
             // 
             this.gunaShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel3.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel3.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaShadowPanel3.Controls.Add(this.gunaLabel8);
             this.gunaShadowPanel3.Controls.Add(this.lblWards);
             this.gunaShadowPanel3.Location = new System.Drawing.Point(1075, 17);
@@ -369,6 +371,17 @@
             this.gunaShadowPanel3.ShadowShift = 10;
             this.gunaShadowPanel3.Size = new System.Drawing.Size(209, 247);
             this.gunaShadowPanel3.TabIndex = 14;
+            // 
+            // gunaLabel8
+            // 
+            this.gunaLabel8.AutoSize = true;
+            this.gunaLabel8.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaLabel8.Location = new System.Drawing.Point(33, 136);
+            this.gunaLabel8.Name = "gunaLabel8";
+            this.gunaLabel8.Size = new System.Drawing.Size(142, 51);
+            this.gunaLabel8.TabIndex = 0;
+            this.gunaLabel8.Text = "Wards";
             // 
             // lblWards
             // 
@@ -384,7 +397,7 @@
             // gunaShadowPanel2
             // 
             this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel7);
             this.gunaShadowPanel2.Controls.Add(this.lblRooms);
             this.gunaShadowPanel2.Location = new System.Drawing.Point(850, 17);
@@ -395,6 +408,17 @@
             this.gunaShadowPanel2.ShadowShift = 10;
             this.gunaShadowPanel2.Size = new System.Drawing.Size(209, 247);
             this.gunaShadowPanel2.TabIndex = 14;
+            // 
+            // gunaLabel7
+            // 
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaLabel7.Location = new System.Drawing.Point(33, 141);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(152, 51);
+            this.gunaLabel7.TabIndex = 0;
+            this.gunaLabel7.Text = "Rooms";
             // 
             // lblRooms
             // 
@@ -410,7 +434,7 @@
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel1);
             this.gunaShadowPanel1.Controls.Add(this.lblPatient);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(626, 17);
@@ -421,6 +445,17 @@
             this.gunaShadowPanel1.ShadowShift = 10;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(209, 247);
             this.gunaShadowPanel1.TabIndex = 15;
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.gunaLabel1.Location = new System.Drawing.Point(18, 136);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(176, 51);
+            this.gunaLabel1.TabIndex = 0;
+            this.gunaLabel1.Text = "Patients";
             // 
             // lblPatient
             // 
@@ -469,39 +504,6 @@
             this.lblBillOfficer.Size = new System.Drawing.Size(139, 28);
             this.lblBillOfficer.TabIndex = 0;
             this.lblBillOfficer.Text = "Hi, Doctor";
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(18, 136);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(176, 51);
-            this.gunaLabel1.TabIndex = 0;
-            this.gunaLabel1.Text = "Patients";
-            // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.gunaLabel7.Location = new System.Drawing.Point(33, 141);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(152, 51);
-            this.gunaLabel7.TabIndex = 0;
-            this.gunaLabel7.Text = "Rooms";
-            // 
-            // gunaLabel8
-            // 
-            this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.gunaLabel8.Location = new System.Drawing.Point(33, 136);
-            this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(142, 51);
-            this.gunaLabel8.TabIndex = 0;
-            this.gunaLabel8.Text = "Wards";
             // 
             // frmWdDash
             // 

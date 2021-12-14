@@ -339,6 +339,60 @@
     <Compile Include="frmSettingsAccount.Designer.cs">
       <DependentUpon>frmSettingsAccount.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmSettingsAccountEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettingsAccountEdit.Designer.cs">
+      <DependentUpon>frmSettingsAccountEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSettingsLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSettingsLogin.Designer.cs">
+      <DependentUpon>frmSettingsLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTranceparentBG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTranceparentBG.Designer.cs">
+      <DependentUpon>frmTranceparentBG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWard.Designer.cs">
+      <DependentUpon>frmWard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWdDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWdDash.Designer.cs">
+      <DependentUpon>frmWdDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWdRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWdRoom.Designer.cs">
+      <DependentUpon>frmWdRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXray.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXray.Designer.cs">
+      <DependentUpon>frmXray.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXrayAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXrayAdd.Designer.cs">
+      <DependentUpon>frmXrayAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXrayAddOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXrayAddOut.Designer.cs">
+      <DependentUpon>frmXrayAddOut.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmADaddmitPatient.resx">
@@ -481,6 +535,33 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmSettingsAccount.resx">
       <DependentUpon>frmSettingsAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettingsAccountEdit.resx">
+      <DependentUpon>frmSettingsAccountEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSettingsLogin.resx">
+      <DependentUpon>frmSettingsLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTranceparentBG.resx">
+      <DependentUpon>frmTranceparentBG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWard.resx">
+      <DependentUpon>frmWard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWdDash.resx">
+      <DependentUpon>frmWdDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWdRoom.resx">
+      <DependentUpon>frmWdRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXray.resx">
+      <DependentUpon>frmXray.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXrayAdd.resx">
+      <DependentUpon>frmXrayAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXrayAddOut.resx">
+      <DependentUpon>frmXrayAddOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

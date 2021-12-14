@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmXrayInpatient : Form
     {
@@ -26,7 +26,7 @@ namespace Health_Street
         private void show()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY");
             dgvRooms.AutoGenerateColumns = false;
             dgvRooms.DataSource = dt;
         }
@@ -44,7 +44,7 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No LIKE '" + txtSearch.text + "%' OR Admission_Number LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No LIKE '" + txtSearch.text + "%' OR Admission_Number LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%'");
             dgvRooms.DataSource = dt;
         }
 
@@ -52,7 +52,7 @@ namespace Health_Street
         {
             frmXrayAdd frm = new frmXrayAdd();
             frm.UpdateEvenetHanler+= frm_UpdateXray;
-            new Health_Street.frmTranceparentBG(frm);
+            //new Health_Street.frmTranceparentBG(frm);
         }
 
         private void dgvRooms_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -72,14 +72,14 @@ namespace Health_Street
                 {
                     string sId = dgr.Cells[1].Value.ToString();
 
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No = '" + sId + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No = '" + sId + "'");
                     c += 1;
                 }
             }
             show();
             if (n == 1)
             {
-                HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmXrayAdd
     {
@@ -42,6 +42,7 @@
             this.lblDate = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel6 = new Guna.UI.WinForms.GunaLabel();
+            this.lblXrayPath = new Guna.UI.WinForms.GunaLabel();
             this.lblApNumber = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
@@ -55,7 +56,6 @@
             this.txtADNumber = new Guna.UI.WinForms.GunaTextBox();
             this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
-            this.lblXrayPath = new Guna.UI.WinForms.GunaLabel();
             this.pnlTheme.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctbXray)).BeginInit();
@@ -69,6 +69,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -109,7 +110,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.pctbXray);
@@ -273,6 +274,16 @@
             this.gunaLabel6.Size = new System.Drawing.Size(0, 20);
             this.gunaLabel6.TabIndex = 6;
             // 
+            // lblXrayPath
+            // 
+            this.lblXrayPath.AutoSize = true;
+            this.lblXrayPath.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblXrayPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.lblXrayPath.Location = new System.Drawing.Point(19, 229);
+            this.lblXrayPath.Name = "lblXrayPath";
+            this.lblXrayPath.Size = new System.Drawing.Size(0, 20);
+            this.lblXrayPath.TabIndex = 6;
+            // 
             // lblApNumber
             // 
             this.lblApNumber.AutoSize = true;
@@ -340,7 +351,7 @@
             // 
             // txtRoomNo
             // 
-            this.txtRoomNo.BaseColor = System.Drawing.Color.White;
+            this.txtRoomNo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtRoomNo.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtRoomNo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRoomNo.Enabled = false;
@@ -359,7 +370,7 @@
             // 
             // txtWardNo
             // 
-            this.txtWardNo.BaseColor = System.Drawing.Color.White;
+            this.txtWardNo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtWardNo.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtWardNo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtWardNo.Enabled = false;
@@ -378,7 +389,7 @@
             // 
             // txtDctName
             // 
-            this.txtDctName.BaseColor = System.Drawing.Color.White;
+            this.txtDctName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtDctName.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtDctName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDctName.Enabled = false;
@@ -397,7 +408,7 @@
             // 
             // txtXrayPath
             // 
-            this.txtXrayPath.BaseColor = System.Drawing.Color.White;
+            this.txtXrayPath.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtXrayPath.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtXrayPath.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtXrayPath.Enabled = false;
@@ -416,7 +427,7 @@
             // 
             // txtADNumber
             // 
-            this.txtADNumber.BaseColor = System.Drawing.Color.White;
+            this.txtADNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtADNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtADNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtADNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -441,16 +452,6 @@
             this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
             this.Animate.Interval = 800;
             this.Animate.TargetControl = this;
-            // 
-            // lblXrayPath
-            // 
-            this.lblXrayPath.AutoSize = true;
-            this.lblXrayPath.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblXrayPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.lblXrayPath.Location = new System.Drawing.Point(19, 229);
-            this.lblXrayPath.Name = "lblXrayPath";
-            this.lblXrayPath.Size = new System.Drawing.Size(0, 20);
-            this.lblXrayPath.TabIndex = 6;
             // 
             // frmXrayAdd
             // 

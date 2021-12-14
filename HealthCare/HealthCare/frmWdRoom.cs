@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmWdRoom : Form
     {
@@ -26,7 +26,7 @@ namespace Health_Street
         private void show()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM ROOM, WARD WHERE ROOM.Ward_Number = WARD.Ward_Number");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM ROOM, WARD WHERE ROOM.Ward_Number = WARD.Ward_Number");
             dgvRooms.AutoGenerateColumns = false;
             dgvRooms.DataSource = dt;
         }
@@ -34,7 +34,7 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM ROOM,WARD WHERE ROOM.Room_Number LIKE '" + txtSearch.text + "%' OR ROOM.Room_Name LIKE '" + txtSearch.text + "%' OR ROOM.Room_Type LIKE '" + txtSearch.text + "%' OR WARD.Ward_Number LIKE '" + txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM ROOM,WARD WHERE ROOM.Room_Number LIKE '" + txtSearch.text + "%' OR ROOM.Room_Name LIKE '" + txtSearch.text + "%' OR ROOM.Room_Type LIKE '" + txtSearch.text + "%' OR WARD.Ward_Number LIKE '" + txtSearch.text + "%'");
             dgvRooms.DataSource = dt;
         }
 

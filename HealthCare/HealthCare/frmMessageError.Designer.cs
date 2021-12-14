@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Guna.UI.WinForms.GunaElipse Elips;
-            Guna.UI.Animation.Animation animation2 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation1 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMessageError));
             this.DragCtrl = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.pnlDrag = new Guna.UI.WinForms.GunaElipsePanel();
@@ -60,7 +60,7 @@
             // pnlDrag
             // 
             this.pnlDrag.BackColor = System.Drawing.Color.Transparent;
-            this.pnlDrag.BaseColor = System.Drawing.SystemColors.ScrollBar;
+            this.pnlDrag.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pnlDrag.Controls.Add(this.lblCaption);
             this.pnlDrag.Controls.Add(this.gunaCirclePictureBox1);
             this.pnlDrag.Controls.Add(this.pnlMessage);
@@ -100,11 +100,11 @@
             // 
             // pnlMessage
             // 
-            this.pnlMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-            | System.Windows.Forms.AnchorStyles.Left)
+            this.pnlMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMessage.BackColor = System.Drawing.Color.Transparent;
-            this.pnlMessage.BaseColor = System.Drawing.Color.White;
+            this.pnlMessage.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlMessage.Controls.Add(this.PictureBox);
             this.pnlMessage.Controls.Add(this.btnOk);
             this.pnlMessage.Controls.Add(this.lblMessage);
@@ -129,7 +129,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaTransition1.SetDecoration(this.btnOk, Guna.UI.Animation.DecorationType.None);
@@ -166,29 +166,29 @@
             // 
             this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Scale;
             this.gunaTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.gunaTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.gunaTransition1.DefaultAnimation = animation1;
             // 
             // frmMessageError
             // 
             this.AcceptButton = this.btnOk;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ScrollBar;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.ClientSize = new System.Drawing.Size(600, 285);
             this.Controls.Add(this.pnlDrag);
             this.gunaTransition1.SetDecoration(this, Guna.UI.Animation.DecorationType.None);

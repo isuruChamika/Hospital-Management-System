@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmPatientDetails
     {

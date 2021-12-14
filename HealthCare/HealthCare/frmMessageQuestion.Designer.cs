@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmMessageQuestion
     {
@@ -180,7 +180,6 @@
             // 
             this.pictureBox.BaseColor = System.Drawing.Color.Black;
             this.gunaTransition1.SetDecoration(this.pictureBox, Guna.UI.Animation.DecorationType.None);
-            this.pictureBox.Image = global::Health_Street.Properties.Resources.Question;
             this.pictureBox.Location = new System.Drawing.Point(21, 17);
             this.pictureBox.Name = "pictureBox";
             this.pictureBox.Size = new System.Drawing.Size(123, 112);

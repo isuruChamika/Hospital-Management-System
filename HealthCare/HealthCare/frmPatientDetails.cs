@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmPatientDetails : Form
     {
@@ -27,12 +27,12 @@ namespace Health_Street
         private void show()
         {
             DataTable dt1 = new DataTable();
-            dt1 = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_REPORT WHERE Admission_Number = '"+frmDctInpatient.admitionNumber+"'");
+            //dt1 = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_REPORT WHERE Admission_Number = '"+frmDctInpatient.admitionNumber+"'");
             dgvReports.AutoGenerateColumns = false;
             dgvReports.DataSource = dt1;
 
             DataTable dt2 = new DataTable();
-            dt2 = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_MEDICINE WHERE Admission_Number = '" + frmDctInpatient.admitionNumber + "'");
+            //dt2 = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_MEDICINE WHERE Admission_Number = '" + frmDctInpatient.admitionNumber + "'");
             dgvMedicine.AutoGenerateColumns = false;
             dgvMedicine.DataSource = dt2;
         }

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmNewPassword : Form
     {
@@ -55,12 +55,12 @@ namespace Health_Street
             else
             {
                 string sqlcmd = "UPDATE ACCOUNT SET Login_Password = '" + txtComfrmPassword.Text + "' WHERE E_mail = '"+gmail+"'";
-                if (SQLConnectionManager.insrtUpdteDelt(sqlcmd) == 1)
-                {
-                    MessageBox.Show("SUCCESSFULL");
-                    new frmLogin().Show();
-                    this.Close();
-                }
+                //if (SQLConnectionManager.insrtUpdteDelt(sqlcmd) == 1)
+                //{
+                //    MessageBox.Show("SUCCESSFULL");
+                //    new frmLogin().Show();
+                //    this.Close();
+                //}
             }
         }
 

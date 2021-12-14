@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmPharmacy : Form
     {
-        clsOpnChild chFrmObj = new clsOpnChild();
+        //clsOpnChild chFrmObj = new clsOpnChild();
         public frmPharmacy()
         {
             InitializeComponent();
@@ -41,7 +41,7 @@ namespace Health_Street
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
             //phrAnimate.Start();
-            chFrmObj.openChild(new frmPhrDash(), pnlPhrChild);
+            //chFrmObj.openChild(new frmPhrDash(), pnlPhrChild);
         }
 
         private void subPnlClose()
@@ -78,7 +78,7 @@ namespace Health_Street
             btnMed.Checked = false;
             btnOfficer.Checked = false;
             btnSettings.Checked = false;
-            chFrmObj.openChild(new frmPhrSplr(), pnlPhrChild);
+            //chFrmObj.openChild(new frmPhrSplr(), pnlPhrChild);
 
         }
 
@@ -88,24 +88,24 @@ namespace Health_Street
             btnMed.Checked = false;
             btnOfficer.Checked = false;
             btnSettings.Checked = false;
-            chFrmObj.openChild(new frmPhrCstmr(), pnlPhrChild);
+            //chFrmObj.openChild(new frmPhrCstmr(), pnlPhrChild);
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             subPnlClose();
-            chFrmObj.openChild(new frmPhrDash(), pnlPhrChild);
+            //chFrmObj.openChild(new frmPhrDash(), pnlPhrChild);
         }
 
         private void btnMed_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmPhrMdcn(), pnlPhrChild);
+            //chFrmObj.openChild(new frmPhrMdcn(), pnlPhrChild);
             subPnlClose();
         }
 
         private void btnPchas_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
+            //chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
             subPnlClose();
             this.btnOfficer.Checked = true;
         }
@@ -113,7 +113,7 @@ namespace Health_Street
         private void btnSettings_Click(object sender, EventArgs e)
         {
             subPnlClose();
-            chFrmObj.openChild(new frmSettings(), pnlPhrChild);
+            //chFrmObj.openChild(new frmSettings(), pnlPhrChild);
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -140,11 +140,11 @@ namespace Health_Street
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            if (HSMessageBox.Show("ARE YOU SURE TO EXIT ?", "QUESTION", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
-            {
-                this.Hide();
-                new frmLogin().Show();
-            }
+            //if (HSMessageBox.Show("ARE YOU SURE TO EXIT ?", "QUESTION", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            //{
+            //    this.Hide();
+            //    new frmLogin().Show();
+            //}
         }
     }
 }

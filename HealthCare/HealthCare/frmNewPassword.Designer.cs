@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmNewPassword
     {
@@ -38,6 +38,8 @@
             this.btnCancel = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnSave = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaGradientPanel2 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.gunaGradientPanel3 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.btnShwComfirmPassword = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblComfirmPassword = new Guna.UI.WinForms.GunaLabel();
@@ -48,8 +50,6 @@
             this.txtnewPassword = new Guna.UI.WinForms.GunaLineTextBox();
             this.drag = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.newPassword = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
-            this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaGradientPanel3 = new Guna.UI.WinForms.GunaGradientPanel();
             this.drag2 = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.pnlDrag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
@@ -93,10 +93,10 @@
             this.gunaGradientPanel1.Controls.Add(this.btnCancel);
             this.gunaGradientPanel1.Controls.Add(this.btnSave);
             this.gunaGradientPanel1.Controls.Add(this.gunaGradientPanel2);
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.SystemColors.Control;
-            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.SystemColors.Control;
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGradientPanel1.Location = new System.Drawing.Point(198, 232);
             this.gunaGradientPanel1.Name = "gunaGradientPanel1";
             this.gunaGradientPanel1.Size = new System.Drawing.Size(643, 430);
@@ -186,15 +186,41 @@
             this.gunaGradientPanel2.Controls.Add(this.txtComfrmPassword);
             this.gunaGradientPanel2.Controls.Add(this.txtnewPassword);
             this.gunaGradientPanel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaGradientPanel2.GradientColor1 = System.Drawing.Color.White;
-            this.gunaGradientPanel2.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel2.GradientColor3 = System.Drawing.Color.White;
-            this.gunaGradientPanel2.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel2.GradientColor1 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaGradientPanel2.GradientColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaGradientPanel2.GradientColor3 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaGradientPanel2.GradientColor4 = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGradientPanel2.Location = new System.Drawing.Point(0, 0);
             this.gunaGradientPanel2.Name = "gunaGradientPanel2";
             this.gunaGradientPanel2.Size = new System.Drawing.Size(643, 366);
             this.gunaGradientPanel2.TabIndex = 0;
             this.gunaGradientPanel2.Text = "gunaGradientPanel2";
+            // 
+            // gunaGradientPanel3
+            // 
+            this.gunaGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel3.BackgroundImage")));
+            this.gunaGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel3.GradientColor1 = System.Drawing.SystemColors.Control;
+            this.gunaGradientPanel3.GradientColor2 = System.Drawing.Color.White;
+            this.gunaGradientPanel3.GradientColor3 = System.Drawing.SystemColors.Control;
+            this.gunaGradientPanel3.GradientColor4 = System.Drawing.Color.White;
+            this.gunaGradientPanel3.Location = new System.Drawing.Point(11, 140);
+            this.gunaGradientPanel3.Name = "gunaGradientPanel3";
+            this.gunaGradientPanel3.Size = new System.Drawing.Size(620, 5);
+            this.gunaGradientPanel3.TabIndex = 13;
+            this.gunaGradientPanel3.Text = "gunaGradientPanel3";
+            // 
+            // gunaLabel3
+            // 
+            this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.gunaLabel3.Location = new System.Drawing.Point(14, 74);
+            this.gunaLabel3.Name = "gunaLabel3";
+            this.gunaLabel3.Size = new System.Drawing.Size(424, 52);
+            this.gunaLabel3.TabIndex = 12;
+            this.gunaLabel3.Text = "Enter a new password";
             // 
             // gunaPictureBox1
             // 
@@ -277,7 +303,7 @@
             // 
             // txtComfrmPassword
             // 
-            this.txtComfrmPassword.BackColor = System.Drawing.Color.White;
+            this.txtComfrmPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtComfrmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtComfrmPassword.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtComfrmPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -293,7 +319,7 @@
             // 
             // txtnewPassword
             // 
-            this.txtnewPassword.BackColor = System.Drawing.Color.White;
+            this.txtnewPassword.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtnewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtnewPassword.FocusedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtnewPassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
@@ -317,32 +343,6 @@
             this.newPassword.Interval = 800;
             this.newPassword.TargetControl = this;
             // 
-            // gunaLabel3
-            // 
-            this.gunaLabel3.AutoSize = true;
-            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(14, 74);
-            this.gunaLabel3.Name = "gunaLabel3";
-            this.gunaLabel3.Size = new System.Drawing.Size(424, 52);
-            this.gunaLabel3.TabIndex = 12;
-            this.gunaLabel3.Text = "Enter a new password";
-            // 
-            // gunaGradientPanel3
-            // 
-            this.gunaGradientPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel3.BackgroundImage")));
-            this.gunaGradientPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel3.GradientColor1 = System.Drawing.SystemColors.Control;
-            this.gunaGradientPanel3.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel3.GradientColor3 = System.Drawing.SystemColors.Control;
-            this.gunaGradientPanel3.GradientColor4 = System.Drawing.Color.White;
-            this.gunaGradientPanel3.Location = new System.Drawing.Point(11, 140);
-            this.gunaGradientPanel3.Name = "gunaGradientPanel3";
-            this.gunaGradientPanel3.Size = new System.Drawing.Size(620, 5);
-            this.gunaGradientPanel3.TabIndex = 13;
-            this.gunaGradientPanel3.Text = "gunaGradientPanel3";
-            // 
             // drag2
             // 
             this.drag2.TargetControl = this.gunaPictureBox2;
@@ -351,7 +351,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(1018, 713);
             this.Controls.Add(this.gunaGradientPanel1);
             this.Controls.Add(this.pnlDrag);

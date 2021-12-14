@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmOrganization : Form
     {
@@ -32,7 +32,7 @@ namespace Health_Street
         private void showData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
             dgvPatient.AutoGenerateColumns = false;
             dgvPatient.DataSource = dt;
         }
@@ -41,7 +41,7 @@ namespace Health_Street
         {
             frmADaddPatient frm = new frmADaddPatient(/*this*/);
             frm.UpdateEvenetHanler += frm_UpdateEventHandler;
-            new Health_Street.frmTranceparentBG(frm);
+            //new Health_Street.frmTranceparentBG(frm);
         }
 
         private void frmADaddmitPatient_Load(object sender, EventArgs e)
@@ -52,14 +52,14 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION WHERE Goverment_Reg_Number LIKE '" + txtSearch.text + "%' OR Organization_Name LIKE '" + txtSearch.text + "%' OR Bill_Number LIKE '" + txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION WHERE Goverment_Reg_Number LIKE '" + txtSearch.text + "%' OR Organization_Name LIKE '" + txtSearch.text + "%' OR Bill_Number LIKE '" + txtSearch.text + "%'");
             dgvPatient.DataSource = dt;
         }
 
         private void dgvPatient_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmPatientDetails frm = new frmPatientDetails();
-            frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
+            //frmPatientDetails frm = new frmPatientDetails();
+            //frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
         }
 
         
@@ -82,14 +82,14 @@ namespace Health_Street
             {
                 if (Convert.ToBoolean(dgr.Cells[0].Value) == true)
                 {
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM ORGANIZATION WHERE Goverment_Reg_Number = '" + dgr.Cells[1].Value.ToString() + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM ORGANIZATION WHERE Goverment_Reg_Number = '" + dgr.Cells[1].Value.ToString() + "'");
                     c += 1;
                 }
             }
             showData();
             if (n == 1)
             {
-                HSMessageBox.Show(c + "DATA DELETED SUCCESSFULL", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + "DATA DELETED SUCCESSFULL", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

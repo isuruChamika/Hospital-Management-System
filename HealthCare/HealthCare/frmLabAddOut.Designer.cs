@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmLabAddOut
     {
@@ -66,6 +66,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -106,7 +107,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.lblSample);
@@ -151,7 +152,7 @@
             // cmbSample
             // 
             this.cmbSample.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSample.BaseColor = System.Drawing.Color.White;
+            this.cmbSample.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.cmbSample.BorderColor = System.Drawing.Color.Silver;
             this.cmbSample.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.cmbSample.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -325,7 +326,7 @@
             // 
             // txtRoomNo
             // 
-            this.txtRoomNo.BaseColor = System.Drawing.Color.White;
+            this.txtRoomNo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtRoomNo.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtRoomNo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRoomNo.Enabled = false;
@@ -344,7 +345,7 @@
             // 
             // txtWardNo
             // 
-            this.txtWardNo.BaseColor = System.Drawing.Color.White;
+            this.txtWardNo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtWardNo.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtWardNo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtWardNo.Enabled = false;
@@ -363,7 +364,7 @@
             // 
             // txtDctName
             // 
-            this.txtDctName.BaseColor = System.Drawing.Color.White;
+            this.txtDctName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtDctName.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtDctName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDctName.Enabled = false;
@@ -382,7 +383,7 @@
             // 
             // txtPatientId
             // 
-            this.txtPatientId.BaseColor = System.Drawing.Color.White;
+            this.txtPatientId.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtPatientId.BorderColor = System.Drawing.Color.Silver;
             this.txtPatientId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPatientId.FocusedBaseColor = System.Drawing.Color.White;

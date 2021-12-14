@@ -1,4 +1,4 @@
-﻿using Microsoft.Reporting.WebForms;
+﻿//using Microsoft.Reporting.WebForms;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmGuardian : Form
     {
@@ -34,7 +34,7 @@ namespace Health_Street
         private void showData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN");
             dgvPatient.AutoGenerateColumns = false;
             dgvPatient.DataSource = dt;
         }
@@ -45,7 +45,7 @@ namespace Health_Street
             //frm.UpdateEvenetHanlerBill += frm_UpdateEventHandler;
             //new Health_Street.frmTranceparentBG(frm);
 
-            new Reports.frmPrintBillPatient().Show();
+            //new Reports.frmPrintBillPatient().Show();
         }
 
         private void frmADaddmitPatient_Load(object sender, EventArgs e)
@@ -56,14 +56,14 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN WHERE Guardian_Id_Number LIKE '" + txtSearch.text + "%' OR Guardian_Name LIKE '" + txtSearch.text + "%' OR Guardian_Address LIKE '" + txtSearch.text + "%' OR Guardian_NIC LIKE '" + txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN WHERE Guardian_Id_Number LIKE '" + txtSearch.text + "%' OR Guardian_Name LIKE '" + txtSearch.text + "%' OR Guardian_Address LIKE '" + txtSearch.text + "%' OR Guardian_NIC LIKE '" + txtSearch.text + "%'");
             dgvPatient.DataSource = dt;
         }
 
         private void dgvPatient_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            frmPatientDetails frm = new frmPatientDetails();
-            frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
+            //frmPatientDetails frm = new frmPatientDetails();
+            //frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
         }
 
         
@@ -78,13 +78,13 @@ namespace Health_Street
         private void dgvPatient_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             guardianId = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
-            new Reports.frmPrintBillPatient().ShowDialog();
+            //new Reports.frmPrintBillPatient().ShowDialog();
         }
 
         private void dgvPatient_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             guardianId = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
-            new Reports.frmPrintBillPatient().ShowDialog();
+            //new Reports.frmPrintBillPatient().ShowDialog();
         }
 
         private void dgvPatient_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -98,14 +98,14 @@ namespace Health_Street
             {
                 if (Convert.ToBoolean(dgr.Cells[0].Value) == true)
                 {
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT WHERE Admission_Number = '" + dgr.Cells[1].Value.ToString() + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT WHERE Admission_Number = '" + dgr.Cells[1].Value.ToString() + "'");
                     c += 1;
                 }
             }
             showData();
             if (n == 1)
             {
-                HSMessageBox.Show(c + "DATA DELETED SUCCESFULL", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + "DATA DELETED SUCCESFULL", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

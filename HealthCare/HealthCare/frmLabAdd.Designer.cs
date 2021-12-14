@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmLabAdd
     {
@@ -34,6 +34,9 @@
             this.btnClose = new Guna.UI.WinForms.GunaControlBox();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
+            this.lblSample = new Guna.UI.WinForms.GunaLabel();
+            this.cmbSample = new Guna.UI.WinForms.GunaComboBox();
+            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.btnPSave = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
             this.lblTime = new Guna.UI.WinForms.GunaLabel();
@@ -51,9 +54,6 @@
             this.txtPatientId = new Guna.UI.WinForms.GunaTextBox();
             this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
-            this.lblSample = new Guna.UI.WinForms.GunaLabel();
-            this.cmbSample = new Guna.UI.WinForms.GunaComboBox();
-            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
             this.pnlTheme.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -66,6 +66,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -106,7 +107,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaGroupBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.lblSample);
@@ -137,6 +138,50 @@
             this.gunaGroupBox1.TabIndex = 0;
             this.gunaGroupBox1.Text = "Add X-Ray";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
+            // 
+            // lblSample
+            // 
+            this.lblSample.AutoSize = true;
+            this.lblSample.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lblSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            this.lblSample.Location = new System.Drawing.Point(277, 136);
+            this.lblSample.Name = "lblSample";
+            this.lblSample.Size = new System.Drawing.Size(0, 20);
+            this.lblSample.TabIndex = 9;
+            // 
+            // cmbSample
+            // 
+            this.cmbSample.BackColor = System.Drawing.Color.Transparent;
+            this.cmbSample.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.cmbSample.BorderColor = System.Drawing.Color.Silver;
+            this.cmbSample.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cmbSample.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbSample.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.cmbSample.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cmbSample.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.cmbSample.FormattingEnabled = true;
+            this.cmbSample.Items.AddRange(new object[] {
+            "BLOOD",
+            "URINE",
+            "MARROW",
+            "SWAB"});
+            this.cmbSample.Location = new System.Drawing.Point(277, 101);
+            this.cmbSample.Name = "cmbSample";
+            this.cmbSample.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.cmbSample.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cmbSample.Size = new System.Drawing.Size(172, 31);
+            this.cmbSample.TabIndex = 8;
+            // 
+            // gunaLabel8
+            // 
+            this.gunaLabel8.AutoSize = true;
+            this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel8.ForeColor = System.Drawing.Color.DimGray;
+            this.gunaLabel8.Location = new System.Drawing.Point(273, 72);
+            this.gunaLabel8.Name = "gunaLabel8";
+            this.gunaLabel8.Size = new System.Drawing.Size(113, 23);
+            this.gunaLabel8.TabIndex = 7;
+            this.gunaLabel8.Text = "Sample Type";
             // 
             // btnPSave
             // 
@@ -281,7 +326,7 @@
             // 
             // txtRoomNo
             // 
-            this.txtRoomNo.BaseColor = System.Drawing.Color.White;
+            this.txtRoomNo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtRoomNo.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtRoomNo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRoomNo.Enabled = false;
@@ -300,7 +345,7 @@
             // 
             // txtWardNo
             // 
-            this.txtWardNo.BaseColor = System.Drawing.Color.White;
+            this.txtWardNo.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtWardNo.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtWardNo.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtWardNo.Enabled = false;
@@ -319,7 +364,7 @@
             // 
             // txtDctName
             // 
-            this.txtDctName.BaseColor = System.Drawing.Color.White;
+            this.txtDctName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtDctName.BorderColor = System.Drawing.Color.Gainsboro;
             this.txtDctName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtDctName.Enabled = false;
@@ -338,7 +383,7 @@
             // 
             // txtPatientId
             // 
-            this.txtPatientId.BaseColor = System.Drawing.Color.White;
+            this.txtPatientId.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtPatientId.BorderColor = System.Drawing.Color.Silver;
             this.txtPatientId.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtPatientId.FocusedBaseColor = System.Drawing.Color.White;
@@ -363,50 +408,6 @@
             this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
             this.Animate.Interval = 800;
             this.Animate.TargetControl = this;
-            // 
-            // lblSample
-            // 
-            this.lblSample.AutoSize = true;
-            this.lblSample.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.lblSample.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            this.lblSample.Location = new System.Drawing.Point(277, 136);
-            this.lblSample.Name = "lblSample";
-            this.lblSample.Size = new System.Drawing.Size(0, 20);
-            this.lblSample.TabIndex = 9;
-            // 
-            // cmbSample
-            // 
-            this.cmbSample.BackColor = System.Drawing.Color.Transparent;
-            this.cmbSample.BaseColor = System.Drawing.Color.White;
-            this.cmbSample.BorderColor = System.Drawing.Color.Silver;
-            this.cmbSample.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cmbSample.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbSample.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            this.cmbSample.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cmbSample.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.cmbSample.FormattingEnabled = true;
-            this.cmbSample.Items.AddRange(new object[] {
-            "BLOOD",
-            "URINE",
-            "MARROW",
-            "SWAB"});
-            this.cmbSample.Location = new System.Drawing.Point(277, 101);
-            this.cmbSample.Name = "cmbSample";
-            this.cmbSample.OnHoverItemBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            this.cmbSample.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cmbSample.Size = new System.Drawing.Size(172, 31);
-            this.cmbSample.TabIndex = 8;
-            // 
-            // gunaLabel8
-            // 
-            this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel8.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel8.Location = new System.Drawing.Point(273, 72);
-            this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(113, 23);
-            this.gunaLabel8.TabIndex = 7;
-            this.gunaLabel8.Text = "Sample Type";
             // 
             // frmLabAdd
             // 

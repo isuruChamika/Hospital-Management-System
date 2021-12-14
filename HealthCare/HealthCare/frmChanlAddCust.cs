@@ -9,7 +9,7 @@ using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmChanlAddCust : Form
     {
@@ -139,24 +139,24 @@ namespace Health_Street
             }
             else
             {
-                string addmitionOffId = SQLConnectionManager.getValue("SELECT * FROM ADMISSION_OFFICER", frmLogin.passingRoll,10,1);
+                //string addmitionOffId = SQLConnectionManager.getValue("SELECT * FROM ADMISSION_OFFICER", frmLogin.passingRoll,10,1);
 
-                MessageBox.Show(addmitionOffId);
+                //MessageBox.Show(addmitionOffId);
 
 
-                int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO GUARDIAN VALUES ('" + txtNic.Text + "','" + txtName.Text + "','" + txtAddress.Text + "','" + txtTpNumber.Text + "','" + txtRelationship.Text + "','" + addmitionOffId + "')");
-                string guardianId = SQLConnectionManager.getValue("SELECT * FROM GUARDIAN", txtNic.Text, 2, 1);
-                MessageBox.Show(guardianId);
+                //int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO GUARDIAN VALUES ('" + txtNic.Text + "','" + txtName.Text + "','" + txtAddress.Text + "','" + txtTpNumber.Text + "','" + txtRelationship.Text + "','" + addmitionOffId + "')");
+                //string guardianId = SQLConnectionManager.getValue("SELECT * FROM GUARDIAN", txtNic.Text, 2, 1);
+                //MessageBox.Show(guardianId);
                
-                if (i == 1)
-                {
-                    HSMessageBox.Show("DATA ADDED SUCCESSFULY", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-                else
-                {
-                    MessageBox.Show("kelawila", "DataBindings enter une na");
-                }
-                insert();
+                //if (i == 1)
+                //{
+                //    HSMessageBox.Show("DATA ADDED SUCCESSFULY", "MESSAGE", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //}
+                //else
+                //{
+                //    MessageBox.Show("kelawila", "DataBindings enter une na");
+                //}
+                //insert();
 
 
             }

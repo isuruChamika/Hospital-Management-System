@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmChanlAddCust
     {
@@ -68,6 +68,7 @@
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
+            this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.gunaLabel18);
             this.pnlTheme.Controls.Add(this.gunaGroupBox2);
@@ -91,7 +92,7 @@
             // gunaGroupBox2
             // 
             this.gunaGroupBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.gunaGroupBox2.BackColor = System.Drawing.SystemColors.Control;
+            this.gunaGroupBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.FloralWhite;
             this.gunaGroupBox2.Controls.Add(this.gunaLabel15);
@@ -301,7 +302,7 @@
             // 
             // txtNic
             // 
-            this.txtNic.BaseColor = System.Drawing.Color.White;
+            this.txtNic.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtNic.BorderColor = System.Drawing.Color.Silver;
             this.txtNic.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtNic.FocusedBaseColor = System.Drawing.Color.White;
@@ -319,7 +320,7 @@
             // 
             // txtRelationship
             // 
-            this.txtRelationship.BaseColor = System.Drawing.Color.White;
+            this.txtRelationship.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtRelationship.BorderColor = System.Drawing.Color.Silver;
             this.txtRelationship.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtRelationship.FocusedBaseColor = System.Drawing.Color.White;
@@ -337,7 +338,7 @@
             // 
             // txtTpNumber
             // 
-            this.txtTpNumber.BaseColor = System.Drawing.Color.White;
+            this.txtTpNumber.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtTpNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtTpNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtTpNumber.FocusedBaseColor = System.Drawing.Color.White;
@@ -355,7 +356,7 @@
             // 
             // txtAddress
             // 
-            this.txtAddress.BaseColor = System.Drawing.Color.White;
+            this.txtAddress.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtAddress.BorderColor = System.Drawing.Color.Silver;
             this.txtAddress.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtAddress.FocusedBaseColor = System.Drawing.Color.White;
@@ -373,7 +374,7 @@
             // 
             // txtName
             // 
-            this.txtName.BaseColor = System.Drawing.Color.White;
+            this.txtName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtName.BorderColor = System.Drawing.Color.Silver;
             this.txtName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtName.FocusedBaseColor = System.Drawing.Color.White;
@@ -442,7 +443,7 @@
             this.Animate.Interval = 800;
             this.Animate.TargetControl = this;
             // 
-            // frmBilAddCustomer
+            // frmChanlAddCust
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -450,7 +451,7 @@
             this.ClientSize = new System.Drawing.Size(771, 951);
             this.Controls.Add(this.pnlTheme);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmBilAddCustomer";
+            this.Name = "frmChanlAddCust";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmADAddmitPatient";
             this.pnlTheme.ResumeLayout(false);

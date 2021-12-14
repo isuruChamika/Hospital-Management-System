@@ -62,7 +62,7 @@
             // gunaPanel1
             // 
             this.gunaPanel1.AutoScroll = true;
-            this.gunaPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
             this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel1.Controls.Add(this.btnDelete);
@@ -111,7 +111,7 @@
             // 
             // txtSearch
             // 
-            this.txtSearch.BackColor = System.Drawing.Color.White;
+            this.txtSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtSearch.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("txtSearch.BackgroundImage")));
             this.txtSearch.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.txtSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
@@ -157,7 +157,7 @@
             this.dgvXrayOutPatient.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvXrayOutPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvXrayOutPatient.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvXrayOutPatient.BackgroundColor = System.Drawing.Color.White;
+            this.dgvXrayOutPatient.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvXrayOutPatient.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvXrayOutPatient.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvXrayOutPatient.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -209,7 +209,7 @@
             this.dgvXrayOutPatient.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvXrayOutPatient.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvXrayOutPatient.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvXrayOutPatient.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.dgvXrayOutPatient.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvXrayOutPatient.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvXrayOutPatient.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.dgvXrayOutPatient.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;

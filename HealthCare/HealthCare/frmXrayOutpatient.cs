@@ -22,15 +22,15 @@ namespace Health_Street
             show();
         }
 
-        private void frm_updateOutxray(object sender, frmXrayAddOut.UpdateEvenetArgs args)
-        {
-            show();
-        }
+        //private void frm_updateOutxray(object sender, frmXrayAddOut.UpdateEvenetArgs args)
+        //{
+        //    show();
+        //}
 
         private void show()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_XRAY");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_XRAY");
             dgvXrayOutPatient.AutoGenerateColumns = false;
             dgvXrayOutPatient.DataSource = dt;
         }
@@ -43,15 +43,15 @@ namespace Health_Street
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_XRAY WHERE Out_Patient_Xray_No LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%'");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_XRAY WHERE Out_Patient_Xray_No LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%'");
             dgvXrayOutPatient.DataSource = dt;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            frmXrayAddOut frm = new frmXrayAddOut();
-            frm.UpdateEvenetHanler += frm_updateOutxray;
-            new Health_Street.frmTranceparentBG(frm);
+            //frmXrayAddOut frm = new frmXrayAddOut();
+            //frm.UpdateEvenetHanler += frm_updateOutxray;
+            //new Health_Street.frmTranceparentBG(frm);
         }
 
         private void dgvXrayOutPatient_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -68,14 +68,14 @@ namespace Health_Street
                 {
                     string sId = dgr.Cells[1].Value.ToString();
 
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_PATIENT_XRAY WHERE Out_Patient_Xray_No = '" + sId + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_PATIENT_XRAY WHERE Out_Patient_Xray_No = '" + sId + "'");
                     c += 1;
                 }
             }
             show();
             if (n == 1)
             {
-                HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + " DATA DELETED SUCCESSFULLY ", "DELETE DATA", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

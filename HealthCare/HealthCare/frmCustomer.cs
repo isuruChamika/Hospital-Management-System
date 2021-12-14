@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmCustomer : Form
     {
@@ -30,7 +30,7 @@ namespace Health_Street
         private void showData()
         {
             DataTable dt = new DataTable();
-            dt = SQLConnectionManager.getdata("SELECT * FROM CUSTOMER");
+            //dt = SQLConnectionManager.getdata("SELECT * FROM CUSTOMER");
             dgvCustomer.AutoGenerateColumns = false;
             dgvCustomer.DataSource = dt;
         }
@@ -49,7 +49,7 @@ namespace Health_Street
         {
             frmChanlAdd frm = new frmChanlAdd();
             frm.UpdateEvenetHanler += frm_UpdateIventHandler;
-            new Health_Street.frmTranceparentBG(frm);
+            //new Health_Street.frmTranceparentBG(frm);
         }
 
         int n, c = 0;
@@ -70,14 +70,14 @@ namespace Health_Street
             {
                 if (Convert.ToBoolean(dgr.Cells[0].Value) == true)
                 {
-                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM CUSTOMER WHERE Invoice_Number = '" + dgr.Cells[1].Value.ToString() + "'");
+                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM CUSTOMER WHERE Invoice_Number = '" + dgr.Cells[1].Value.ToString() + "'");
                     c += 1;
                 }
             }
             showData();
             if (n == 1)
             {
-                HSMessageBox.Show(c + "DATA DELETED SUCCESSFULLY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
+                //HSMessageBox.Show(c + "DATA DELETED SUCCESSFULLY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information); ;
             }
         }
     }

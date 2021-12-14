@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmChanlingOfficer : Form
     {
-        clsOpnChild chFrmObj = new clsOpnChild();
+        //clsOpnChild chFrmObj = new clsOpnChild();
         public frmChanlingOfficer()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace Health_Street
         private void frmPharmacy_Load(object sender, EventArgs e)
         {
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            chFrmObj.openChild(new frmChanlDash(), pnlPhrChild);
+            //chFrmObj.openChild(new frmChanlDash(), pnlPhrChild);
         }
 
 
@@ -60,23 +60,23 @@ namespace Health_Street
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmChanlDash(), pnlPhrChild);
+            //chFrmObj.openChild(new frmChanlDash(), pnlPhrChild);
         }
 
         private void btnPatient_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmCustomer(), pnlPhrChild);
+            //chFrmObj.openChild(new frmCustomer(), pnlPhrChild);
         }
 
         private void btnPchas_Click(object sender, EventArgs e)
         {
             this.btnDct.Checked = true;
-            chFrmObj.openChild(new frmDoctor(), pnlPhrChild);
+            //chFrmObj.openChild(new frmDoctor(), pnlPhrChild);
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmSettings(), pnlPhrChild);
+            //chFrmObj.openChild(new frmSettings(), pnlPhrChild);
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -103,11 +103,11 @@ namespace Health_Street
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            if (HSMessageBox.Show("ARE YOU SURE EXIT", "ERROR", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
-            {
-                this.Hide();
-                new frmLogin().Show();
-            }
+            //if (HSMessageBox.Show("ARE YOU SURE EXIT", "ERROR", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            //{
+            //    this.Hide();
+            //    new frmLogin().Show();
+            //}
         }
 
         private void btnInpatient_Click(object sender, EventArgs e)
@@ -116,7 +116,7 @@ namespace Health_Street
 
         private void btnOfficer_Click(object sender, EventArgs e)
         {
-            chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
+            //chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
         }
 
         private void pnlPhrChild_Paint(object sender, PaintEventArgs e)

@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmMessageError
     {
@@ -100,8 +100,8 @@
             // 
             // pnlMessage
             // 
-            this.pnlMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.pnlMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+            | System.Windows.Forms.AnchorStyles.Left)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlMessage.BackColor = System.Drawing.Color.Transparent;
             this.pnlMessage.BaseColor = System.Drawing.Color.White;
@@ -120,7 +120,6 @@
             // 
             this.PictureBox.BaseColor = System.Drawing.Color.White;
             this.gunaTransition1.SetDecoration(this.PictureBox, Guna.UI.Animation.DecorationType.None);
-            this.PictureBox.Image = global::Health_Street.Properties.Resources.Error;
             this.PictureBox.Location = new System.Drawing.Point(21, 17);
             this.PictureBox.Name = "PictureBox";
             this.PictureBox.Size = new System.Drawing.Size(123, 105);
@@ -130,7 +129,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.btnOk.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnOk.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaTransition1.SetDecoration(this.btnOk, Guna.UI.Animation.DecorationType.None);

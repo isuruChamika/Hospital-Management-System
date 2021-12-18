@@ -35,6 +35,7 @@
             this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.pnlRight = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnShwPass = new Bunifu.Framework.UI.BunifuImageButton();
             this.chkbxRememberMe = new Guna.UI.WinForms.GunaCheckBox();
             this.lnkLblForgotPw = new Guna.UI.WinForms.GunaLinkLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
@@ -47,13 +48,12 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.drag1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.drag2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
-            this.btnShwPass = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).BeginInit();
             this.pnlRight.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).BeginInit();
             this.SuspendLayout();
             // 
             // elips
@@ -115,6 +115,24 @@
             this.pnlRight.ShadowDecoration.Parent = this.pnlRight;
             this.pnlRight.Size = new System.Drawing.Size(524, 827);
             this.pnlRight.TabIndex = 1;
+            // 
+            // btnShwPass
+            // 
+            this.btnShwPass.BackColor = System.Drawing.Color.Transparent;
+            this.btnShwPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShwPass.BackgroundImage")));
+            this.btnShwPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShwPass.Image = ((System.Drawing.Image)(resources.GetObject("btnShwPass.Image")));
+            this.btnShwPass.ImageActive = null;
+            this.btnShwPass.Location = new System.Drawing.Point(448, 591);
+            this.btnShwPass.Margin = new System.Windows.Forms.Padding(0);
+            this.btnShwPass.Name = "btnShwPass";
+            this.btnShwPass.Size = new System.Drawing.Size(26, 25);
+            this.btnShwPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnShwPass.TabIndex = 11;
+            this.btnShwPass.TabStop = false;
+            this.btnShwPass.Zoom = 20;
+            this.btnShwPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShwPass_MouseDown);
+            this.btnShwPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShwPass_MouseUp);
             // 
             // chkbxRememberMe
             // 
@@ -268,6 +286,7 @@
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
             this.btnClose.Size = new System.Drawing.Size(79, 43);
             this.btnClose.TabIndex = 3;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click_1);
             // 
             // drag1
             // 
@@ -282,24 +301,6 @@
             this.drag2.Horizontal = true;
             this.drag2.TargetControl = this.pnlRight;
             this.drag2.Vertical = true;
-            // 
-            // btnShwPass
-            // 
-            this.btnShwPass.BackColor = System.Drawing.Color.Transparent;
-            this.btnShwPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShwPass.BackgroundImage")));
-            this.btnShwPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnShwPass.Image = ((System.Drawing.Image)(resources.GetObject("btnShwPass.Image")));
-            this.btnShwPass.ImageActive = null;
-            this.btnShwPass.Location = new System.Drawing.Point(448, 591);
-            this.btnShwPass.Margin = new System.Windows.Forms.Padding(0);
-            this.btnShwPass.Name = "btnShwPass";
-            this.btnShwPass.Size = new System.Drawing.Size(26, 25);
-            this.btnShwPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnShwPass.TabIndex = 11;
-            this.btnShwPass.TabStop = false;
-            this.btnShwPass.Zoom = 20;
-            this.btnShwPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShwPass_MouseDown);
-            this.btnShwPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShwPass_MouseUp);
             // 
             // frmLogin
             // 
@@ -318,9 +319,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).EndInit();
             this.pnlRight.ResumeLayout(false);
             this.pnlRight.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).EndInit();
             this.ResumeLayout(false);
 
         }

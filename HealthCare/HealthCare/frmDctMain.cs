@@ -121,11 +121,11 @@ namespace HealthCare
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            //if (HSMessageBox.Show("ARE YOU SURE TO EXIT ?", "ERROR", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
-            //{
-            //    this.Hide();
-            //    new frmLogin().Show();
-            //}
+            if (HSMessageBox.Show("ARE YOU SURE TO EXIT ?", "ERROR", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            {
+                this.Hide();
+                new frmLogin().Show();
+            }
         }
 
         private void pnlDctmain_Paint(object sender, PaintEventArgs e)

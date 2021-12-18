@@ -80,6 +80,11 @@ namespace HealthCare
             txtPassword.PasswordChar = '●';
         }
 
+        private void btnClose_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         //private void rememberMe()
         //{
         //    if (chkbxRememberMe.Checked == false)

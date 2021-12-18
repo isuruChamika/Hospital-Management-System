@@ -439,6 +439,7 @@
     <Compile Include="frmXrayOutpatient.Designer.cs">
       <DependentUpon>frmXrayOutpatient.cs</DependentUpon>
     </Compile>
+    <Compile Include="HSMessageBox.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLConnectionManager.cs" />
@@ -650,6 +651,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Question.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

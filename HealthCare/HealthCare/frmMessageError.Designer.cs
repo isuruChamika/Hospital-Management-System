@@ -120,6 +120,7 @@
             // 
             this.PictureBox.BaseColor = System.Drawing.Color.White;
             this.gunaTransition1.SetDecoration(this.PictureBox, Guna.UI.Animation.DecorationType.None);
+            this.PictureBox.Image = global::HealthCare.Properties.Resources.Question;
             this.PictureBox.Location = new System.Drawing.Point(21, 17);
             this.PictureBox.Name = "PictureBox";
             this.PictureBox.Size = new System.Drawing.Size(123, 105);

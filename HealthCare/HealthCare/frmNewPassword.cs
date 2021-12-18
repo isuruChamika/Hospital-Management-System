@@ -55,12 +55,12 @@ namespace HealthCare
             else
             {
                 string sqlcmd = "UPDATE ACCOUNT SET Login_Password = '" + txtComfrmPassword.Text + "' WHERE E_mail = '"+gmail+"'";
-                //if (SQLConnectionManager.insrtUpdteDelt(sqlcmd) == 1)
-                //{
-                //    MessageBox.Show("SUCCESSFULL");
-                //    new frmLogin().Show();
-                //    this.Close();
-                //}
+                if (SQLConnectionManager.insrtUpdteDelt(sqlcmd) == 1)
+                {
+                    MessageBox.Show("SUCCESSFULL");
+                    new frmLogin().Show();
+                    this.Close();
+                }
             }
         }
 

@@ -26,7 +26,7 @@ namespace HealthCare
         private void show()
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY");
+            dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY");
             dgvRooms.AutoGenerateColumns = false;
             dgvRooms.DataSource = dt;
         }
@@ -44,7 +44,7 @@ namespace HealthCare
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No LIKE '" + txtSearch.text + "%' OR Admission_Number LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%'");
+            dt = SQLConnectionManager.getdata("SELECT * FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No LIKE '" + txtSearch.text + "%' OR Admission_Number LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%'");
             dgvRooms.DataSource = dt;
         }
 
@@ -52,7 +52,7 @@ namespace HealthCare
         {
             frmXrayAdd frm = new frmXrayAdd();
             frm.UpdateEvenetHanler+= frm_UpdateXray;
-            //new Health_Street.frmTranceparentBG(frm);
+            new HealthCare.frmTranceparentBG(frm);
         }
 
         private void dgvRooms_DataError(object sender, DataGridViewDataErrorEventArgs e)
@@ -72,7 +72,7 @@ namespace HealthCare
                 {
                     string sId = dgr.Cells[1].Value.ToString();
 
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No = '" + sId + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT_XRAY WHERE In_Patient_X_Ray_No = '" + sId + "'");
                     c += 1;
                 }
             }

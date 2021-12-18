@@ -43,7 +43,11 @@
       <HintPath>..\..\..\..\..\PcWonderland.com_Guna_UI_Framework_Ultimate_2\Guna UI Framework Ultimate v2.0.0.1 Lib-Master\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="SMDLogic">
+      <HintPath>C:\Users\ud\Desktop\DSE\dll\SMDLogic.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
     <Reference Include="System.Xml.Linq" />
@@ -62,6 +66,12 @@
     </Compile>
     <Compile Include="frmADaddmitPatient.Designer.cs">
       <DependentUpon>frmADaddmitPatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddOrganization.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddOrganization.Designer.cs">
+      <DependentUpon>frmAddOrganization.cs</DependentUpon>
     </Compile>
     <Compile Include="frmADaddPatient.cs">
       <SubType>Form</SubType>
@@ -152,6 +162,12 @@
     </Compile>
     <Compile Include="frmDctInpatient.Designer.cs">
       <DependentUpon>frmDctInpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDctMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDctMain.Designer.cs">
+      <DependentUpon>frmDctMain.cs</DependentUpon>
     </Compile>
     <Compile Include="frmDctPatient.cs">
       <SubType>Form</SubType>
@@ -266,6 +282,12 @@
     </Compile>
     <Compile Include="frmPharSupplierAdd.Designer.cs">
       <DependentUpon>frmPharSupplierAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPhrCstmr.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPhrCstmr.Designer.cs">
+      <DependentUpon>frmPhrCstmr.cs</DependentUpon>
     </Compile>
     <Compile Include="frmPhrDash.cs">
       <SubType>Form</SubType>
@@ -393,10 +415,32 @@
     <Compile Include="frmXrayAddOut.Designer.cs">
       <DependentUpon>frmXrayAddOut.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmXrayDash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXrayDash.Designer.cs">
+      <DependentUpon>frmXrayDash.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXrayInpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXrayInpatient.Designer.cs">
+      <DependentUpon>frmXrayInpatient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmXrayOutpatient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmXrayOutpatient.Designer.cs">
+      <DependentUpon>frmXrayOutpatient.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLConnectionManager.cs" />
     <EmbeddedResource Include="frmADaddmitPatient.resx">
       <DependentUpon>frmADaddmitPatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddOrganization.resx">
+      <DependentUpon>frmAddOrganization.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmADaddPatient.resx">
       <DependentUpon>frmADaddPatient.cs</DependentUpon>
@@ -442,6 +486,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmDctInpatient.resx">
       <DependentUpon>frmDctInpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDctMain.resx">
+      <DependentUpon>frmDctMain.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDctPatient.resx">
       <DependentUpon>frmDctPatient.cs</DependentUpon>
@@ -499,6 +546,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmPharSupplierAdd.resx">
       <DependentUpon>frmPharSupplierAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPhrCstmr.resx">
+      <DependentUpon>frmPhrCstmr.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmPhrDash.resx">
       <DependentUpon>frmPhrDash.cs</DependentUpon>
@@ -562,6 +612,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmXrayAddOut.resx">
       <DependentUpon>frmXrayAddOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXrayDash.resx">
+      <DependentUpon>frmXrayDash.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXrayInpatient.resx">
+      <DependentUpon>frmXrayInpatient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmXrayOutpatient.resx">
+      <DependentUpon>frmXrayOutpatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

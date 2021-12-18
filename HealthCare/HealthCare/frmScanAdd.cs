@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-//using System.Web.Services.Description;
 using System.Windows.Forms;
 using System.IO;
 
@@ -89,17 +88,17 @@ namespace HealthCare
                     image = null;
                 }
 
-                //int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO IN_PATIENT_SCAN VALUES('" + txtAdNumber.Text + "','@image',SYSDATETIME(),SYSDATETIME(),'" + txtWardNo.Text + "','" + txtRoomNo.Text + "','" + dct + "')", "@image", image);
+                int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO IN_PATIENT_SCAN VALUES('" + txtAdNumber.Text + "','@image',SYSDATETIME(),SYSDATETIME(),'" + txtWardNo.Text + "','" + txtRoomNo.Text + "','" + dct + "')", "@image", image);
 
-                //if (i == 1)
-                //{
-                //    HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //}
-                //else
-                //{
-                //    MessageBox.Show("DATA ADDED UNSUCCESSFULL", "ERROR");
-                //}
-                //insert();
+                if (i == 1)
+                {
+                    //HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("DATA ADDED UNSUCCESSFULL", "ERROR");
+                }
+                insert();
 
 
             }
@@ -108,30 +107,30 @@ namespace HealthCare
         string dct;
         private void txtApNumber_TextChanged(object sender, EventArgs e)
         {
-            //if (!string.IsNullOrEmpty(txtAdNumber.Text))
-            //{
-            //    txtAdNumber.BorderColor = Color.Silver;
-            //    txtAdNumber.FocusedBorderColor = Color.FromArgb(33, 96, 104);
-            //    lblApNumber.ResetText();
-            //    if (txtAdNumber.Text == SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 1))
-            //    {
-            //        txtAdNumber.BorderColor = Color.Silver;
-            //        txtAdNumber.FocusedBorderColor = Color.FromArgb(33, 96, 104);
-            //        lblApNumber.ResetText();
-            //        dct = txtWardNo.Text = SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 8);
-            //        txtWardNo.Text = SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 9);
-            //        txtRoomNo.Text = SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 10);
-            //        txtDctName.Text = SQLConnectionManager.getValue("SELECT * FROM SPECIALIST_DOCTOR", dct, 1, 4);
-            //    }
-            //    else
-            //    {
-            //        adNumber();
-            //        lblApNumber.Text = "*Can't Find";
-            //        txtDctName.ResetText();
-            //        txtWardNo.ResetText();
-            //        txtRoomNo.ResetText();
-            //    }
-            //}
+            if (!string.IsNullOrEmpty(txtAdNumber.Text))
+            {
+                txtAdNumber.BorderColor = Color.Silver;
+                txtAdNumber.FocusedBorderColor = Color.FromArgb(33, 96, 104);
+                lblApNumber.ResetText();
+                if (txtAdNumber.Text == SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 1))
+                {
+                    txtAdNumber.BorderColor = Color.Silver;
+                    txtAdNumber.FocusedBorderColor = Color.FromArgb(33, 96, 104);
+                    lblApNumber.ResetText();
+                    dct = txtWardNo.Text = SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 8);
+                    txtWardNo.Text = SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 9);
+                    txtRoomNo.Text = SQLConnectionManager.getValue("SELECT * FROM IN_PATIENT", txtAdNumber.Text, 1, 10);
+                    txtDctName.Text = SQLConnectionManager.getValue("SELECT * FROM SPECIALIST_DOCTOR", dct, 1, 4);
+                }
+                else
+                {
+                    adNumber();
+                    lblApNumber.Text = "*Can't Find";
+                    txtDctName.ResetText();
+                    txtWardNo.ResetText();
+                    txtRoomNo.ResetText();
+                }
+            }
         }
 
 

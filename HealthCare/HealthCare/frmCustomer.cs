@@ -30,7 +30,7 @@ namespace HealthCare
         private void showData()
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM CUSTOMER");
+            dt = SQLConnectionManager.getdata("SELECT * FROM CUSTOMER");
             dgvCustomer.AutoGenerateColumns = false;
             dgvCustomer.DataSource = dt;
         }
@@ -49,7 +49,7 @@ namespace HealthCare
         {
             frmChanlAdd frm = new frmChanlAdd();
             frm.UpdateEvenetHanler += frm_UpdateIventHandler;
-            //new Health_Street.frmTranceparentBG(frm);
+            new HealthCare.frmTranceparentBG(frm);
         }
 
         int n, c = 0;
@@ -70,7 +70,7 @@ namespace HealthCare
             {
                 if (Convert.ToBoolean(dgr.Cells[0].Value) == true)
                 {
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM CUSTOMER WHERE Invoice_Number = '" + dgr.Cells[1].Value.ToString() + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM CUSTOMER WHERE Invoice_Number = '" + dgr.Cells[1].Value.ToString() + "'");
                     c += 1;
                 }
             }

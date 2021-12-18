@@ -18,15 +18,15 @@ namespace HealthCare
             InitializeComponent();
             ShowData();
 
-            //if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
-            //{
-            //     SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
-            //    if (reader1.Read())
-            //    {
-            //        lblBillOfficer.Text = "Hi, " + reader1[2].ToString();
+            if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
+            {
+                SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+                if (reader1.Read())
+                {
+                    lblBillOfficer.Text = "Hi, " + reader1[2].ToString();
 
-            //    }
-            //}
+                }
+            }
 
             rowCountGuardian();
             rowCountOrganzation();
@@ -34,23 +34,23 @@ namespace HealthCare
 
         private void rowCountGuardian()
         {
-            //DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN");
-            //lblGuardian.Text = "+" + dt.Rows.Count.ToString();
+            DataTable dt = new DataTable();
+            dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN");
+            lblGuardian.Text = "+" + dt.Rows.Count.ToString();
         }
         private void rowCountOrganzation()
         {
-            //DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
-            //lblOrganization.Text = "+" + dt.Rows.Count.ToString();
+            DataTable dt = new DataTable();
+            dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
+            lblOrganization.Text = "+" + dt.Rows.Count.ToString();
         }
 
         private void ShowData()
         {
-            //DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
-            //dgvOrgniz.AutoGenerateColumns = false;
-            //dgvOrgniz.DataSource = dt;
+            DataTable dt = new DataTable();
+            dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
+            dgvOrgniz.AutoGenerateColumns = false;
+            dgvOrgniz.DataSource = dt;
         }
 
         private void frmPhrDash_Load(object sender, EventArgs e)

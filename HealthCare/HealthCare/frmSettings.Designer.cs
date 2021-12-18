@@ -55,6 +55,7 @@
             // gunaPanel1
             // 
             this.gunaPanel1.AutoScroll = true;
+            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
             this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel1.Controls.Add(this.pnlDctSettingsChild);
@@ -62,7 +63,7 @@
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(1265, 764);
+            this.gunaPanel1.Size = new System.Drawing.Size(1330, 764);
             this.gunaPanel1.TabIndex = 6;
             // 
             // pnlDctSettingsChild
@@ -70,16 +71,17 @@
             this.pnlDctSettingsChild.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.pnlDctSettingsChild.BackColor = System.Drawing.Color.Transparent;
             this.pnlDctSettingsChild.BaseColor = System.Drawing.Color.Transparent;
-            this.pnlDctSettingsChild.Location = new System.Drawing.Point(62, 199);
+            this.pnlDctSettingsChild.Location = new System.Drawing.Point(95, 199);
             this.pnlDctSettingsChild.Name = "pnlDctSettingsChild";
             this.pnlDctSettingsChild.ShadowColor = System.Drawing.Color.Black;
             this.pnlDctSettingsChild.ShadowShift = 0;
             this.pnlDctSettingsChild.ShadowStyle = Guna.UI.WinForms.ShadowMode.ForwardDiagonal;
-            this.pnlDctSettingsChild.Size = new System.Drawing.Size(1191, 421);
+            this.pnlDctSettingsChild.Size = new System.Drawing.Size(1191, 434);
             this.pnlDctSettingsChild.TabIndex = 1;
             // 
             // gunaPanel2
             // 
+            this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaPanel2.Controls.Add(this.pbIcon);
             this.gunaPanel2.Controls.Add(this.lblSubSetings);
             this.gunaPanel2.Controls.Add(this.lblSetings);
@@ -87,7 +89,7 @@
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(1265, 198);
+            this.gunaPanel2.Size = new System.Drawing.Size(1330, 198);
             this.gunaPanel2.TabIndex = 0;
             // 
             // pbIcon
@@ -107,7 +109,7 @@
             this.lblSubSetings.AutoSize = true;
             this.lblSubSetings.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
             this.lblSubSetings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(80)))), ((int)(((byte)(119)))));
-            this.lblSubSetings.Location = new System.Drawing.Point(388, 39);
+            this.lblSubSetings.Location = new System.Drawing.Point(409, 39);
             this.lblSubSetings.Name = "lblSubSetings";
             this.lblSubSetings.Size = new System.Drawing.Size(157, 78);
             this.lblSubSetings.TabIndex = 2;
@@ -133,7 +135,7 @@
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 81);
             this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(1265, 117);
+            this.gunaPanel3.Size = new System.Drawing.Size(1330, 117);
             this.gunaPanel3.TabIndex = 0;
             // 
             // btnAccount
@@ -245,14 +247,14 @@
             this.btnStngLogin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnStngLogin.Click += new System.EventHandler(this.btnStngLogin_Click);
             // 
-            // frmDctSettings
+            // frmSettings
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1265, 764);
+            this.ClientSize = new System.Drawing.Size(1330, 764);
             this.Controls.Add(this.gunaPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "frmDctSettings";
+            this.Name = "frmSettings";
             this.Text = "frmPhrDash";
             this.Load += new System.EventHandler(this.frmDctSettings_Load);
             this.gunaPanel1.ResumeLayout(false);

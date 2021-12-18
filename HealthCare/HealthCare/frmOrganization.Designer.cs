@@ -90,6 +90,7 @@
             this.btnDelete.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnDelete.TabIndex = 15;
             this.btnDelete.TabStop = false;
+            this.btnDelete.Visible = false;
             this.btnDelete.Zoom = 10;
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
@@ -106,6 +107,7 @@
             this.btnAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnAdd.TabIndex = 12;
             this.btnAdd.TabStop = false;
+            this.btnAdd.Visible = false;
             this.btnAdd.Zoom = 10;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 

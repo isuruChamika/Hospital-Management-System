@@ -66,35 +66,35 @@ namespace HealthCare
 
         private void comboDoctor()
         {
-            //DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT S_Doctor_Name FROM SPECIALIST_DOCTOR");
+            DataTable dt = new DataTable();
+            dt = SQLConnectionManager.getdata("SELECT S_Doctor_Name FROM SPECIALIST_DOCTOR");
 
-            //foreach(DataRow dr in dt.Rows)
-            //{
-            //    cmbSpecialist.Items.Add(dr["S_Doctor_Name"].ToString());
-            //}
+            foreach (DataRow dr in dt.Rows)
+            {
+                cmbSpecialist.Items.Add(dr["S_Doctor_Name"].ToString());
+            }
         }
 
         private void comboWard()
         {
-            //DataTable dt2 = new DataTable();
-            //dt2 = SQLConnectionManager.getdata("SELECT Ward_Name FROM WARD");
+            DataTable dt2 = new DataTable();
+            dt2 = SQLConnectionManager.getdata("SELECT Ward_Name FROM WARD");
 
-            //foreach (DataRow dr in dt2.Rows)
-            //{
-            //    cmbWard.Items.Add(dr["Ward_Name"].ToString());
-            //}
+            foreach (DataRow dr in dt2.Rows)
+            {
+                cmbWard.Items.Add(dr["Ward_Name"].ToString());
+            }
         }
 
         private void comboRoom()
         {
-            //DataTable dt3 = new DataTable();
-            //dt3 = SQLConnectionManager.getdata("SELECT Room_Name FROM ROOM");
+            DataTable dt3 = new DataTable();
+            dt3 = SQLConnectionManager.getdata("SELECT Room_Name FROM ROOM");
 
-            //foreach (DataRow dr in dt3.Rows)
-            //{
-            //    cmbRoom.Items.Add(dr["Room_Name"].ToString());
-            //}
+            foreach (DataRow dr in dt3.Rows)
+            {
+                cmbRoom.Items.Add(dr["Room_Name"].ToString());
+            }
         }
 
         private void firstName()
@@ -344,22 +344,22 @@ namespace HealthCare
             }
             else
             {
-                //string addmitionOffId = SQLConnectionManager.getValue("SELECT * FROM ADMISSION_OFFICER", frmLogin.passingRoll,10,1);
+                string addmitionOffId = SQLConnectionManager.getValue("SELECT * FROM ADMISSION_OFFICER", frmLogin.passingRoll, 10, 1);
 
 
-                //int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO GUARDIAN VALUES ('" + txtNic.Text + "','" + txtName.Text + "','" + txtAddress.Text + "','" + txtTpNumber.Text + "','" + txtRelationship.Text + "','" + addmitionOffId + "','B0002')");
-                //string guardianId = SQLConnectionManager.getValue("SELECT * FROM GUARDIAN", txtNic.Text, 2, 1);
-                //int j = SQLConnectionManager.insrtUpdteDelt("INSERT INTO PATIENT_PRIVATE_DETAIL VALUES ('" + txtFirstname.Text + "','" + txtMiddleName.Text + "','" + txtSurname.Text + "','" + gender + "','" + dtpDOF.Value.ToString("MM-dd-yyy") + "','" + age + "','" + cmbBlood.Text.ToString() + "','" + guardianId + "','" + specialD + "')");
+                int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO GUARDIAN VALUES ('" + txtNic.Text + "','" + txtName.Text + "','" + txtAddress.Text + "','" + txtTpNumber.Text + "','" + txtRelationship.Text + "','" + addmitionOffId + "','B0002')");
+                string guardianId = SQLConnectionManager.getValue("SELECT * FROM GUARDIAN", txtNic.Text, 2, 1);
+                int j = SQLConnectionManager.insrtUpdteDelt("INSERT INTO PATIENT_PRIVATE_DETAIL VALUES ('" + txtFirstname.Text + "','" + txtMiddleName.Text + "','" + txtSurname.Text + "','" + gender + "','" + dtpDOF.Value.ToString("MM-dd-yyy") + "','" + age + "','" + cmbBlood.Text.ToString() + "','" + guardianId + "','" + specialD + "')");
 
-                //if (i == 1 && j == 1)
-                //{
-                //    HSMessageBox.Show("DATA ADDED SUCCESSFULLY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //}
-                //else
-                //{
-                //    MessageBox.Show("DATA ADDED UNSUCCESSFULLY", "ERROR");
-                //}
-                //insert();
+                if (i == 1 && j == 1)
+                {
+                    //HSMessageBox.Show("DATA ADDED SUCCESSFULLY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("DATA ADDED UNSUCCESSFULLY", "ERROR");
+                }
+                insert();
 
 
             }

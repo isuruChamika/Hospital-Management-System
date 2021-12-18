@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDLogic;
 
 namespace HealthCare
 {
     public partial class frmWard : Form
     {
-        //clsOpnChild chFrmObj = new clsOpnChild();
         public frmWard()
         {
             InitializeComponent();
@@ -35,7 +35,7 @@ namespace HealthCare
         private void frmPharmacy_Load(object sender, EventArgs e)
         {
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            //chFrmObj.openChild(new frmWdDash(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmWdDash(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
 
@@ -59,23 +59,23 @@ namespace HealthCare
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            //chFrmObj.openChild(new frmWdDash(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmWdDash(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnPatient_Click(object sender, EventArgs e)
         {
-            //chFrmObj.openChild(new frmDctInpatient(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmDctInpatient(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnPchas_Click(object sender, EventArgs e)
         {
             this.btnStaff.Checked = true;
-            //chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmOfficer(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            //chFrmObj.openChild(new frmSettings(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmSettings(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -115,7 +115,7 @@ namespace HealthCare
 
         private void btnRoom_Click(object sender, EventArgs e)
         {
-            //chFrmObj.openChild(new frmWdRoom(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmWdRoom(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
     }
 }

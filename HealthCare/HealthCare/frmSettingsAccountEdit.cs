@@ -19,49 +19,49 @@ namespace HealthCare
         {
             InitializeComponent();
 
-            //if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
-            //{
-            //    SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
-            //    if (reader1.Read())
-            //    {
-            //        txtFirstName.Text = reader1["First_Name"].ToString();
-            //        txtMiddleName.Text = reader1["Middle_Name"].ToString();
-            //        txtSurname.Text = reader1["Surname"].ToString();
-            //        txtAddress.Text = reader1["User_Address"].ToString();
-            //        txtTpNumber.Text = reader1["User_Tele_No"].ToString();
-            //        txtDesignation.Text = reader1["Designation"].ToString();
-            //        txtSalary.Text = reader1["Salary"].ToString();
+            if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
+            {
+                SqlDataReader reader1 = SQLConnectionManager.readAndGet("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+                if (reader1.Read())
+                {
+                    txtFirstName.Text = reader1["First_Name"].ToString();
+                    txtMiddleName.Text = reader1["Middle_Name"].ToString();
+                    txtSurname.Text = reader1["Surname"].ToString();
+                    txtAddress.Text = reader1["User_Address"].ToString();
+                    txtTpNumber.Text = reader1["User_Tele_No"].ToString();
+                    txtDesignation.Text = reader1["Designation"].ToString();
+                    txtSalary.Text = reader1["Salary"].ToString();
 
-            //        string image = Convert.ToString(reader1[6]);
-            //        if (image == "System.Byte[]")
-            //        {
-            //            MemoryStream mstream = new MemoryStream((byte[])reader1[6]);
-            //            try
-            //            {
-            //                pbProfile.Image = new Bitmap(mstream);
-            //            }
-            //            catch (ArgumentException)
-            //            {
-            //                pbProfile.Image = null;
-            //            }
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("not Have a picturer");
-            //            pbProfile.Image = null;
-            //        }
+                    string image = Convert.ToString(reader1[6]);
+                    if (image == "System.Byte[]")
+                    {
+                        MemoryStream mstream = new MemoryStream((byte[])reader1[6]);
+                        try
+                        {
+                            pbProfile.Image = new Bitmap(mstream);
+                        }
+                        catch (ArgumentException)
+                        {
+                            pbProfile.Image = null;
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("not Have a picturer");
+                        pbProfile.Image = null;
+                    }
 
-            //    }
-            //}
+                }
+            }
 
-            //if (SQLConnectionManager.chek("SELECT * FROM ACCOUNT WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
-            //{
-            //    SqlDataReader reader2 = SQLConnectionManager.readAndGet("SELECT * FROM ACCOUNT WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
-            //    if (reader2.Read())
-            //    {
-            //        txtGmail.Text = reader2["E_mail"].ToString();
-            //    }
-            //}
+            if (SQLConnectionManager.chek("SELECT * FROM ACCOUNT WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 1)
+            {
+                SqlDataReader reader2 = SQLConnectionManager.readAndGet("SELECT * FROM ACCOUNT WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+                if (reader2.Read())
+                {
+                    txtGmail.Text = reader2["E_mail"].ToString();
+                }
+            }
         }
 
         private void frmDctSettingsAccount_Load(object sender, EventArgs e)
@@ -142,116 +142,116 @@ namespace HealthCare
         [Obsolete]
         private void btnSave_Click(object sender, EventArgs e)
         {
-            //if ((DateTime.Now.Year == dtpDateofBirth.Value.Year))
-            //{
-            //    dateOfBirth();
-            //    dtpDateofBirth.Focus();
-            //}
-            //else if (DateTime.Now.Year <= dtpDateofBirth.Value.Year)
-            //{
-            //    dtpDateofBirth.OnHoverBorderColor = Color.FromArgb(232, 17, 35);
-            //    dtpDateofBirth.BorderColor = Color.FromArgb(232, 17, 35);
-            //    dtpDateofBirth.ForeColor = Color.FromArgb(232, 17, 35);
-            //    dtpDateofBirth.FocusedColor = Color.FromArgb(232, 17, 35);
-            //    lblDateTime.Text = "*cant";
-            //}
-            //else if (txtFirstName.Text.Any(char.IsDigit))
-            //{
-            //    txtFirstName.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtFirstName.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblFirstName.Text = "cannot have numbers";
-            //}
-            //else if (txtSurname.Text.Any(char.IsDigit))
-            //{
-            //    txtSurname.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtSurname.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblSurname.Text = "cannot have numbers";
-            //}
-            //else if (txtMiddleName.Text.Any(char.IsDigit))
-            //{
-            //    txtMiddleName.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtMiddleName.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblMiddleName.Text = "cannot have numbers";
-            //}
-            //else if (!Regex.IsMatch(txtTpNumber.Text, @"^(?:7|0|(?:\+94))[0-9]{8,9}$"))
-            //{
-            //    txtTpNumber.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtTpNumber.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblTp.Text = "TP must have 10 numbers";
-            //}
-            //else if (txtAddress.Text.Any(char.IsDigit))
-            //{
-            //    txtAddress.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtAddress.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblAddress.Text = "cannot have numbers";
-            //}
-            //else if (!Regex.IsMatch(txtGmail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
-            //{
-            //    txtGmail.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtGmail.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblGmail.Text = "Enter a valid email. Ex:name@gmail.com";
-            //}
-            //else if (txtDesignation.Text.Any(char.IsDigit))
-            //{
-            //    txtDesignation.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtDesignation.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblDesignation.Text = "cannot have numbers";
-            //}
-            //else if (!txtSalary.Text.Any(char.IsDigit))
-            //{
-            //    txtSalary.FocusedBorderColor = Color.FromArgb(232, 17, 35);
-            //    txtSalary.BorderColor = Color.FromArgb(232, 17, 35);
-            //    lblSalary.Text = "cannot have String";
-            //}
-            //else
-            //{
-            //    byte[] image = null;
-            //    if (flag)
-            //    {
-                    
-            //        FileStream fstream = new FileStream(imgeLocation, FileMode.Open, FileAccess.Read);
-            //        BinaryReader br = new BinaryReader(fstream);
-            //        image = br.ReadBytes((int)fstream.Length);
-            //    }
-            //    else
-            //    {
-            //        image = null;
-            //    }
+            if ((DateTime.Now.Year == dtpDateofBirth.Value.Year))
+            {
+                dateOfBirth();
+                dtpDateofBirth.Focus();
+            }
+            else if (DateTime.Now.Year <= dtpDateofBirth.Value.Year)
+            {
+                dtpDateofBirth.OnHoverBorderColor = Color.FromArgb(232, 17, 35);
+                dtpDateofBirth.BorderColor = Color.FromArgb(232, 17, 35);
+                dtpDateofBirth.ForeColor = Color.FromArgb(232, 17, 35);
+                dtpDateofBirth.FocusedColor = Color.FromArgb(232, 17, 35);
+                lblDateTime.Text = "*cant";
+            }
+            else if (txtFirstName.Text.Any(char.IsDigit))
+            {
+                txtFirstName.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtFirstName.BorderColor = Color.FromArgb(232, 17, 35);
+                lblFirstName.Text = "cannot have numbers";
+            }
+            else if (txtSurname.Text.Any(char.IsDigit))
+            {
+                txtSurname.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtSurname.BorderColor = Color.FromArgb(232, 17, 35);
+                lblSurname.Text = "cannot have numbers";
+            }
+            else if (txtMiddleName.Text.Any(char.IsDigit))
+            {
+                txtMiddleName.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtMiddleName.BorderColor = Color.FromArgb(232, 17, 35);
+                lblMiddleName.Text = "cannot have numbers";
+            }
+            else if (!Regex.IsMatch(txtTpNumber.Text, @"^(?:7|0|(?:\+94))[0-9]{8,9}$"))
+            {
+                txtTpNumber.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtTpNumber.BorderColor = Color.FromArgb(232, 17, 35);
+                lblTp.Text = "TP must have 10 numbers";
+            }
+            else if (txtAddress.Text.Any(char.IsDigit))
+            {
+                txtAddress.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtAddress.BorderColor = Color.FromArgb(232, 17, 35);
+                lblAddress.Text = "cannot have numbers";
+            }
+            else if (!Regex.IsMatch(txtGmail.Text, @"^[a-zA-Z][\w\.-]*[a-zA-Z0-9]@[a-zA-Z0-9][\w\.-]*[a-zA-Z0-9]\.[a-zA-Z][a-zA-Z\.]*[a-zA-Z]$"))
+            {
+                txtGmail.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtGmail.BorderColor = Color.FromArgb(232, 17, 35);
+                lblGmail.Text = "Enter a valid email. Ex:name@gmail.com";
+            }
+            else if (txtDesignation.Text.Any(char.IsDigit))
+            {
+                txtDesignation.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtDesignation.BorderColor = Color.FromArgb(232, 17, 35);
+                lblDesignation.Text = "cannot have numbers";
+            }
+            else if (!txtSalary.Text.Any(char.IsDigit))
+            {
+                txtSalary.FocusedBorderColor = Color.FromArgb(232, 17, 35);
+                txtSalary.BorderColor = Color.FromArgb(232, 17, 35);
+                lblSalary.Text = "cannot have String";
+            }
+            else
+            {
+                byte[] image = null;
+                if (flag)
+                {
+
+                    FileStream fstream = new FileStream(imgeLocation, FileMode.Open, FileAccess.Read);
+                    BinaryReader br = new BinaryReader(fstream);
+                    image = br.ReadBytes((int)fstream.Length);
+                }
+                else
+                {
+                    image = null;
+                }
 
 
-            //    if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 0)
-            //    {
+                if (SQLConnectionManager.chek("SELECT * FROM LOG_IN_USER WHERE Roll_Id = '" + frmLogin.passingRoll + "'") == 0)
+                {
 
-            //        int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO LOG_IN_USER VALUES ('" + frmLogin.passingRoll + "','" + txtFirstName.Text + "','" + txtMiddleName.Text + "','" + txtSurname.Text + "','" + txtAddress.Text + "',@image,'" + gender + "','" + txtTpNumber.Text + "','" + dof + "','" + txtDesignation.Text + "','" + txtSalary.Text + "')", "@image", image);
-            //        int j = SQLConnectionManager.insrtUpdteDelt("UPDATE ACCOUNT SET E_mail = '" + txtGmail.Text + "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+                    int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO LOG_IN_USER VALUES ('" + frmLogin.passingRoll + "','" + txtFirstName.Text + "','" + txtMiddleName.Text + "','" + txtSurname.Text + "','" + txtAddress.Text + "',@image,'" + gender + "','" + txtTpNumber.Text + "','" + dof + "','" + txtDesignation.Text + "','" + txtSalary.Text + "')", "@image", image);
+                    int j = SQLConnectionManager.insrtUpdteDelt("UPDATE ACCOUNT SET E_mail = '" + txtGmail.Text + "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
 
-            //        if (i == 1 && j == 1)
-            //        {
-            //            HSMessageBox.Show("DATA ADDED SUCCESFULL","SUCCESFULL",MessageBoxButtons.OK,MessageBoxIcon.Information);
-            //        }
-            //        else
-            //        {
-            //            HSMessageBox.Show("DATA ADDED UNSUCCESSFULL", "UNSUCCESSFULL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        }
+                    if (i == 1 && j == 1)
+                    {
+                        //HSMessageBox.Show("DATA ADDED SUCCESFULL", "SUCCESFULL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        //HSMessageBox.Show("DATA ADDED UNSUCCESSFULL", "UNSUCCESSFULL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
 
-            //    }
-            //    else
-            //    {
-            //        int j = SQLConnectionManager.insrtUpdteDelt("UPDATE LOG_IN_USER SET First_Name='"+ txtFirstName.Text + "',Middle_Name='"+ txtMiddleName.Text + "',Surname='"+ txtSurname.Text + "',User_Address='"+ txtAddress.Text + "',Img=@image, Gender='" + gender + "', User_Tele_No='"+ txtTpNumber.Text + "', Date_Of_Birth='"+ dof + "', Designation='"+ txtDesignation.Text + "', Salary='"+ txtSalary.Text + "' WHERE Roll_Id='"+frmLogin.passingRoll+"'", "@image", image);
-            //        int i = SQLConnectionManager.insrtUpdteDelt("UPDATE ACCOUNT SET E_mail = '" + txtGmail.Text + "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
+                }
+                else
+                {
+                    int j = SQLConnectionManager.insrtUpdteDelt("UPDATE LOG_IN_USER SET First_Name='" + txtFirstName.Text + "',Middle_Name='" + txtMiddleName.Text + "',Surname='" + txtSurname.Text + "',User_Address='" + txtAddress.Text + "',Img=@image, Gender='" + gender + "', User_Tele_No='" + txtTpNumber.Text + "', Date_Of_Birth='" + dof + "', Designation='" + txtDesignation.Text + "', Salary='" + txtSalary.Text + "' WHERE Roll_Id='" + frmLogin.passingRoll + "'", "@image", image);
+                    int i = SQLConnectionManager.insrtUpdteDelt("UPDATE ACCOUNT SET E_mail = '" + txtGmail.Text + "' WHERE Roll_Id = '" + frmLogin.passingRoll + "'");
 
-            //        if (i == 1 && j == 1)
-            //        {
-            //            HSMessageBox.Show("DATA UPPDATED SUCCESFULL","SUCCESFULL", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //        }
-            //        else
-            //        {
-            //            HSMessageBox.Show("DATA UPPDATED UNSUCCESSFULL", "UNSUCCESSFULL", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            //        }
-            //        insert();
+                    if (i == 1 && j == 1)
+                    {
+                        //HSMessageBox.Show("DATA UPPDATED SUCCESFULL", "SUCCESFULL", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        //HSMessageBox.Show("DATA UPPDATED UNSUCCESSFULL", "UNSUCCESSFULL", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                    insert();
 
-            //    }
-            //}
+                }
+            }
         }
 
         private void txtFirstName_TextChanged(object sender, EventArgs e)
@@ -455,7 +455,7 @@ namespace HealthCare
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            //new Health_Street.frmTranceparentBG(new frmSettingsAccountEdit());
+            new HealthCare.frmTranceparentBG(new frmSettingsAccountEdit());
         }
 
         private void btnCancel_Click(object sender, EventArgs e)

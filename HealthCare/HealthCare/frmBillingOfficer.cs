@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDLogic;
 
 namespace HealthCare
 {
     public partial class frmBillingOfficer : Form
     {
-        //clsOpnChild chld = new clsOpnChild();
         public frmBillingOfficer()
         {
             InitializeComponent();
@@ -36,7 +36,7 @@ namespace HealthCare
         private void frmPharmacy_Load(object sender, EventArgs e)
         {
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            //chld.openChild(new frmBillDash(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmBillDash(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
 
@@ -64,23 +64,23 @@ namespace HealthCare
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
-            //chld.openChild(new frmBillDash(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmBillDash(), pnlPhrChild, Color.FromArgb(42, 49, 59)); ;
         }
 
         private void btnMed_Click(object sender, EventArgs e)
         {
-            //chld.openChild(new frmGuardian(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmGuardian(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnPchas_Click(object sender, EventArgs e)
         {
             this.btnOrg.Checked = true;
-            //chld.openChild(new frmOrganization(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmOrganization(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
-            //chld.openChild(new frmSettings(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmSettings(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -116,7 +116,7 @@ namespace HealthCare
 
         private void btnOfficer_Click(object sender, EventArgs e)
         {
-            //chld.openChild(new frmOfficer(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmOfficer(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
     }
 }

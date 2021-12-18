@@ -9,12 +9,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDLogic;
 
-namespace Health_Street
+namespace HealthCare
 {
     public partial class frmDctMain : Form
     {
-        clsOpnChild chld = new clsOpnChild();
         public frmDctMain()
         {
             InitializeComponent();
@@ -104,7 +104,7 @@ namespace Health_Street
             dctAnimate.Start();
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
-            chld.openChild(new frmDctDash(), pnlChildForms);
+            SMDChildFormOpen.Open(new frmDctDash(), pnlChildForms, Color.FromArgb(42, 49, 59));
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -115,17 +115,17 @@ namespace Health_Street
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             pnlRighUserd.Visible = true;
-            chld.openChild(new frmDctDash(), pnlChildForms);
+            SMDChildFormOpen.Open(new frmDctDash(), pnlChildForms,Color.FromArgb(42, 49, 59));
         }
 
 
         private void btnLogout_Click(object sender, EventArgs e)
         {
-            if (HSMessageBox.Show("ARE YOU SURE TO EXIT ?", "ERROR", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
-            {
-                this.Hide();
-                new frmLogin().Show();
-            }
+            //if (HSMessageBox.Show("ARE YOU SURE TO EXIT ?", "ERROR", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            //{
+            //    this.Hide();
+            //    new frmLogin().Show();
+            //}
         }
 
         private void pnlDctmain_Paint(object sender, PaintEventArgs e)
@@ -136,19 +136,19 @@ namespace Health_Street
         private void btnPatinents_Click_1(object sender, EventArgs e)
         {
             pnlRighUserd.Visible = false;
-            chld.openChild(new frmDctPatient(), pnlChildForms);
+            SMDChildFormOpen.Open(new frmDctPatient(), pnlChildForms, Color.FromArgb(42, 49, 59));
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
             pnlRighUserd.Visible = false;
-            chld.openChild(new frmSettings(), pnlChildForms);
+            SMDChildFormOpen.Open(new frmSettings(), pnlChildForms, Color.FromArgb(42, 49, 59));
         }
 
         private void btnGuardian_Click(object sender, EventArgs e)
         {
             pnlRighUserd.Visible = false;
-            chld.openChild(new frmDctInpatient(), pnlChildForms);
+            SMDChildFormOpen.Open(new frmDctInpatient(), pnlChildForms, Color.FromArgb(42, 49, 59));
         }
 
         private void gunaLabel5_Click(object sender, EventArgs e)

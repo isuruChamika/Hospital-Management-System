@@ -22,17 +22,17 @@ namespace HealthCare
             showData();
         }
 
-        //private void frm_updateOutScan(object sender, frmScanAddOut.UpdateEvenetArgs args)
-        //{
-        //    showData();
-        //}
+        private void frm_updateOutScan(object sender, frmScanAddOut.UpdateEvenetArgs args)
+        {
+            showData();
+        }
 
         private void showData()
         {
-            //DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_SCAN");
-            //dgvOutScan.AutoGenerateColumns = false;
-            //dgvOutScan.DataSource = dt;
+            DataTable dt = new DataTable();
+            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_SCAN");
+            dgvOutScan.AutoGenerateColumns = false;
+            dgvOutScan.DataSource = dt;
         }
 
         private void frmPhrCstmr_Load(object sender, EventArgs e)
@@ -43,7 +43,7 @@ namespace HealthCare
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_SCAN WHERE Out_Patient_Scan_No LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%' OR Issue_Date LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%'");
+            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_PATIENT_SCAN WHERE Out_Patient_Scan_No LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%' OR Issue_Date LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%'");
             dgvOutScan.DataSource = dt;
         }
 
@@ -54,9 +54,9 @@ namespace HealthCare
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //frmScanAddOut frm = new frmScanAddOut();
-            //frm.UpdateEvenetHanler += frm_updateOutScan;
-            //new Health_Street.frmTranceparentBG(frm);
+            frmScanAddOut frm = new frmScanAddOut();
+            frm.UpdateEvenetHanler += frm_updateOutScan;
+            new HealthCare.frmTranceparentBG(frm);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -68,7 +68,7 @@ namespace HealthCare
                 {
                     string sId = dgr.Cells[1].Value.ToString();
 
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_PATIENT_SCAN WHERE Out_Patient_Scan_No = '" + sId + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_PATIENT_SCAN WHERE Out_Patient_Scan_No = '" + sId + "'");
                     c += 1;
                 }
             }

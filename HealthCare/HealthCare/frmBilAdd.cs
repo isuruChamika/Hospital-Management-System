@@ -144,23 +144,23 @@ namespace HealthCare
             }
             else
             {
-                //string addmitionOffId = SQLConnectionManager.getValue("SELECT * FROM ADMISSION_OFFICER", frmLogin.passingRoll,10,1);
+                string addmitionOffId = SQLConnectionManager.getValue("SELECT * FROM ADMISSION_OFFICER", frmLogin.passingRoll, 10, 1);
 
-                //MessageBox.Show(addmitionOffId);
+                MessageBox.Show(addmitionOffId);
 
 
-                //int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO GUARDIAN VALUES ('" + txtNic.Text + "','" + txtName.Text + "','" + txtAddress.Text + "','" + txtTpNumber.Text + "','" + txtRelationship.Text + "','" + addmitionOffId + "')");
-                
-               
-                //if (i == 1)
-                //{
-                //    HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                //}
-                //else
-                //{
-                //    MessageBox.Show("DATA ADDED UNSUCCESSFUL", "DataBindings enter une na");
-                //}
-                //insert();
+                int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO GUARDIAN VALUES ('" + txtNic.Text + "','" + txtName.Text + "','" + txtAddress.Text + "','" + txtTpNumber.Text + "','" + txtRelationship.Text + "','" + addmitionOffId + "')");
+
+
+                if (i == 1)
+                {
+                    //HSMessageBox.Show("DATA ADDED SUCCESSFULY", "INFORMATION", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("DATA ADDED UNSUCCESSFUL", "DataBindings enter une na");
+                }
+                insert();
 
 
             }

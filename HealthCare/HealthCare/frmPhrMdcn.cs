@@ -25,15 +25,15 @@ namespace HealthCare
         private void showData()
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
+            dt = SQLConnectionManager.getdata("SELECT * FROM DRUG");
             dgvMedicine.AutoGenerateColumns = false;
             dgvMedicine.DataSource = dt;
         }
 
-        //private void frm_insertUpdate(object sender, frmPhrMedAdd.UpdateEvenetArgs args)
-        //{
-        //    showData();
-        //}
+        private void frm_insertUpdate(object sender, frmPhrMedAdd.UpdateEvenetArgs args)
+        {
+            showData();
+        }
 
         private void frmPhrMdcn_Load(object sender, EventArgs e)
         {
@@ -43,7 +43,7 @@ namespace HealthCare
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM PHARMACY_MEDICINES WHERE Pharmacy_Invoice_Number LIKE '" + txtSearch.text + "%' OR Drug_Code LIKE '" + txtSearch.text + "%' OR Quantity LIKE '" + txtSearch.text + "%' OR Number_Of_Days LIKE '" + txtSearch.text + "%'");
+            dt = SQLConnectionManager.getdata("SELECT * FROM PHARMACY_MEDICINES WHERE Pharmacy_Invoice_Number LIKE '" + txtSearch.text + "%' OR Drug_Code LIKE '" + txtSearch.text + "%' OR Quantity LIKE '" + txtSearch.text + "%' OR Number_Of_Days LIKE '" + txtSearch.text + "%'");
             dgvMedicine.AutoGenerateColumns = false;
             dgvMedicine.DataSource = dt;
         }
@@ -55,9 +55,9 @@ namespace HealthCare
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //frmPhrMedAdd frm = new frmPhrMedAdd();
-            //frm.UpdateEvenetHanler += frm_insertUpdate;
-            //new Health_Street.frmTranceparentBG(frm);
+            frmPhrMedAdd frm = new frmPhrMedAdd();
+            frm.UpdateEvenetHanler += frm_insertUpdate;
+            new HealthCare.frmTranceparentBG(frm);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace HealthCare
                 {
                     string drugId = dgr.Cells[2].Value.ToString();
 
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM DRUG WHERE Drug_Code = '" + drugId + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM DRUG WHERE Drug_Code = '" + drugId + "'");
                     c += 1;
                 }
             }

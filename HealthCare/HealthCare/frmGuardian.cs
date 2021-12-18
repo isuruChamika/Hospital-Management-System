@@ -1,5 +1,4 @@
-﻿//using Microsoft.Reporting.WebForms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -34,16 +33,16 @@ namespace HealthCare
         private void showData()
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN");
+            dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN");
             dgvPatient.AutoGenerateColumns = false;
             dgvPatient.DataSource = dt;
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            //frmBilAdd frm = new frmBilAdd(/*this*/);
-            //frm.UpdateEvenetHanlerBill += frm_UpdateEventHandler;
-            //new Health_Street.frmTranceparentBG(frm);
+            frmBilAdd frm = new frmBilAdd(/*this*/);
+            frm.UpdateEvenetHanlerBill += frm_UpdateEventHandler;
+            new HealthCare.frmTranceparentBG(frm);
 
             //new Reports.frmPrintBillPatient().Show();
         }
@@ -56,14 +55,14 @@ namespace HealthCare
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN WHERE Guardian_Id_Number LIKE '" + txtSearch.text + "%' OR Guardian_Name LIKE '" + txtSearch.text + "%' OR Guardian_Address LIKE '" + txtSearch.text + "%' OR Guardian_NIC LIKE '" + txtSearch.text + "%'");
+            dt = SQLConnectionManager.getdata("SELECT * FROM GUARDIAN WHERE Guardian_Id_Number LIKE '" + txtSearch.text + "%' OR Guardian_Name LIKE '" + txtSearch.text + "%' OR Guardian_Address LIKE '" + txtSearch.text + "%' OR Guardian_NIC LIKE '" + txtSearch.text + "%'");
             dgvPatient.DataSource = dt;
         }
 
         private void dgvPatient_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //frmPatientDetails frm = new frmPatientDetails();
-            //frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
+            frmPatientDetails frm = new frmPatientDetails();
+            frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
         }
 
         
@@ -98,7 +97,7 @@ namespace HealthCare
             {
                 if (Convert.ToBoolean(dgr.Cells[0].Value) == true)
                 {
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT WHERE Admission_Number = '" + dgr.Cells[1].Value.ToString() + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_PATIENT WHERE Admission_Number = '" + dgr.Cells[1].Value.ToString() + "'");
                     c += 1;
                 }
             }

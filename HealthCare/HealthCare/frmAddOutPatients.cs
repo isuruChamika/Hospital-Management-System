@@ -3,7 +3,6 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text.RegularExpressions;
-//using System.Windows.Automation.Peers;
 using System.Windows.Forms;
 
 namespace HealthCare
@@ -145,12 +144,12 @@ namespace HealthCare
             }
             else
             {
-                //int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO OUT_PATIENT VALUES ('" + txtPatientName.Text + "','" + txtGuardianNic.Text + "','" + txtGuardianTP.Text + "','" + txtAge.Text + "','" + txtReason.Text + "',SYSDATETIME(), SYSDATETIME())");
-                //if (i == 1)
-                //{
-                //    MessageBox.Show("SUCCESSFULL");
-                //}
-                //insert();
+                int i = SQLConnectionManager.insrtUpdteDelt("INSERT INTO OUT_PATIENT VALUES ('" + txtPatientName.Text + "','" + txtGuardianNic.Text + "','" + txtGuardianTP.Text + "','" + txtAge.Text + "','" + txtReason.Text + "',SYSDATETIME(), SYSDATETIME())");
+                if (i == 1)
+                {
+                    MessageBox.Show("SUCCESSFULL");
+                }
+                insert();
             }
 
         }

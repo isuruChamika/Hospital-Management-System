@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDLogic;
 
 namespace HealthCare
 {
     public partial class frmLaboratory : Form
     {
-        //clsOpnChild chFrmObj = new clsOpnChild();
         public frmLaboratory()
         {
             InitializeComponent();
@@ -48,7 +48,7 @@ namespace HealthCare
         private void frmPharmacy_Load(object sender, EventArgs e)
         {
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
-            //chFrmObj.openChild(new frmLabDash(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmLabDash(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
 
@@ -77,7 +77,7 @@ namespace HealthCare
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             subPnlClose();
-            //chFrmObj.openChild(new frmLabDash(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmLabDash(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnSample_Click(object sender, EventArgs e)
@@ -102,7 +102,7 @@ namespace HealthCare
         private void btnSettings_Click(object sender, EventArgs e)
         {
             subPnlClose();
-            //chFrmObj.openChild(new frmSettings(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmSettings(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)
@@ -141,7 +141,7 @@ namespace HealthCare
             btnDashboard.Checked = false;
             btnStaf.Checked = false;
             btnSettings.Checked = false;
-            //chFrmObj.openChild(new frmLabSmplInpatient(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmLabSmplInpatient(), pnlPhrChild, Color.FromArgb(42, 49, 59));
 
         }
 
@@ -149,7 +149,7 @@ namespace HealthCare
         {
             subPnlClose();
             this.btnStaf.Checked = true;
-            //chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmOfficer(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnOutpatient_Click(object sender, EventArgs e)
@@ -157,7 +157,7 @@ namespace HealthCare
             btnDashboard.Checked = false;
             btnStaf.Checked = false;
             btnSettings.Checked = false;
-            //chFrmObj.openChild(new frmLabSmplOutpatient(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmLabSmplOutpatient(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
     }
 }

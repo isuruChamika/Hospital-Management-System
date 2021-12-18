@@ -32,7 +32,7 @@ namespace HealthCare
         private void showData()
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
+            dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION");
             dgvPatient.AutoGenerateColumns = false;
             dgvPatient.DataSource = dt;
         }
@@ -41,7 +41,7 @@ namespace HealthCare
         {
             frmADaddPatient frm = new frmADaddPatient(/*this*/);
             frm.UpdateEvenetHanler += frm_UpdateEventHandler;
-            //new Health_Street.frmTranceparentBG(frm);
+            new HealthCare.frmTranceparentBG(frm);
         }
 
         private void frmADaddmitPatient_Load(object sender, EventArgs e)
@@ -52,14 +52,14 @@ namespace HealthCare
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION WHERE Goverment_Reg_Number LIKE '" + txtSearch.text + "%' OR Organization_Name LIKE '" + txtSearch.text + "%' OR Bill_Number LIKE '" + txtSearch.text + "%'");
+            dt = SQLConnectionManager.getdata("SELECT * FROM ORGANIZATION WHERE Goverment_Reg_Number LIKE '" + txtSearch.text + "%' OR Organization_Name LIKE '" + txtSearch.text + "%' OR Bill_Number LIKE '" + txtSearch.text + "%'");
             dgvPatient.DataSource = dt;
         }
 
         private void dgvPatient_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //frmPatientDetails frm = new frmPatientDetails();
-            //frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
+            frmPatientDetails frm = new frmPatientDetails();
+            frm.lblPname.Text = this.dgvPatient.CurrentRow.Cells[1].Value.ToString();
         }
 
         
@@ -82,7 +82,7 @@ namespace HealthCare
             {
                 if (Convert.ToBoolean(dgr.Cells[0].Value) == true)
                 {
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM ORGANIZATION WHERE Goverment_Reg_Number = '" + dgr.Cells[1].Value.ToString() + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM ORGANIZATION WHERE Goverment_Reg_Number = '" + dgr.Cells[1].Value.ToString() + "'");
                     c += 1;
                 }
             }

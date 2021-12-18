@@ -31,7 +31,7 @@ namespace HealthCare
         private void showData()
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_SAMPLE");
+            dt = SQLConnectionManager.getdata("SELECT * FROM IN_SAMPLE");
             dgvCustomer.AutoGenerateColumns = false;
             dgvCustomer.DataSource = dt;
         }
@@ -44,7 +44,7 @@ namespace HealthCare
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM IN_SAMPLE WHERE Sample_In_Number LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%' OR Sample_Type LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%' OR Laboratory_Staff_Id LIKE '" + txtSearch.text + "%' ");
+            dt = SQLConnectionManager.getdata("SELECT * FROM IN_SAMPLE WHERE Sample_In_Number LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%' OR Sample_Type LIKE '" + txtSearch.text + "%' OR Ward_Number LIKE '" + txtSearch.text + "%' OR Room_Number LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%' OR Laboratory_Staff_Id LIKE '" + txtSearch.text + "%' ");
             dgvCustomer.DataSource = dt;
         }
 
@@ -57,7 +57,7 @@ namespace HealthCare
         {
             frmLabAdd frm = new frmLabAdd();
             frm.UpdateEvenetHanler += frm_Updater;
-            //new Health_Street.frmTranceparentBG(frm);
+            new HealthCare.frmTranceparentBG(frm);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -69,7 +69,7 @@ namespace HealthCare
                 {
                     string sId = dgr.Cells[1].Value.ToString();
 
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_SAMPLE WHERE Sample_In_Number = '" + sId + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM IN_SAMPLE WHERE Sample_In_Number = '" + sId + "'");
                     c += 1;
                 }
             }

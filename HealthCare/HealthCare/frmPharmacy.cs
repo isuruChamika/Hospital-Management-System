@@ -7,12 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDLogic;
 
 namespace HealthCare
 {
     public partial class frmPharmacy : Form
     {
-        //clsOpnChild chFrmObj = new clsOpnChild();
         public frmPharmacy()
         {
             InitializeComponent();
@@ -40,8 +40,8 @@ namespace HealthCare
         {
             MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
             this.WindowState = FormWindowState.Maximized;
-            //phrAnimate.Start();
-            //chFrmObj.openChild(new frmPhrDash(), pnlPhrChild);
+            ////phrAnimate.Start();
+            SMDChildFormOpen.Open(new frmPhrDash(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void subPnlClose()
@@ -78,7 +78,7 @@ namespace HealthCare
             btnMed.Checked = false;
             btnOfficer.Checked = false;
             btnSettings.Checked = false;
-            //chFrmObj.openChild(new frmPhrSplr(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmPhrSplr(), pnlPhrChild, Color.FromArgb(42, 49, 59)); ;
 
         }
 
@@ -88,24 +88,24 @@ namespace HealthCare
             btnMed.Checked = false;
             btnOfficer.Checked = false;
             btnSettings.Checked = false;
-            //chFrmObj.openChild(new frmPhrCstmr(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmPhrCstmr(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             subPnlClose();
-            //chFrmObj.openChild(new frmPhrDash(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmPhrDash(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnMed_Click(object sender, EventArgs e)
         {
-            //chFrmObj.openChild(new frmPhrMdcn(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmPhrMdcn(), pnlPhrChild, Color.FromArgb(42, 49, 59));
             subPnlClose();
         }
 
         private void btnPchas_Click(object sender, EventArgs e)
         {
-            //chFrmObj.openChild(new frmOfficer(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmOfficer(), pnlPhrChild, Color.FromArgb(42, 49, 59));
             subPnlClose();
             this.btnOfficer.Checked = true;
         }
@@ -113,7 +113,7 @@ namespace HealthCare
         private void btnSettings_Click(object sender, EventArgs e)
         {
             subPnlClose();
-            //chFrmObj.openChild(new frmSettings(), pnlPhrChild);
+            SMDChildFormOpen.Open(new frmSettings(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
 
         private void btnMaximize_Click(object sender, EventArgs e)

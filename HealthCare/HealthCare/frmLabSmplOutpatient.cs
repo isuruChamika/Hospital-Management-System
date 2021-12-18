@@ -22,7 +22,7 @@ namespace HealthCare
         private void showData()
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_SAMPLE");
+            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_SAMPLE");
             dgvOutSample.AutoGenerateColumns = false;
             dgvOutSample.DataSource = dt;
         }
@@ -35,7 +35,7 @@ namespace HealthCare
         private void txtSearch_OnTextChange(object sender, EventArgs e)
         {
             DataTable dt = new DataTable();
-            //dt = SQLConnectionManager.getdata("SELECT * FROM OUT_SAMPLE WHERE Sample_Out_Number LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%' OR Sample_Type LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%' OR Laboratory_Staff_Id LIKE '" + txtSearch.text + "%' ");
+            dt = SQLConnectionManager.getdata("SELECT * FROM OUT_SAMPLE WHERE Sample_Out_Number LIKE '" + txtSearch.text + "%' OR Patient_Id_Number LIKE '" + txtSearch.text + "%' OR Sample_Type LIKE '" + txtSearch.text + "%' OR Specialist_Doctor_Id LIKE '" + txtSearch.text + "%' OR Laboratory_Staff_Id LIKE '" + txtSearch.text + "%' ");
             dgvOutSample.DataSource = dt;
         }
 
@@ -53,7 +53,7 @@ namespace HealthCare
         {
             frmLabAddOut frm = new frmLabAddOut();
             frm.UpdateEvenetHanler += frm_Updater;
-            //new Health_Street.frmTranceparentBG(frm);
+            new HealthCare.frmTranceparentBG(frm);
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
@@ -65,7 +65,7 @@ namespace HealthCare
                 {
                     string sId = dgr.Cells[1].Value.ToString();
 
-                    //n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_SAMPLE WHERE Sample_Out_Number = '" + sId + "'");
+                    n = SQLConnectionManager.insrtUpdteDelt("DELETE FROM OUT_SAMPLE WHERE Sample_Out_Number = '" + sId + "'");
                     c += 1;
                 }
             }

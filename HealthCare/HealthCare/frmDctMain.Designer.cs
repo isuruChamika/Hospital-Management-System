@@ -1,4 +1,4 @@
-﻿namespace Health_Street
+﻿namespace HealthCare
 {
     partial class frmDctMain
     {
@@ -79,7 +79,7 @@
             // pnlDctmain
             // 
             this.pnlDctmain.AutoScroll = true;
-            this.pnlDctmain.BackColor = System.Drawing.Color.White;
+            this.pnlDctmain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pnlDctmain.Controls.Add(this.btnMinimize);
             this.pnlDctmain.Controls.Add(this.btnMaximize);
             this.pnlDctmain.Controls.Add(this.btnClose);
@@ -150,7 +150,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlChildForms.AutoScroll = true;
             this.pnlChildForms.BackColor = System.Drawing.Color.Transparent;
-            this.pnlChildForms.BaseColor = System.Drawing.SystemColors.Control;
+            this.pnlChildForms.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlChildForms.Controls.Add(this.pnlRighUserd);
             this.pnlChildForms.Location = new System.Drawing.Point(227, 49);
             this.pnlChildForms.Name = "pnlChildForms";
@@ -159,7 +159,7 @@
             // 
             // pnlRighUserd
             // 
-            this.pnlRighUserd.BackColor = System.Drawing.Color.White;
+            this.pnlRighUserd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pnlRighUserd.Controls.Add(this.gunaShadowPanel2);
             this.pnlRighUserd.Controls.Add(this.gunaShadowPanel1);
             this.pnlRighUserd.Controls.Add(this.lblProfileName);
@@ -361,6 +361,7 @@
             // 
             // pnlDctLeft
             // 
+            this.pnlDctLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pnlDctLeft.Controls.Add(this.btnLogout);
             this.pnlDctLeft.Controls.Add(this.pnlLeftSub);
             this.pnlDctLeft.Controls.Add(this.pnlLogo);

@@ -35,6 +35,8 @@
             this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.pnlRight = new Guna.UI2.WinForms.Guna2Panel();
+            this.chkbxRememberMe = new Guna.UI.WinForms.GunaCheckBox();
+            this.lnkLblForgotPw = new Guna.UI.WinForms.GunaLinkLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
@@ -45,11 +47,13 @@
             this.btnClose = new Guna.UI2.WinForms.Guna2ControlBox();
             this.drag1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.drag2 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
+            this.btnShwPass = new Bunifu.Framework.UI.BunifuImageButton();
             this.pnlLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).BeginInit();
             this.pnlRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).BeginInit();
             this.SuspendLayout();
             // 
             // elips
@@ -94,6 +98,9 @@
             // 
             // pnlRight
             // 
+            this.pnlRight.Controls.Add(this.btnShwPass);
+            this.pnlRight.Controls.Add(this.chkbxRememberMe);
+            this.pnlRight.Controls.Add(this.lnkLblForgotPw);
             this.pnlRight.Controls.Add(this.gunaPictureBox1);
             this.pnlRight.Controls.Add(this.gunaPictureBox2);
             this.pnlRight.Controls.Add(this.btnLogin);
@@ -108,6 +115,35 @@
             this.pnlRight.ShadowDecoration.Parent = this.pnlRight;
             this.pnlRight.Size = new System.Drawing.Size(524, 827);
             this.pnlRight.TabIndex = 1;
+            // 
+            // chkbxRememberMe
+            // 
+            this.chkbxRememberMe.BaseColor = System.Drawing.Color.White;
+            this.chkbxRememberMe.CheckedOffColor = System.Drawing.Color.Gray;
+            this.chkbxRememberMe.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
+            this.chkbxRememberMe.FillColor = System.Drawing.Color.White;
+            this.chkbxRememberMe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkbxRememberMe.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.chkbxRememberMe.Location = new System.Drawing.Point(131, 647);
+            this.chkbxRememberMe.Name = "chkbxRememberMe";
+            this.chkbxRememberMe.Size = new System.Drawing.Size(136, 21);
+            this.chkbxRememberMe.TabIndex = 10;
+            this.chkbxRememberMe.Text = "Remember me";
+            this.chkbxRememberMe.CheckedChanged += new System.EventHandler(this.chkbxRememberMe_CheckedChanged);
+            // 
+            // lnkLblForgotPw
+            // 
+            this.lnkLblForgotPw.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(191)))), ((int)(((byte)(184)))));
+            this.lnkLblForgotPw.AutoSize = true;
+            this.lnkLblForgotPw.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.lnkLblForgotPw.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(127)))), ((int)(((byte)(122)))));
+            this.lnkLblForgotPw.Location = new System.Drawing.Point(297, 647);
+            this.lnkLblForgotPw.Name = "lnkLblForgotPw";
+            this.lnkLblForgotPw.Size = new System.Drawing.Size(139, 20);
+            this.lnkLblForgotPw.TabIndex = 9;
+            this.lnkLblForgotPw.TabStop = true;
+            this.lnkLblForgotPw.Text = "Forgotten Password";
+            this.lnkLblForgotPw.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkLblForgotPw_LinkClicked);
             // 
             // gunaPictureBox1
             // 
@@ -192,7 +228,7 @@
             this.txtPassword.PasswordChar = '●';
             this.txtPassword.Radius = 18;
             this.txtPassword.SelectedText = "";
-            this.txtPassword.Size = new System.Drawing.Size(299, 48);
+            this.txtPassword.Size = new System.Drawing.Size(323, 48);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -212,7 +248,7 @@
             this.txtUsername.PasswordChar = '\0';
             this.txtUsername.Radius = 18;
             this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(299, 48);
+            this.txtUsername.Size = new System.Drawing.Size(323, 48);
             this.txtUsername.TabIndex = 4;
             this.txtUsername.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -247,6 +283,24 @@
             this.drag2.TargetControl = this.pnlRight;
             this.drag2.Vertical = true;
             // 
+            // btnShwPass
+            // 
+            this.btnShwPass.BackColor = System.Drawing.Color.Transparent;
+            this.btnShwPass.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnShwPass.BackgroundImage")));
+            this.btnShwPass.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnShwPass.Image = ((System.Drawing.Image)(resources.GetObject("btnShwPass.Image")));
+            this.btnShwPass.ImageActive = null;
+            this.btnShwPass.Location = new System.Drawing.Point(448, 591);
+            this.btnShwPass.Margin = new System.Windows.Forms.Padding(0);
+            this.btnShwPass.Name = "btnShwPass";
+            this.btnShwPass.Size = new System.Drawing.Size(26, 25);
+            this.btnShwPass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnShwPass.TabIndex = 11;
+            this.btnShwPass.TabStop = false;
+            this.btnShwPass.Zoom = 20;
+            this.btnShwPass.MouseDown += new System.Windows.Forms.MouseEventHandler(this.btnShwPass_MouseDown);
+            this.btnShwPass.MouseUp += new System.Windows.Forms.MouseEventHandler(this.btnShwPass_MouseUp);
+            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -266,6 +320,7 @@
             this.pnlRight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -287,6 +342,9 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox4;
+        private Guna.UI.WinForms.GunaLinkLabel lnkLblForgotPw;
+        private Guna.UI.WinForms.GunaCheckBox chkbxRememberMe;
+        private Bunifu.Framework.UI.BunifuImageButton btnShwPass;
     }
 }
 

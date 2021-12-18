@@ -85,3 +85,6 @@ E:\Sachintha\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\Hea
 E:\Sachintha\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.frmPhrSplr.resources
 E:\Sachintha\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.frmScanInpatient.resources
 E:\Sachintha\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.frmXrayOutpatient.resources
+E:\Sachintha\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\SMDMessageBox.dll
+E:\Sachintha\Sini\Hospital-Management-System\HealthCare\HealthCare\bin\Debug\SMDValidation.dll
+E:\Sachintha\Sini\Hospital-Management-System\HealthCare\HealthCare\obj\Debug\HealthCare.frmAddOrganization.resources

@@ -46,6 +46,12 @@
     <Reference Include="SMDLogic">
       <HintPath>C:\Users\ud\Desktop\DSE\dll\SMDLogic.dll</HintPath>
     </Reference>
+    <Reference Include="SMDMessageBox">
+      <HintPath>..\..\..\..\C# PROJECTS\Library System\DLL\SMDMessageBox.dll</HintPath>
+    </Reference>
+    <Reference Include="SMDValidation">
+      <HintPath>..\..\..\..\C# PROJECTS\Library System\DLL\SMDValidation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
@@ -630,6 +636,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

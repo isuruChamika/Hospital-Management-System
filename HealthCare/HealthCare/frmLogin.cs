@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SMDMessageBox;
 
 namespace HealthCare
 {
@@ -16,11 +17,36 @@ namespace HealthCare
         public frmLogin()
         {
             InitializeComponent();
+            LoadCredentials();
         }
 
+        void LoadCredentials()
+        {
+            if (Properties.Settings.Default.Username != string.Empty)
+            {
+                txtUsername.Text = Properties.Settings.Default.Username;
+                txtPassword.Text = Properties.Settings.Default.Password;
+                chkbxRememberMe.Checked = true;
+            }
+        }
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            LoadCredentials();
+        }
+        private void rememberMe()
+        {
+            if (chkbxRememberMe.Checked == false)
+            {
+                Properties.Settings.Default.Username = "";
+                Properties.Settings.Default.Password = "";
+                Properties.Settings.Default.Save();
+            }
+            else if (chkbxRememberMe.Checked == true)
+            {
+                Properties.Settings.Default.Username = txtUsername.Text;
+                Properties.Settings.Default.Password = txtPassword.Text;
+                Properties.Settings.Default.Save();
+            }
         }
 
         private void btnClose_Click(object sender, EventArgs e)
@@ -31,6 +57,27 @@ namespace HealthCare
         private void pnlLeft_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void lnkLblForgotPw_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            this.Hide();
+            new frmForgetPassword().Show();
+        }
+
+        private void chkbxRememberMe_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnShwPass_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPassword.PasswordChar = '\0';
+        }
+
+        private void btnShwPass_MouseUp(object sender, MouseEventArgs e)
+        {
+            txtPassword.PasswordChar = '●';
         }
 
         //private void rememberMe()
@@ -168,6 +215,7 @@ namespace HealthCare
                     break;
                 case "Error":
                     //HSMessageBox.Show("THE USERNAME OR PASSWORD \nTHAT YOU HAVE \nENTERED DOESN'T MATCH", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    SMDMessage.show("ERROR", "THE USERNAME OR PASSWORD \nTHAT YOU HAVE \nENTERED DOESN'T MATCH",SMDMessageBoxButtons.OK,SMDMessageBoxIcon.Error);
                     txtUsername.Clear();
                     txtPassword.Clear();
                     txtUsername.Focus();

@@ -67,6 +67,7 @@
             // 
             this.pnlTheme.AutoScroll = true;
             this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.pnlTheme.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -82,6 +83,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.AnimationHoverSpeed = 0.07F;
             this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconSize = 15F;
             this.btnClose.Location = new System.Drawing.Point(555, 0);
@@ -96,8 +98,9 @@
             // gunaLabel18
             // 
             this.gunaLabel18.AutoSize = true;
+            this.gunaLabel18.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaLabel18.Location = new System.Drawing.Point(31, 46);
             this.gunaLabel18.Name = "gunaLabel18";
             this.gunaLabel18.Size = new System.Drawing.Size(581, 67);

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmScannRoomDash));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -81,7 +80,7 @@
             // 
             this.gunaPanel1.AutoScroll = true;
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
-            this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
+            this.gunaPanel1.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel1.Controls.Add(this.gunaGroupBox2);
             this.gunaPanel1.Controls.Add(this.gunaGroupBox1);
@@ -367,7 +366,7 @@
             // gunaShadowPanel2
             // 
             this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel5);
             this.gunaShadowPanel2.Controls.Add(this.lblOutpatients);
             this.gunaShadowPanel2.Location = new System.Drawing.Point(997, 19);
@@ -404,7 +403,7 @@
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel1);
             this.gunaShadowPanel1.Controls.Add(this.lblInpatients);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(723, 19);

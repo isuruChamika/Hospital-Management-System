@@ -30,23 +30,23 @@
         {
             this.components = new System.ComponentModel.Container();
             Guna.UI.WinForms.GunaElipse Elips;
-            Guna.UI.Animation.Animation animation4 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation2 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMessageQuestion));
             this.DragCtrl = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.pnlDrag = new Guna.UI.WinForms.GunaElipsePanel();
-            this.lblCaption = new Guna.UI.WinForms.GunaLabel();
-            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.pnlMessage = new Guna.UI.WinForms.GunaElipsePanel();
-            this.btnNo = new System.Windows.Forms.Button();
-            this.btnYes = new System.Windows.Forms.Button();
-            this.lblMessage = new Guna.UI.WinForms.GunaLabel();
-            this.pictureBox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.gunaTransition1 = new Guna.UI.WinForms.GunaTransition(this.components);
+            this.pnlMessage = new Guna.UI.WinForms.GunaElipsePanel();
+            this.pictureBox = new Guna.UI.WinForms.GunaTransfarantPictureBox();
+            this.lblMessage = new Guna.UI.WinForms.GunaLabel();
+            this.btnYes = new System.Windows.Forms.Button();
+            this.btnNo = new System.Windows.Forms.Button();
+            this.gunaCirclePictureBox1 = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.lblCaption = new Guna.UI.WinForms.GunaLabel();
+            this.pnlDrag = new Guna.UI.WinForms.GunaElipsePanel();
             Elips = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.pnlDrag.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
             this.pnlMessage.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).BeginInit();
+            this.pnlDrag.SuspendLayout();
             this.SuspendLayout();
             // 
             // Elips
@@ -58,45 +58,26 @@
             // 
             this.DragCtrl.TargetControl = this.pnlDrag;
             // 
-            // pnlDrag
+            // gunaTransition1
             // 
-            this.pnlDrag.BackColor = System.Drawing.Color.Transparent;
-            this.pnlDrag.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
-            this.pnlDrag.Controls.Add(this.lblCaption);
-            this.pnlDrag.Controls.Add(this.gunaCirclePictureBox1);
-            this.pnlDrag.Controls.Add(this.pnlMessage);
-            this.gunaTransition1.SetDecoration(this.pnlDrag, Guna.UI.Animation.DecorationType.None);
-            this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlDrag.Location = new System.Drawing.Point(0, 0);
-            this.pnlDrag.Name = "pnlDrag";
-            this.pnlDrag.Radius = 20;
-            this.pnlDrag.Size = new System.Drawing.Size(600, 285);
-            this.pnlDrag.TabIndex = 0;
-            // 
-            // lblCaption
-            // 
-            this.lblCaption.AutoSize = true;
-            this.gunaTransition1.SetDecoration(this.lblCaption, Guna.UI.Animation.DecorationType.None);
-            this.lblCaption.Font = new System.Drawing.Font("Nirmala UI", 13F, System.Drawing.FontStyle.Bold);
-            this.lblCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.lblCaption.Location = new System.Drawing.Point(62, 10);
-            this.lblCaption.Name = "lblCaption";
-            this.lblCaption.Size = new System.Drawing.Size(94, 30);
-            this.lblCaption.TabIndex = 2;
-            this.lblCaption.Text = "Caption";
-            // 
-            // gunaCirclePictureBox1
-            // 
-            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaTransition1.SetDecoration(this.gunaCirclePictureBox1, Guna.UI.Animation.DecorationType.None);
-            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
-            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(13, 11);
-            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
-            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(43, 29);
-            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaCirclePictureBox1.TabIndex = 1;
-            this.gunaCirclePictureBox1.TabStop = false;
-            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
+            this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Scale;
+            this.gunaTransition1.Cursor = null;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.gunaTransition1.DefaultAnimation = animation2;
             // 
             // pnlMessage
             // 
@@ -116,6 +97,53 @@
             this.pnlMessage.Size = new System.Drawing.Size(576, 218);
             this.pnlMessage.TabIndex = 0;
             this.pnlMessage.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlMessage_Paint);
+            // 
+            // pictureBox
+            // 
+            this.pictureBox.BaseColor = System.Drawing.Color.Black;
+            this.gunaTransition1.SetDecoration(this.pictureBox, Guna.UI.Animation.DecorationType.None);
+            this.pictureBox.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox.Image")));
+            this.pictureBox.Location = new System.Drawing.Point(14, 17);
+            this.pictureBox.Name = "pictureBox";
+            this.pictureBox.Size = new System.Drawing.Size(139, 137);
+            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox.TabIndex = 0;
+            this.pictureBox.TabStop = false;
+            // 
+            // lblMessage
+            // 
+            this.lblMessage.AutoSize = true;
+            this.gunaTransition1.SetDecoration(this.lblMessage, Guna.UI.Animation.DecorationType.None);
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
+            this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.lblMessage.Location = new System.Drawing.Point(173, 17);
+            this.lblMessage.Name = "lblMessage";
+            this.lblMessage.Size = new System.Drawing.Size(87, 24);
+            this.lblMessage.TabIndex = 1;
+            this.lblMessage.Text = "Message";
+            // 
+            // btnYes
+            // 
+            this.btnYes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnYes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaTransition1.SetDecoration(this.btnYes, Guna.UI.Animation.DecorationType.None);
+            this.btnYes.DialogResult = System.Windows.Forms.DialogResult.Yes;
+            this.btnYes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnYes.FlatAppearance.BorderSize = 0;
+            this.btnYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(191)))), ((int)(((byte)(198)))));
+            this.btnYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnYes.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnYes.Location = new System.Drawing.Point(253, 142);
+            this.btnYes.Name = "btnYes";
+            this.btnYes.Size = new System.Drawing.Size(138, 60);
+            this.btnYes.TabIndex = 2;
+            this.btnYes.Text = "Yes";
+            this.btnYes.UseVisualStyleBackColor = false;
+            this.btnYes.Click += new System.EventHandler(this.button1_Click);
+            this.btnYes.MouseHover += new System.EventHandler(this.btnYes_MouseHover_1);
             // 
             // btnNo
             // 
@@ -141,73 +169,46 @@
             this.btnNo.MouseLeave += new System.EventHandler(this.btnNo_MouseLeave);
             this.btnNo.MouseHover += new System.EventHandler(this.btnNo_MouseHover);
             // 
-            // btnYes
+            // gunaCirclePictureBox1
             // 
-            this.btnYes.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnYes.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.gunaTransition1.SetDecoration(this.btnYes, Guna.UI.Animation.DecorationType.None);
-            this.btnYes.DialogResult = System.Windows.Forms.DialogResult.Yes;
-            this.btnYes.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.btnYes.FlatAppearance.BorderSize = 0;
-            this.btnYes.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.btnYes.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(191)))), ((int)(((byte)(198)))));
-            this.btnYes.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnYes.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnYes.Location = new System.Drawing.Point(253, 142);
-            this.btnYes.Name = "btnYes";
-            this.btnYes.Size = new System.Drawing.Size(138, 60);
-            this.btnYes.TabIndex = 2;
-            this.btnYes.Text = "Yes";
-            this.btnYes.UseVisualStyleBackColor = false;
-            this.btnYes.Click += new System.EventHandler(this.button1_Click);
-            this.btnYes.MouseHover += new System.EventHandler(this.btnYes_MouseHover_1);
+            this.gunaCirclePictureBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaTransition1.SetDecoration(this.gunaCirclePictureBox1, Guna.UI.Animation.DecorationType.None);
+            this.gunaCirclePictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaCirclePictureBox1.Image")));
+            this.gunaCirclePictureBox1.Location = new System.Drawing.Point(13, 11);
+            this.gunaCirclePictureBox1.Name = "gunaCirclePictureBox1";
+            this.gunaCirclePictureBox1.Size = new System.Drawing.Size(43, 29);
+            this.gunaCirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.gunaCirclePictureBox1.TabIndex = 1;
+            this.gunaCirclePictureBox1.TabStop = false;
+            this.gunaCirclePictureBox1.UseTransfarantBackground = false;
             // 
-            // lblMessage
+            // lblCaption
             // 
-            this.lblMessage.AutoSize = true;
-            this.gunaTransition1.SetDecoration(this.lblMessage, Guna.UI.Animation.DecorationType.None);
-            this.lblMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 11F);
-            this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
-            this.lblMessage.Location = new System.Drawing.Point(159, 26);
-            this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(91, 24);
-            this.lblMessage.TabIndex = 1;
-            this.lblMessage.Text = "Message";
+            this.lblCaption.AutoSize = true;
+            this.gunaTransition1.SetDecoration(this.lblCaption, Guna.UI.Animation.DecorationType.None);
+            this.lblCaption.Font = new System.Drawing.Font("Nirmala UI", 13F, System.Drawing.FontStyle.Bold);
+            this.lblCaption.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
+            this.lblCaption.Location = new System.Drawing.Point(62, 10);
+            this.lblCaption.Name = "lblCaption";
+            this.lblCaption.Size = new System.Drawing.Size(94, 30);
+            this.lblCaption.TabIndex = 2;
+            this.lblCaption.Text = "Caption";
             // 
-            // pictureBox
+            // pnlDrag
             // 
-            this.pictureBox.BaseColor = System.Drawing.Color.Black;
-            this.gunaTransition1.SetDecoration(this.pictureBox, Guna.UI.Animation.DecorationType.None);
-            this.pictureBox.Image = global::HealthCare.Properties.Resources.Question;
-            this.pictureBox.Location = new System.Drawing.Point(21, 17);
-            this.pictureBox.Name = "pictureBox";
-            this.pictureBox.Size = new System.Drawing.Size(120, 120);
-            this.pictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox.TabIndex = 0;
-            this.pictureBox.TabStop = false;
-            // 
-            // gunaTransition1
-            // 
-            this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Scale;
-            this.gunaTransition1.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 0F;
-            this.gunaTransition1.DefaultAnimation = animation4;
+            this.pnlDrag.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDrag.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
+            this.pnlDrag.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.pnlDrag.Controls.Add(this.lblCaption);
+            this.pnlDrag.Controls.Add(this.gunaCirclePictureBox1);
+            this.pnlDrag.Controls.Add(this.pnlMessage);
+            this.gunaTransition1.SetDecoration(this.pnlDrag, Guna.UI.Animation.DecorationType.None);
+            this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlDrag.Location = new System.Drawing.Point(0, 0);
+            this.pnlDrag.Name = "pnlDrag";
+            this.pnlDrag.Radius = 20;
+            this.pnlDrag.Size = new System.Drawing.Size(600, 285);
+            this.pnlDrag.TabIndex = 0;
             // 
             // frmMessageQuestion
             // 
@@ -223,12 +224,12 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "frmMessageQuestion";
             this.Load += new System.EventHandler(this.frmMessageQuestion_Load);
-            this.pnlDrag.ResumeLayout(false);
-            this.pnlDrag.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
             this.pnlMessage.ResumeLayout(false);
             this.pnlMessage.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gunaCirclePictureBox1)).EndInit();
+            this.pnlDrag.ResumeLayout(false);
+            this.pnlDrag.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -236,14 +237,14 @@
         #endregion
 
         private Guna.UI.WinForms.GunaDragControl DragCtrl;
-        private Guna.UI.WinForms.GunaElipsePanel pnlDrag;
-        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
         private Guna.UI.WinForms.GunaTransition gunaTransition1;
-        private Guna.UI.WinForms.GunaElipsePanel pnlMessage;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox pictureBox;
-        private Guna.UI.WinForms.GunaLabel lblCaption;
-        private Guna.UI.WinForms.GunaLabel lblMessage;
-        private System.Windows.Forms.Button btnNo;
         private System.Windows.Forms.Button btnYes;
+        private Guna.UI.WinForms.GunaElipsePanel pnlDrag;
+        private Guna.UI.WinForms.GunaLabel lblCaption;
+        private Guna.UI.WinForms.GunaCirclePictureBox gunaCirclePictureBox1;
+        private Guna.UI.WinForms.GunaElipsePanel pnlMessage;
+        private System.Windows.Forms.Button btnNo;
+        private Guna.UI.WinForms.GunaLabel lblMessage;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox pictureBox;
     }
 }

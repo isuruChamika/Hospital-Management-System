@@ -94,7 +94,7 @@
             // gunaGroupBox2
             // 
             this.gunaGroupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox2.Controls.Add(this.dgvRoom);
             this.gunaGroupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -224,7 +224,7 @@
             // gunaGroupBox1
             // 
             this.gunaGroupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox1.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox1.Controls.Add(this.dgvWard);
             this.gunaGroupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -334,7 +334,7 @@
             // gunaShadowPanel2
             // 
             this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel3);
             this.gunaShadowPanel2.Controls.Add(this.lblAvailbaleRoom);
             this.gunaShadowPanel2.Location = new System.Drawing.Point(997, 19);
@@ -350,8 +350,8 @@
             // 
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Bahnschrift SemiBold", 23F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.gunaLabel3.Location = new System.Drawing.Point(16, 122);
+            this.gunaLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.gunaLabel3.Location = new System.Drawing.Point(12, 122);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(234, 94);
             this.gunaLabel3.TabIndex = 0;
@@ -361,7 +361,7 @@
             // 
             this.lblAvailbaleRoom.AutoSize = true;
             this.lblAvailbaleRoom.Font = new System.Drawing.Font("Bahnschrift SemiBold", 40F, System.Drawing.FontStyle.Bold);
-            this.lblAvailbaleRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.lblAvailbaleRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.lblAvailbaleRoom.Location = new System.Drawing.Point(28, 33);
             this.lblAvailbaleRoom.Name = "lblAvailbaleRoom";
             this.lblAvailbaleRoom.Size = new System.Drawing.Size(142, 81);
@@ -371,7 +371,7 @@
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel1);
             this.gunaShadowPanel1.Controls.Add(this.lblSoledRoom);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(723, 19);
@@ -387,8 +387,8 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Bahnschrift SemiBold", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
-            this.gunaLabel1.Location = new System.Drawing.Point(35, 114);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Turquoise;
+            this.gunaLabel1.Location = new System.Drawing.Point(16, 118);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(205, 102);
             this.gunaLabel1.TabIndex = 0;
@@ -398,7 +398,7 @@
             // 
             this.lblSoledRoom.AutoSize = true;
             this.lblSoledRoom.Font = new System.Drawing.Font("Bahnschrift SemiBold", 40F, System.Drawing.FontStyle.Bold);
-            this.lblSoledRoom.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(94)))), ((int)(((byte)(110)))));
+            this.lblSoledRoom.ForeColor = System.Drawing.Color.Turquoise;
             this.lblSoledRoom.Location = new System.Drawing.Point(30, 33);
             this.lblSoledRoom.Name = "lblSoledRoom";
             this.lblSoledRoom.Size = new System.Drawing.Size(114, 81);
@@ -411,13 +411,13 @@
             this.pnlBanner.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.pnlBanner.Controls.Add(this.gunaLabel2);
             this.pnlBanner.Controls.Add(this.lblAddmitionOfficer);
-            this.pnlBanner.Location = new System.Drawing.Point(21, 64);
+            this.pnlBanner.Location = new System.Drawing.Point(21, 63);
             this.pnlBanner.Name = "pnlBanner";
             this.pnlBanner.Radius = 10;
             this.pnlBanner.ShadowColor = System.Drawing.Color.Black;
             this.pnlBanner.ShadowShift = 10;
             this.pnlBanner.ShadowStyle = Guna.UI.WinForms.ShadowMode.ForwardDiagonal;
-            this.pnlBanner.Size = new System.Drawing.Size(684, 202);
+            this.pnlBanner.Size = new System.Drawing.Size(684, 203);
             this.pnlBanner.TabIndex = 8;
             // 
             // gunaLabel2

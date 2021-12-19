@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             Guna.UI.WinForms.GunaElipse Elips;
-            Guna.UI.Animation.Animation animation1 = new Guna.UI.Animation.Animation();
+            Guna.UI.Animation.Animation animation2 = new Guna.UI.Animation.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMessageError));
             this.DragCtrl = new Guna.UI.WinForms.GunaDragControl(this.components);
             this.pnlDrag = new Guna.UI.WinForms.GunaElipsePanel();
@@ -60,6 +60,7 @@
             // pnlDrag
             // 
             this.pnlDrag.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDrag.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlDrag.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
             this.pnlDrag.Controls.Add(this.lblCaption);
             this.pnlDrag.Controls.Add(this.gunaCirclePictureBox1);
@@ -120,10 +121,10 @@
             // 
             this.PictureBox.BaseColor = System.Drawing.Color.White;
             this.gunaTransition1.SetDecoration(this.PictureBox, Guna.UI.Animation.DecorationType.None);
-            this.PictureBox.Image = global::HealthCare.Properties.Resources.Question;
-            this.PictureBox.Location = new System.Drawing.Point(21, 17);
+            this.PictureBox.Image = ((System.Drawing.Image)(resources.GetObject("PictureBox.Image")));
+            this.PictureBox.Location = new System.Drawing.Point(19, 19);
             this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(123, 105);
+            this.PictureBox.Size = new System.Drawing.Size(125, 103);
             this.PictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.PictureBox.TabIndex = 3;
             this.PictureBox.TabStop = false;
@@ -155,11 +156,11 @@
             // 
             this.lblMessage.AutoSize = true;
             this.gunaTransition1.SetDecoration(this.lblMessage, Guna.UI.Animation.DecorationType.None);
-            this.lblMessage.Font = new System.Drawing.Font("MS Reference Sans Serif", 11F);
+            this.lblMessage.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F);
             this.lblMessage.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(32)))), ((int)(((byte)(80)))), ((int)(((byte)(114)))));
             this.lblMessage.Location = new System.Drawing.Point(150, 27);
             this.lblMessage.Name = "lblMessage";
-            this.lblMessage.Size = new System.Drawing.Size(91, 24);
+            this.lblMessage.Size = new System.Drawing.Size(87, 24);
             this.lblMessage.TabIndex = 1;
             this.lblMessage.Text = "Message";
             // 
@@ -167,22 +168,22 @@
             // 
             this.gunaTransition1.AnimationType = Guna.UI.Animation.AnimationType.Scale;
             this.gunaTransition1.Cursor = null;
-            animation1.AnimateOnlyDifferences = true;
-            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
-            animation1.LeafCoeff = 0F;
-            animation1.MaxTime = 1F;
-            animation1.MinTime = 0F;
-            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
-            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
-            animation1.MosaicSize = 0;
-            animation1.Padding = new System.Windows.Forms.Padding(0);
-            animation1.RotateCoeff = 0F;
-            animation1.RotateLimit = 0F;
-            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
-            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
-            animation1.TimeCoeff = 0F;
-            animation1.TransparencyCoeff = 0F;
-            this.gunaTransition1.DefaultAnimation = animation1;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.gunaTransition1.DefaultAnimation = animation2;
             // 
             // frmMessageError
             // 

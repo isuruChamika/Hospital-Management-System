@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmChangePassword));
             this.elips = new Guna.UI.WinForms.GunaElipse(this.components);
             this.drag = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.pbTheme = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.frmChngAnimate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.lblCPassword = new Guna.UI.WinForms.GunaLabel();
@@ -53,9 +51,8 @@
             this.txtFirstName = new Guna.UI.WinForms.GunaTextBox();
             this.btnSave = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnCancel = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.pbTheme = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbTheme)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // elips
@@ -67,20 +64,6 @@
             // 
             this.drag.TargetControl = this.pbTheme;
             // 
-            // pbTheme
-            // 
-            this.pbTheme.BackColor = System.Drawing.Color.Transparent;
-            this.pbTheme.BaseColor = System.Drawing.Color.Black;
-            this.pbTheme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbTheme.Image = ((System.Drawing.Image)(resources.GetObject("pbTheme.Image")));
-            this.pbTheme.Location = new System.Drawing.Point(0, 0);
-            this.pbTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbTheme.Name = "pbTheme";
-            this.pbTheme.Size = new System.Drawing.Size(645, 884);
-            this.pbTheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbTheme.TabIndex = 5;
-            this.pbTheme.TabStop = false;
-            // 
             // frmChngAnimate
             // 
             this.frmChngAnimate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_CENTER;
@@ -90,11 +73,12 @@
             // gunaLabel7
             // 
             this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel7.Location = new System.Drawing.Point(36, 233);
+            this.gunaLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaLabel7.Location = new System.Drawing.Point(92, 73);
             this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(382, 114);
+            this.gunaLabel7.Size = new System.Drawing.Size(455, 134);
             this.gunaLabel7.TabIndex = 11;
             this.gunaLabel7.Text = "Custermized Your \r\n           Details";
             // 
@@ -152,7 +136,7 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel6.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.gunaLabel6.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gunaLabel6.Location = new System.Drawing.Point(468, 553);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(122, 25);
@@ -195,6 +179,7 @@
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.gunaLabel2.Location = new System.Drawing.Point(339, 393);
@@ -209,7 +194,7 @@
             this.txtComfirmPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtComfirmPassword.BorderColor = System.Drawing.Color.Silver;
             this.txtComfirmPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtComfirmPassword.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtComfirmPassword.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtComfirmPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtComfirmPassword.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtComfirmPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -218,7 +203,7 @@
             this.txtComfirmPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtComfirmPassword.Name = "txtComfirmPassword";
             this.txtComfirmPassword.PasswordChar = '●';
-            this.txtComfirmPassword.Radius = 16;
+            this.txtComfirmPassword.Radius = 3;
             this.txtComfirmPassword.SelectedText = "";
             this.txtComfirmPassword.Size = new System.Drawing.Size(284, 44);
             this.txtComfirmPassword.TabIndex = 7;
@@ -231,7 +216,7 @@
             this.txtNewPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtNewPassword.BorderColor = System.Drawing.Color.Silver;
             this.txtNewPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtNewPassword.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtNewPassword.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtNewPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtNewPassword.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtNewPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -240,7 +225,7 @@
             this.txtNewPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNewPassword.Name = "txtNewPassword";
             this.txtNewPassword.PasswordChar = '●';
-            this.txtNewPassword.Radius = 16;
+            this.txtNewPassword.Radius = 3;
             this.txtNewPassword.SelectedText = "";
             this.txtNewPassword.Size = new System.Drawing.Size(284, 44);
             this.txtNewPassword.TabIndex = 7;
@@ -264,7 +249,7 @@
             this.txtGmail.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtGmail.BorderColor = System.Drawing.Color.Silver;
             this.txtGmail.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtGmail.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtGmail.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtGmail.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtGmail.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtGmail.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -273,7 +258,7 @@
             this.txtGmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGmail.Name = "txtGmail";
             this.txtGmail.PasswordChar = '\0';
-            this.txtGmail.Radius = 16;
+            this.txtGmail.Radius = 3;
             this.txtGmail.SelectedText = "";
             this.txtGmail.Size = new System.Drawing.Size(435, 44);
             this.txtGmail.TabIndex = 7;
@@ -285,7 +270,7 @@
             this.txtLastName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtLastName.BorderColor = System.Drawing.Color.Silver;
             this.txtLastName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtLastName.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtLastName.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtLastName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtLastName.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtLastName.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -294,7 +279,7 @@
             this.txtLastName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLastName.Name = "txtLastName";
             this.txtLastName.PasswordChar = '\0';
-            this.txtLastName.Radius = 16;
+            this.txtLastName.Radius = 3;
             this.txtLastName.SelectedText = "";
             this.txtLastName.Size = new System.Drawing.Size(284, 44);
             this.txtLastName.TabIndex = 7;
@@ -306,7 +291,7 @@
             this.txtFirstName.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtFirstName.BorderColor = System.Drawing.Color.Silver;
             this.txtFirstName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtFirstName.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtFirstName.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtFirstName.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.txtFirstName.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtFirstName.Font = new System.Drawing.Font("Segoe UI", 10F);
@@ -315,7 +300,7 @@
             this.txtFirstName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtFirstName.Name = "txtFirstName";
             this.txtFirstName.PasswordChar = '\0';
-            this.txtFirstName.Radius = 16;
+            this.txtFirstName.Radius = 3;
             this.txtFirstName.SelectedText = "";
             this.txtFirstName.Size = new System.Drawing.Size(284, 44);
             this.txtFirstName.TabIndex = 7;
@@ -327,22 +312,22 @@
             this.btnSave.AnimationHoverSpeed = 0.07F;
             this.btnSave.AnimationSpeed = 0.03F;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BaseColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnSave.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnSave.BorderColor = System.Drawing.Color.Transparent;
             this.btnSave.BorderSize = 2;
             this.btnSave.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnSave.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.btnSave.CheckedForeColor = System.Drawing.Color.White;
             this.btnSave.CheckedImage = null;
-            this.btnSave.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnSave.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSave.FocusedColor = System.Drawing.Color.Empty;
             this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = null;
             this.btnSave.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSave.LineColor = System.Drawing.Color.Transparent;
-            this.btnSave.Location = new System.Drawing.Point(219, 786);
+            this.btnSave.Location = new System.Drawing.Point(113, 761);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
@@ -364,22 +349,22 @@
             this.btnCancel.AnimationHoverSpeed = 0.07F;
             this.btnCancel.AnimationSpeed = 0.03F;
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BaseColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnCancel.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnCancel.BorderColor = System.Drawing.Color.Transparent;
             this.btnCancel.BorderSize = 2;
             this.btnCancel.CheckedBaseColor = System.Drawing.Color.Gray;
             this.btnCancel.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.btnCancel.CheckedForeColor = System.Drawing.Color.White;
             this.btnCancel.CheckedImage = null;
-            this.btnCancel.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnCancel.CheckedLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancel.FocusedColor = System.Drawing.Color.Empty;
             this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = null;
             this.btnCancel.ImageSize = new System.Drawing.Size(20, 20);
             this.btnCancel.LineColor = System.Drawing.Color.Transparent;
-            this.btnCancel.Location = new System.Drawing.Point(424, 786);
+            this.btnCancel.Location = new System.Drawing.Point(360, 761);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
@@ -395,17 +380,18 @@
             this.btnCancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // gunaPictureBox1
+            // pbTheme
             // 
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(417, 203);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(173, 169);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 12;
-            this.gunaPictureBox1.TabStop = false;
+            this.pbTheme.BackColor = System.Drawing.Color.Transparent;
+            this.pbTheme.BaseColor = System.Drawing.Color.DimGray;
+            this.pbTheme.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbTheme.Location = new System.Drawing.Point(0, 0);
+            this.pbTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbTheme.Name = "pbTheme";
+            this.pbTheme.Size = new System.Drawing.Size(645, 884);
+            this.pbTheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbTheme.TabIndex = 5;
+            this.pbTheme.TabStop = false;
             // 
             // frmChangePassword
             // 
@@ -413,7 +399,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(645, 884);
-            this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel7);
             this.Controls.Add(this.lblCPassword);
             this.Controls.Add(this.lblNPassword);
@@ -441,7 +426,6 @@
             this.Text = "frmChangePassword";
             this.Load += new System.EventHandler(this.frmChangePassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbTheme)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,6 +456,5 @@
         private Guna.UI.WinForms.GunaLabel lblName;
         private Guna.UI.WinForms.GunaAdvenceButton btnSave;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
     }
 }

@@ -80,6 +80,7 @@
             // 
             this.pnlDctmain.AutoScroll = true;
             this.pnlDctmain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.pnlDctmain.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlDctmain.Controls.Add(this.btnMinimize);
             this.pnlDctmain.Controls.Add(this.btnMaximize);
             this.pnlDctmain.Controls.Add(this.btnClose);
@@ -98,6 +99,7 @@
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.AnimationHoverSpeed = 0.07F;
             this.btnMinimize.AnimationSpeed = 0.03F;
+            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
             this.btnMinimize.IconColor = System.Drawing.Color.Black;
             this.btnMinimize.IconSize = 15F;
@@ -115,6 +117,7 @@
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.AnimationHoverSpeed = 0.07F;
             this.btnMaximize.AnimationSpeed = 0.03F;
+            this.btnMaximize.BackColor = System.Drawing.Color.Transparent;
             this.btnMaximize.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MaximizeBox;
             this.btnMaximize.IconColor = System.Drawing.Color.Black;
             this.btnMaximize.IconSize = 15F;
@@ -132,6 +135,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.AnimationHoverSpeed = 0.07F;
             this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconSize = 15F;
             this.btnClose.Location = new System.Drawing.Point(1864, 0);
@@ -152,39 +156,40 @@
             this.pnlChildForms.BackColor = System.Drawing.Color.Transparent;
             this.pnlChildForms.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.pnlChildForms.Controls.Add(this.pnlRighUserd);
-            this.pnlChildForms.Location = new System.Drawing.Point(227, 49);
+            this.pnlChildForms.Location = new System.Drawing.Point(254, 66);
             this.pnlChildForms.Name = "pnlChildForms";
-            this.pnlChildForms.Size = new System.Drawing.Size(1703, 939);
+            this.pnlChildForms.Size = new System.Drawing.Size(1659, 922);
             this.pnlChildForms.TabIndex = 2;
             // 
             // pnlRighUserd
             // 
-            this.pnlRighUserd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.pnlRighUserd.BackColor = System.Drawing.Color.Transparent;
+            this.pnlRighUserd.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlRighUserd.Controls.Add(this.gunaShadowPanel2);
             this.pnlRighUserd.Controls.Add(this.gunaShadowPanel1);
             this.pnlRighUserd.Controls.Add(this.lblProfileName);
             this.pnlRighUserd.Controls.Add(this.pbProPic);
             this.pnlRighUserd.Controls.Add(this.gunaPictureBox1);
             this.pnlRighUserd.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnlRighUserd.Location = new System.Drawing.Point(1367, 0);
+            this.pnlRighUserd.Location = new System.Drawing.Point(1350, 0);
             this.pnlRighUserd.Name = "pnlRighUserd";
-            this.pnlRighUserd.Size = new System.Drawing.Size(336, 939);
+            this.pnlRighUserd.Size = new System.Drawing.Size(309, 922);
             this.pnlRighUserd.TabIndex = 4;
             // 
             // gunaShadowPanel2
             // 
             this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel7);
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel3);
             this.gunaShadowPanel2.Controls.Add(this.lblEmail);
             this.gunaShadowPanel2.Controls.Add(this.lblAddress);
-            this.gunaShadowPanel2.Location = new System.Drawing.Point(10, 744);
+            this.gunaShadowPanel2.Location = new System.Drawing.Point(3, 693);
             this.gunaShadowPanel2.Name = "gunaShadowPanel2";
             this.gunaShadowPanel2.Radius = 7;
             this.gunaShadowPanel2.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel2.ShadowStyle = Guna.UI.WinForms.ShadowMode.ForwardDiagonal;
-            this.gunaShadowPanel2.Size = new System.Drawing.Size(321, 201);
+            this.gunaShadowPanel2.Size = new System.Drawing.Size(306, 226);
             this.gunaShadowPanel2.TabIndex = 2;
             // 
             // gunaLabel7
@@ -238,19 +243,19 @@
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.LightGray;
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel4);
             this.gunaShadowPanel1.Controls.Add(this.lblGender);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel2);
             this.gunaShadowPanel1.Controls.Add(this.lblsalary);
             this.gunaShadowPanel1.Controls.Add(this.lblDesignation);
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel1);
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(10, 523);
+            this.gunaShadowPanel1.Location = new System.Drawing.Point(3, 465);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.Radius = 7;
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.gunaShadowPanel1.ShadowStyle = Guna.UI.WinForms.ShadowMode.ForwardDiagonal;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(321, 201);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(303, 222);
             this.gunaShadowPanel1.TabIndex = 2;
             // 
             // gunaLabel4
@@ -328,11 +333,11 @@
             this.lblProfileName.AutoSize = true;
             this.lblProfileName.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Bold);
             this.lblProfileName.ForeColor = System.Drawing.Color.Gray;
-            this.lblProfileName.Location = new System.Drawing.Point(64, 305);
+            this.lblProfileName.Location = new System.Drawing.Point(81, 298);
             this.lblProfileName.Name = "lblProfileName";
-            this.lblProfileName.Size = new System.Drawing.Size(219, 35);
+            this.lblProfileName.Size = new System.Drawing.Size(153, 35);
             this.lblProfileName.TabIndex = 1;
-            this.lblProfileName.Text = "Sachintha Madhawa";
+            this.lblProfileName.Text = "isuru chamika";
             this.lblProfileName.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.lblProfileName.UseCompatibleTextRendering = true;
             // 
@@ -341,7 +346,7 @@
             this.pbProPic.BaseColor = System.Drawing.Color.White;
             this.pbProPic.Location = new System.Drawing.Point(30, 33);
             this.pbProPic.Name = "pbProPic";
-            this.pbProPic.Size = new System.Drawing.Size(283, 253);
+            this.pbProPic.Size = new System.Drawing.Size(249, 253);
             this.pbProPic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbProPic.TabIndex = 0;
             this.pbProPic.TabStop = false;
@@ -351,8 +356,7 @@
             // 
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(-15, 219);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(-36, 219);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Size = new System.Drawing.Size(385, 320);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -362,6 +366,7 @@
             // pnlDctLeft
             // 
             this.pnlDctLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.pnlDctLeft.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlDctLeft.Controls.Add(this.btnLogout);
             this.pnlDctLeft.Controls.Add(this.pnlLeftSub);
             this.pnlDctLeft.Controls.Add(this.pnlLogo);
@@ -369,7 +374,7 @@
             this.pnlDctLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlDctLeft.Name = "pnlDctLeft";
             this.pnlDctLeft.ShadowDecoration.Parent = this.pnlDctLeft;
-            this.pnlDctLeft.Size = new System.Drawing.Size(229, 1000);
+            this.pnlDctLeft.Size = new System.Drawing.Size(235, 1000);
             this.pnlDctLeft.TabIndex = 0;
             // 
             // btnLogout
@@ -378,36 +383,38 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.AnimationHoverSpeed = 0.07F;
             this.btnLogout.AnimationSpeed = 0.03F;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.BaseColor = System.Drawing.Color.Transparent;
             this.btnLogout.BorderColor = System.Drawing.Color.Transparent;
             this.btnLogout.CheckedBaseColor = System.Drawing.Color.Transparent;
             this.btnLogout.CheckedBorderColor = System.Drawing.Color.Transparent;
             this.btnLogout.CheckedForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.btnLogout.CheckedImage = null;
+            this.btnLogout.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnLogout.CheckedImage")));
             this.btnLogout.CheckedLineColor = System.Drawing.Color.Transparent;
             this.btnLogout.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogout.FocusedColor = System.Drawing.Color.Empty;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnLogout.ForeColor = System.Drawing.Color.Red;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageSize = new System.Drawing.Size(23, 23);
             this.btnLogout.LineColor = System.Drawing.Color.Transparent;
-            this.btnLogout.Location = new System.Drawing.Point(29, 902);
+            this.btnLogout.Location = new System.Drawing.Point(27, 860);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHoverBorderColor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.btnLogout.OnHoverImage = null;
+            this.btnLogout.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnLogout.OnHoverImage")));
             this.btnLogout.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnLogout.OnPressedColor = System.Drawing.Color.Transparent;
-            this.btnLogout.Size = new System.Drawing.Size(180, 48);
-            this.btnLogout.TabIndex = 6;
+            this.btnLogout.Size = new System.Drawing.Size(205, 70);
+            this.btnLogout.TabIndex = 7;
             this.btnLogout.Text = "Log Out";
-            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
             // pnlLeftSub
             // 
+            this.pnlLeftSub.BackColor = System.Drawing.Color.Transparent;
             this.pnlLeftSub.Controls.Add(this.btnSettings);
             this.pnlLeftSub.Controls.Add(this.btnGuardian);
             this.pnlLeftSub.Controls.Add(this.btnPatinents);
@@ -416,7 +423,7 @@
             this.pnlLeftSub.Location = new System.Drawing.Point(0, 205);
             this.pnlLeftSub.Name = "pnlLeftSub";
             this.pnlLeftSub.ShadowDecoration.Parent = this.pnlLeftSub;
-            this.pnlLeftSub.Size = new System.Drawing.Size(229, 484);
+            this.pnlLeftSub.Size = new System.Drawing.Size(235, 484);
             this.pnlLeftSub.TabIndex = 1;
             // 
             // btnSettings
@@ -558,21 +565,23 @@
             // 
             // pnlLogo
             // 
+            this.pnlLogo.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlLogo.Controls.Add(this.guna2PictureBox1);
             this.pnlLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlLogo.Location = new System.Drawing.Point(0, 0);
             this.pnlLogo.Name = "pnlLogo";
             this.pnlLogo.ShadowDecoration.Parent = this.pnlLogo;
-            this.pnlLogo.Size = new System.Drawing.Size(229, 205);
+            this.pnlLogo.Size = new System.Drawing.Size(235, 205);
             this.pnlLogo.TabIndex = 0;
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 18);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(3, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(218, 196);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(232, 165);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -635,7 +644,6 @@
         private Guna.UI.WinForms.GunaAdvenceButton btnPatinents;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Panel pnlRighUserd;
-        private Guna.UI.WinForms.GunaAdvenceButton btnLogout;
         private Guna.UI.WinForms.GunaDragControl DctDrag;
         private Guna.UI.WinForms.GunaAdvenceButton btnSettings;
         private Guna.UI.WinForms.GunaAdvenceButton btnGuardian;
@@ -657,5 +665,6 @@
         private Guna.UI.WinForms.GunaLabel lblAddress;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
         private Guna.UI.WinForms.GunaLabel lblEmail;
+        private Guna.UI.WinForms.GunaAdvenceButton btnLogout;
     }
 }

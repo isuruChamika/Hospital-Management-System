@@ -69,6 +69,7 @@
             // 
             this.pnlTheme.AutoScroll = true;
             this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.pnlTheme.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.gunaLabel18);
             this.pnlTheme.Controls.Add(this.gunaGroupBox2);
@@ -81,8 +82,9 @@
             // gunaLabel18
             // 
             this.gunaLabel18.AutoSize = true;
+            this.gunaLabel18.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaLabel18.Location = new System.Drawing.Point(30, 27);
             this.gunaLabel18.Name = "gunaLabel18";
             this.gunaLabel18.Size = new System.Drawing.Size(328, 67);
@@ -97,6 +99,8 @@
             this.gunaGroupBox2.BorderColor = System.Drawing.Color.FloralWhite;
             this.gunaGroupBox2.Controls.Add(this.gunaLabel15);
             this.gunaGroupBox2.Controls.Add(this.lblRelationship);
+            this.gunaGroupBox2.Controls.Add(this.btnPSave);
+            this.gunaGroupBox2.Controls.Add(this.btnCancel);
             this.gunaGroupBox2.Controls.Add(this.lblTPnumber);
             this.gunaGroupBox2.Controls.Add(this.lblAddress);
             this.gunaGroupBox2.Controls.Add(this.lblNic);
@@ -104,8 +108,6 @@
             this.gunaGroupBox2.Controls.Add(this.gunaLabel5);
             this.gunaGroupBox2.Controls.Add(this.gunaLabel9);
             this.gunaGroupBox2.Controls.Add(this.gunaLabel11);
-            this.gunaGroupBox2.Controls.Add(this.btnCancel);
-            this.gunaGroupBox2.Controls.Add(this.btnPSave);
             this.gunaGroupBox2.Controls.Add(this.gunaLabel12);
             this.gunaGroupBox2.Controls.Add(this.txtNic);
             this.gunaGroupBox2.Controls.Add(this.txtRelationship);
@@ -240,7 +242,7 @@
             this.btnCancel.Image = null;
             this.btnCancel.ImageSize = new System.Drawing.Size(20, 20);
             this.btnCancel.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCancel.Location = new System.Drawing.Point(230, 452);
+            this.btnCancel.Location = new System.Drawing.Point(236, 460);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.btnCancel.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -274,7 +276,7 @@
             this.btnPSave.Image = null;
             this.btnPSave.ImageSize = new System.Drawing.Size(20, 20);
             this.btnPSave.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPSave.Location = new System.Drawing.Point(439, 452);
+            this.btnPSave.Location = new System.Drawing.Point(439, 460);
             this.btnPSave.Name = "btnPSave";
             this.btnPSave.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.btnPSave.OnHoverBorderColor = System.Drawing.Color.Black;

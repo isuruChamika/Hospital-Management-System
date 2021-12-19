@@ -228,5 +228,15 @@ namespace HealthCare
                 txtReason.Focus();
             }
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -40,14 +40,14 @@
             this.lblResetCode = new Guna.UI.WinForms.GunaLabel();
             this.lblGmail = new Guna.UI.WinForms.GunaLabel();
             this.btnSend = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
             this.txtGmail = new Guna.UI.WinForms.GunaLineTextBox();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.forgottenPassword = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
+            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
+            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlDrag.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -63,7 +63,8 @@
             // 
             // pnlDrag
             // 
-            this.pnlDrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.pnlDrag.BackColor = System.Drawing.Color.White;
+            this.pnlDrag.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlDrag.Controls.Add(this.btnClose);
             this.pnlDrag.Controls.Add(this.lblCode);
             this.pnlDrag.Controls.Add(this.txtResetCode);
@@ -84,12 +85,14 @@
             this.pnlDrag.Name = "pnlDrag";
             this.pnlDrag.Size = new System.Drawing.Size(1090, 590);
             this.pnlDrag.TabIndex = 0;
+            this.pnlDrag.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlDrag_Paint);
             // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.AnimationHoverSpeed = 0.07F;
             this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconSize = 15F;
             this.btnClose.Location = new System.Drawing.Point(1011, 0);
@@ -105,7 +108,8 @@
             // 
             this.lblCode.AutoSize = true;
             this.lblCode.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
-            this.lblCode.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lblCode.ForeColor = System.Drawing.Color.White;
+            this.lblCode.Image = global::HealthCare.Properties.Resources._0NxcDA1;
             this.lblCode.Location = new System.Drawing.Point(26, 439);
             this.lblCode.Name = "lblCode";
             this.lblCode.Size = new System.Drawing.Size(138, 23);
@@ -116,6 +120,7 @@
             // 
             this.txtResetCode.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.txtResetCode.BorderColor = System.Drawing.Color.DarkGray;
+            this.txtResetCode.BorderSize = 0;
             this.txtResetCode.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtResetCode.FocusedBaseColor = System.Drawing.Color.White;
             this.txtResetCode.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
@@ -184,20 +189,6 @@
             this.btnSend.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
-            // gunaGradientPanel1
-            // 
-            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
-            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.Maroon;
-            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.OrangeRed;
-            this.gunaGradientPanel1.Location = new System.Drawing.Point(465, 125);
-            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
-            this.gunaGradientPanel1.Size = new System.Drawing.Size(170, 6);
-            this.gunaGradientPanel1.TabIndex = 12;
-            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
-            // 
             // txtGmail
             // 
             this.txtGmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
@@ -217,6 +208,7 @@
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.gunaLabel3.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.gunaLabel3.Location = new System.Drawing.Point(330, 144);
@@ -230,12 +222,14 @@
             // 
             this.gunaLabel2.AutoSize = true;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.gunaLabel2.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel2.Image = global::HealthCare.Properties.Resources._0NxcDA1;
             this.gunaLabel2.Location = new System.Drawing.Point(25, 240);
             this.gunaLabel2.Name = "gunaLabel2";
             this.gunaLabel2.Size = new System.Drawing.Size(170, 25);
             this.gunaLabel2.TabIndex = 8;
             this.gunaLabel2.Text = "Enter Your G-mail";
+            this.gunaLabel2.Click += new System.EventHandler(this.gunaLabel2_Click);
             // 
             // gunaLabel1
             // 
@@ -265,24 +259,38 @@
             this.gunaLabel4.TabIndex = 4;
             this.gunaLabel4.Text = "Forgotten";
             // 
+            // forgottenPassword
+            // 
+            this.forgottenPassword.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_BLEND;
+            this.forgottenPassword.Interval = 800;
+            this.forgottenPassword.TargetControl = this;
+            // 
+            // gunaGradientPanel1
+            // 
+            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
+            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.Maroon;
+            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.White;
+            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.OrangeRed;
+            this.gunaGradientPanel1.Location = new System.Drawing.Point(465, 125);
+            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
+            this.gunaGradientPanel1.Size = new System.Drawing.Size(170, 6);
+            this.gunaGradientPanel1.TabIndex = 12;
+            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
+            // 
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(455, 190);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(520, 190);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(643, 364);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(578, 324);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 6;
             this.gunaPictureBox1.TabStop = false;
-            // 
-            // forgottenPassword
-            // 
-            this.forgottenPassword.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_BLEND;
-            this.forgottenPassword.Interval = 800;
-            this.forgottenPassword.TargetControl = this;
             // 
             // frmForgetPassword
             // 

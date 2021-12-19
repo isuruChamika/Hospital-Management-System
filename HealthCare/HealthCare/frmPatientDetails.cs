@@ -56,5 +56,10 @@ namespace HealthCare
         {
 
         }
+
+        private void gunaGroupBox4_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

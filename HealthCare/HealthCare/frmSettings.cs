@@ -49,5 +49,15 @@ namespace HealthCare
             //pbIcon.Image = Properties.Resources.password;
             SMDChildFormOpen.OpenWithActiveForm(new frmSettingsLogin(), pnlDctSettingsChild, Color.FromArgb(42, 49, 59));
         }
+
+        private void pbIcon_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void gunaPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

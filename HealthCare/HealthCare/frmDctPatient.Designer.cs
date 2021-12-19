@@ -62,7 +62,7 @@
             // 
             this.pnlTheme.AutoScroll = true;
             this.pnlTheme.BackColor = System.Drawing.Color.Transparent;
-            this.pnlTheme.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTheme.BackgroundImage")));
+            this.pnlTheme.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.gunaPictureBox1);
             this.pnlTheme.Controls.Add(this.lblPatient);
@@ -79,9 +79,9 @@
             // 
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(37, 4);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(936, 12);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(111, 105);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(234, 155);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 3;
             this.gunaPictureBox1.TabStop = false;
@@ -92,7 +92,7 @@
             this.lblPatient.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblPatient.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
             this.lblPatient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.lblPatient.Location = new System.Drawing.Point(148, 17);
+            this.lblPatient.Location = new System.Drawing.Point(54, 19);
             this.lblPatient.Name = "lblPatient";
             this.lblPatient.Size = new System.Drawing.Size(257, 78);
             this.lblPatient.TabIndex = 2;

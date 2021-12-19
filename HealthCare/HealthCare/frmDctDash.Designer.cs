@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDctDash));
             this.gunaElipse1 = new Guna.UI.WinForms.GunaElipse(this.components);
             this.pnlThemeDash = new Guna.UI.WinForms.GunaPanel();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
@@ -59,7 +58,7 @@
             // 
             this.pnlThemeDash.AutoScroll = true;
             this.pnlThemeDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
-            this.pnlThemeDash.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlThemeDash.BackgroundImage")));
+            this.pnlThemeDash.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlThemeDash.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlThemeDash.Controls.Add(this.gunaShadowPanel2);
             this.pnlThemeDash.Controls.Add(this.gunaShadowPanel1);
@@ -75,7 +74,7 @@
             // 
             this.gunaShadowPanel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel2.Controls.Add(this.gunaLabel9);
             this.gunaShadowPanel2.Controls.Add(this.lblOutpatient);
             this.gunaShadowPanel2.Location = new System.Drawing.Point(854, 8);
@@ -92,7 +91,7 @@
             this.gunaLabel9.AutoSize = true;
             this.gunaLabel9.Font = new System.Drawing.Font("Nirmala UI", 18F, System.Drawing.FontStyle.Bold);
             this.gunaLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.gunaLabel9.Location = new System.Drawing.Point(32, 114);
+            this.gunaLabel9.Location = new System.Drawing.Point(13, 114);
             this.gunaLabel9.Name = "gunaLabel9";
             this.gunaLabel9.Size = new System.Drawing.Size(194, 41);
             this.gunaLabel9.TabIndex = 1;
@@ -113,7 +112,7 @@
             // 
             this.gunaShadowPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.Controls.Add(this.gunaLabel8);
             this.gunaShadowPanel1.Controls.Add(this.lblInpatient);
             this.gunaShadowPanel1.Location = new System.Drawing.Point(626, 8);

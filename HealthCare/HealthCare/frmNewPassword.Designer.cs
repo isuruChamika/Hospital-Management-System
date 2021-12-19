@@ -67,6 +67,7 @@
             // pnlDrag
             // 
             this.pnlDrag.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.pnlDrag.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlDrag.Controls.Add(this.gunaPictureBox2);
             this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlDrag.Location = new System.Drawing.Point(0, 0);
@@ -79,7 +80,7 @@
             this.gunaPictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox2.BaseColor = System.Drawing.Color.Maroon;
             this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
-            this.gunaPictureBox2.Location = new System.Drawing.Point(169, 16);
+            this.gunaPictureBox2.Location = new System.Drawing.Point(171, 0);
             this.gunaPictureBox2.Name = "gunaPictureBox2";
             this.gunaPictureBox2.Size = new System.Drawing.Size(701, 332);
             this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -352,6 +353,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA;
             this.ClientSize = new System.Drawing.Size(1018, 713);
             this.Controls.Add(this.gunaGradientPanel1);
             this.Controls.Add(this.pnlDrag);

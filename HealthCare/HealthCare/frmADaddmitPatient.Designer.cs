@@ -339,11 +339,12 @@
             // gunaPictureBox1
             // 
             this.gunaPictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(22, 33);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(1083, 19);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(111, 105);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(253, 227);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 9;
             this.gunaPictureBox1.TabStop = false;
@@ -352,10 +353,11 @@
             // 
             this.lblPatient.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lblPatient.AutoSize = true;
+            this.lblPatient.BackColor = System.Drawing.Color.Transparent;
             this.lblPatient.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblPatient.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
             this.lblPatient.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.lblPatient.Location = new System.Drawing.Point(133, 46);
+            this.lblPatient.Location = new System.Drawing.Point(22, 19);
             this.lblPatient.Name = "lblPatient";
             this.lblPatient.Size = new System.Drawing.Size(445, 78);
             this.lblPatient.TabIndex = 8;

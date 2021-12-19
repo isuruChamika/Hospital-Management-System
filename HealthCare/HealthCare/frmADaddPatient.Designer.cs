@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmADaddPatient));
             this.elips = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
+            this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.pnlTheme = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
@@ -87,8 +89,6 @@
             this.txtMiddleName = new Guna.UI.WinForms.GunaTextBox();
             this.txtReson = new Guna.UI.WinForms.GunaTextBox();
             this.txtFirstname = new Guna.UI.WinForms.GunaTextBox();
-            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
-            this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.pnlTheme.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
@@ -98,6 +98,16 @@
             // 
             this.elips.Radius = 0;
             this.elips.TargetControl = this;
+            // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
+            // 
+            // Animate
+            // 
+            this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
+            this.Animate.Interval = 800;
+            this.Animate.TargetControl = this;
             // 
             // pnlTheme
             // 
@@ -117,11 +127,12 @@
             // gunaLabel18
             // 
             this.gunaLabel18.AutoSize = true;
-            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            this.gunaLabel18.Location = new System.Drawing.Point(30, 27);
+            this.gunaLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaLabel18.Location = new System.Drawing.Point(30, 24);
             this.gunaLabel18.Name = "gunaLabel18";
-            this.gunaLabel18.Size = new System.Drawing.Size(328, 67);
+            this.gunaLabel18.Size = new System.Drawing.Size(388, 78);
             this.gunaLabel18.TabIndex = 1;
             this.gunaLabel18.Text = "Add Patients";
             // 
@@ -926,16 +937,6 @@
             this.txtFirstname.Size = new System.Drawing.Size(237, 39);
             this.txtFirstname.TabIndex = 0;
             this.txtFirstname.TextChanged += new System.EventHandler(this.txtFirstname_TextChanged);
-            // 
-            // tmrDateTime
-            // 
-            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
-            // 
-            // Animate
-            // 
-            this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
-            this.Animate.Interval = 800;
-            this.Animate.TargetControl = this;
             // 
             // frmADaddPatient
             // 

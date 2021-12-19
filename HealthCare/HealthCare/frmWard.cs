@@ -117,5 +117,14 @@ namespace HealthCare
         {
             SMDChildFormOpen.Open(new frmWdRoom(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+            if (HSMessageBox.Show("ARE YOU SURE TO EXIT?", "QUESTION", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            {
+                this.Hide();
+                new frmLogin().Show();
+            }
+        }
     }
 }

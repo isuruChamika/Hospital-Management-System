@@ -159,5 +159,20 @@ namespace HealthCare
             btnSettings.Checked = false;
             SMDChildFormOpen.Open(new frmLabSmplOutpatient(), pnlPhrChild, Color.FromArgb(42, 49, 59));
         }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+
+            if (HSMessageBox.Show("ARE YOU SURE TO EXIT?", "QUESTION", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            {
+                this.Hide();
+                new frmLogin().Show();
+            }
+        }
     }
 }

@@ -300,7 +300,7 @@
             this.btnSubmit.Image = null;
             this.btnSubmit.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSubmit.LineColor = System.Drawing.Color.Transparent;
-            this.btnSubmit.Location = new System.Drawing.Point(511, 410);
+            this.btnSubmit.Location = new System.Drawing.Point(489, 425);
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.btnSubmit.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -308,7 +308,7 @@
             this.btnSubmit.OnHoverImage = null;
             this.btnSubmit.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnSubmit.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            this.btnSubmit.Radius = 5;
+            this.btnSubmit.Radius = 15;
             this.btnSubmit.Size = new System.Drawing.Size(209, 82);
             this.btnSubmit.TabIndex = 4;
             this.btnSubmit.Text = "Submit";
@@ -317,9 +317,10 @@
             // 
             // gunaPictureBox1
             // 
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(865, 34);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(844, 48);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Size = new System.Drawing.Size(561, 404);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -331,6 +332,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.ClientSize = new System.Drawing.Size(1438, 531);
             this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.btnSubmit);

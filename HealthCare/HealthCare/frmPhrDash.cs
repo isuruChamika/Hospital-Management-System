@@ -78,5 +78,10 @@ namespace HealthCare
         {
 
         }
+
+        private void gunaShadowPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

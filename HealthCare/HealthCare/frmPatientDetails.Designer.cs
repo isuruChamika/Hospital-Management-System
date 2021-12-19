@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
             this.elips = new Guna.UI.WinForms.GunaElipse(this.components);
             this.pnlDrag = new Guna.UI.WinForms.GunaElipsePanel();
             this.btnClose = new Guna.UI.WinForms.GunaControlBox();
@@ -65,6 +65,10 @@
             this.lblPname = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
             this.dgvReports = new Guna.UI.WinForms.GunaDataGridView();
+            this.In_Patient_Report_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Report = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Issue_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Issue_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gunaGroupBox2 = new Guna.UI.WinForms.GunaGroupBox();
             this.dgvMedicine = new Guna.UI.WinForms.GunaDataGridView();
             this.Drug_Code = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,10 +76,6 @@
             this.Given_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Given_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
-            this.In_Patient_Report_No = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Report = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Issue_Date = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Issue_Time = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.pnlDrag.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
             this.gunaElipsePanel2.SuspendLayout();
@@ -94,6 +94,7 @@
             // pnlDrag
             // 
             this.pnlDrag.BackColor = System.Drawing.Color.Transparent;
+            this.pnlDrag.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlDrag.BaseColor = System.Drawing.Color.Transparent;
             this.pnlDrag.Controls.Add(this.btnClose);
             this.pnlDrag.Dock = System.Windows.Forms.DockStyle.Top;
@@ -124,6 +125,7 @@
             // gunaElipsePanel1
             // 
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel1.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.Controls.Add(this.gunaElipsePanel2);
             this.gunaElipsePanel1.Controls.Add(this.gunaGroupBox4);
@@ -136,7 +138,7 @@
             // gunaElipsePanel2
             // 
             this.gunaElipsePanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel2.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaElipsePanel2.Controls.Add(this.gunaPanel3);
             this.gunaElipsePanel2.Controls.Add(this.gunaPanel2);
             this.gunaElipsePanel2.Controls.Add(this.gunaPanel1);
@@ -153,10 +155,11 @@
             // 
             // gunaPanel3
             // 
-            this.gunaPanel3.BackColor = System.Drawing.SystemColors.Control;
+            this.gunaPanel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaPanel3.Controls.Add(this.gunaLabel6);
             this.gunaPanel3.Controls.Add(this.gunaLinePanel1);
             this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.gunaPanel3.ForeColor = System.Drawing.Color.White;
             this.gunaPanel3.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel3.Name = "gunaPanel3";
             this.gunaPanel3.Size = new System.Drawing.Size(415, 65);
@@ -166,7 +169,7 @@
             // 
             this.gunaLabel6.AutoSize = true;
             this.gunaLabel6.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(37)))), ((int)(((byte)(38)))));
+            this.gunaLabel6.ForeColor = System.Drawing.Color.LightGray;
             this.gunaLabel6.Location = new System.Drawing.Point(4, 15);
             this.gunaLabel6.Name = "gunaLabel6";
             this.gunaLabel6.Size = new System.Drawing.Size(176, 35);
@@ -185,7 +188,7 @@
             // 
             // gunaPanel2
             // 
-            this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 273);
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.Size = new System.Drawing.Size(417, 5);
@@ -193,7 +196,7 @@
             // 
             // gunaPanel1
             // 
-            this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.gunaPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel1.Location = new System.Drawing.Point(0, 154);
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(417, 5);
@@ -203,7 +206,7 @@
             // 
             this.gunaLabel8.AutoSize = true;
             this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel8.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel8.ForeColor = System.Drawing.Color.Silver;
             this.gunaLabel8.Location = new System.Drawing.Point(26, 305);
             this.gunaLabel8.Name = "gunaLabel8";
             this.gunaLabel8.Size = new System.Drawing.Size(101, 28);
@@ -244,7 +247,7 @@
             // 
             this.gunaLabel11.AutoSize = true;
             this.gunaLabel11.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel11.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel11.ForeColor = System.Drawing.Color.Silver;
             this.gunaLabel11.Location = new System.Drawing.Point(26, 190);
             this.gunaLabel11.Name = "gunaLabel11";
             this.gunaLabel11.Size = new System.Drawing.Size(96, 28);
@@ -255,7 +258,7 @@
             // 
             this.gunaLabel7.AutoSize = true;
             this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel7.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel7.ForeColor = System.Drawing.Color.Silver;
             this.gunaLabel7.Location = new System.Drawing.Point(26, 86);
             this.gunaLabel7.Name = "gunaLabel7";
             this.gunaLabel7.Size = new System.Drawing.Size(80, 28);
@@ -266,7 +269,7 @@
             // 
             this.gunaGroupBox4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaGroupBox4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGroupBox4.BaseColor = System.Drawing.Color.White;
+            this.gunaGroupBox4.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.gunaGroupBox4.BorderColor = System.Drawing.Color.Gainsboro;
             this.gunaGroupBox4.Controls.Add(this.dof);
             this.gunaGroupBox4.Controls.Add(this.bloodGroup);
@@ -277,7 +280,7 @@
             this.gunaGroupBox4.Controls.Add(this.gender);
             this.gunaGroupBox4.Controls.Add(this.lblPname);
             this.gunaGroupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaGroupBox4.ForeColor = System.Drawing.Color.White;
+            this.gunaGroupBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
             this.gunaGroupBox4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaGroupBox4.LineTop = 35;
             this.gunaGroupBox4.Location = new System.Drawing.Point(30, 6);
@@ -286,12 +289,13 @@
             this.gunaGroupBox4.TabIndex = 0;
             this.gunaGroupBox4.Text = "Patient Details";
             this.gunaGroupBox4.TextLocation = new System.Drawing.Point(10, 8);
+            this.gunaGroupBox4.Click += new System.EventHandler(this.gunaGroupBox4_Click);
             // 
             // dof
             // 
             this.dof.AutoSize = true;
             this.dof.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.dof.ForeColor = System.Drawing.Color.Black;
+            this.dof.ForeColor = System.Drawing.Color.Silver;
             this.dof.Location = new System.Drawing.Point(14, 178);
             this.dof.Name = "dof";
             this.dof.Size = new System.Drawing.Size(103, 28);
@@ -302,7 +306,7 @@
             // 
             this.bloodGroup.AutoSize = true;
             this.bloodGroup.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.bloodGroup.ForeColor = System.Drawing.Color.Black;
+            this.bloodGroup.ForeColor = System.Drawing.Color.Silver;
             this.bloodGroup.Location = new System.Drawing.Point(14, 137);
             this.bloodGroup.Name = "bloodGroup";
             this.bloodGroup.Size = new System.Drawing.Size(131, 28);
@@ -343,7 +347,7 @@
             // 
             this.gunaLabel1.AutoSize = true;
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.Color.Black;
+            this.gunaLabel1.ForeColor = System.Drawing.Color.Silver;
             this.gunaLabel1.Location = new System.Drawing.Point(14, 54);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(68, 28);
@@ -354,7 +358,7 @@
             // 
             this.gender.AutoSize = true;
             this.gender.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.gender.ForeColor = System.Drawing.Color.Black;
+            this.gender.ForeColor = System.Drawing.Color.Silver;
             this.gender.Location = new System.Drawing.Point(14, 96);
             this.gender.Name = "gender";
             this.gender.Size = new System.Drawing.Size(80, 28);
@@ -394,49 +398,49 @@
             this.dgvReports.AllowUserToDeleteRows = false;
             this.dgvReports.AllowUserToResizeColumns = false;
             this.dgvReports.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.dgvReports.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.dgvReports.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvReports.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvReports.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvReports.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvReports.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvReports.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvReports.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvReports.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReports.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvReports.ColumnHeadersHeight = 52;
             this.dgvReports.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.In_Patient_Report_No,
             this.Report,
             this.Issue_Date,
             this.Issue_Time});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(233)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvReports.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(233)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvReports.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvReports.EnableHeadersVisualStyles = false;
             this.dgvReports.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvReports.Location = new System.Drawing.Point(0, 30);
             this.dgvReports.Name = "dgvReports";
             this.dgvReports.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvReports.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvReports.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvReports.RowHeadersVisible = false;
             this.dgvReports.RowHeadersWidth = 51;
             this.dgvReports.RowTemplate.Height = 24;
@@ -449,7 +453,7 @@
             this.dgvReports.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvReports.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvReports.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvReports.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvReports.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvReports.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvReports.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.dgvReports.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -466,6 +470,44 @@
             this.dgvReports.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
             this.dgvReports.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.dgvReports.DataError += new System.Windows.Forms.DataGridViewDataErrorEventHandler(this.dgvInpatient_DataError);
+            // 
+            // In_Patient_Report_No
+            // 
+            this.In_Patient_Report_No.DataPropertyName = "In_Patient_Report_No";
+            this.In_Patient_Report_No.FillWeight = 94.31937F;
+            this.In_Patient_Report_No.HeaderText = "In Patient Report No";
+            this.In_Patient_Report_No.MinimumWidth = 6;
+            this.In_Patient_Report_No.Name = "In_Patient_Report_No";
+            this.In_Patient_Report_No.ReadOnly = true;
+            // 
+            // Report
+            // 
+            this.Report.DataPropertyName = "Report";
+            this.Report.FillWeight = 94.31937F;
+            this.Report.HeaderText = "Report";
+            this.Report.MinimumWidth = 6;
+            this.Report.Name = "Report";
+            this.Report.ReadOnly = true;
+            this.Report.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Report.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Issue_Date
+            // 
+            this.Issue_Date.DataPropertyName = "Issue_Date";
+            this.Issue_Date.FillWeight = 94.31937F;
+            this.Issue_Date.HeaderText = "Issue Date";
+            this.Issue_Date.MinimumWidth = 6;
+            this.Issue_Date.Name = "Issue_Date";
+            this.Issue_Date.ReadOnly = true;
+            // 
+            // Issue_Time
+            // 
+            this.Issue_Time.DataPropertyName = "Issue_Time";
+            this.Issue_Time.FillWeight = 94.31937F;
+            this.Issue_Time.HeaderText = "Issue Time";
+            this.Issue_Time.MinimumWidth = 6;
+            this.Issue_Time.Name = "Issue_Time";
+            this.Issue_Time.ReadOnly = true;
             // 
             // gunaGroupBox2
             // 
@@ -490,49 +532,49 @@
             this.dgvMedicine.AllowUserToDeleteRows = false;
             this.dgvMedicine.AllowUserToResizeColumns = false;
             this.dgvMedicine.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
-            this.dgvMedicine.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(223)))), ((int)(((byte)(219)))));
+            this.dgvMedicine.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
             this.dgvMedicine.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.dgvMedicine.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvMedicine.BackgroundColor = System.Drawing.SystemColors.Control;
+            this.dgvMedicine.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvMedicine.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMedicine.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvMedicine.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMedicine.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedicine.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
             this.dgvMedicine.ColumnHeadersHeight = 52;
             this.dgvMedicine.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Drug_Code,
             this.Quantity,
             this.Given_Time,
             this.Given_Date});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(233)))), ((int)(((byte)(231)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMedicine.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(233)))), ((int)(((byte)(231)))));
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(181)))), ((int)(((byte)(189)))));
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMedicine.DefaultCellStyle = dataGridViewCellStyle15;
             this.dgvMedicine.EnableHeadersVisualStyles = false;
             this.dgvMedicine.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvMedicine.Location = new System.Drawing.Point(0, 30);
             this.dgvMedicine.Name = "dgvMedicine";
             this.dgvMedicine.ReadOnly = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMedicine.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle16.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle16.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle16.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle16.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(17)))), ((int)(((byte)(35)))));
+            dataGridViewCellStyle16.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle16.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMedicine.RowHeadersDefaultCellStyle = dataGridViewCellStyle16;
             this.dgvMedicine.RowHeadersVisible = false;
             this.dgvMedicine.RowHeadersWidth = 51;
             this.dgvMedicine.RowTemplate.Height = 24;
@@ -545,7 +587,7 @@
             this.dgvMedicine.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
             this.dgvMedicine.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.dgvMedicine.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.dgvMedicine.ThemeStyle.BackColor = System.Drawing.SystemColors.Control;
+            this.dgvMedicine.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.dgvMedicine.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(222)))), ((int)(((byte)(218)))));
             this.dgvMedicine.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.dgvMedicine.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -609,49 +651,12 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // In_Patient_Report_No
-            // 
-            this.In_Patient_Report_No.DataPropertyName = "In_Patient_Report_No";
-            this.In_Patient_Report_No.FillWeight = 94.31937F;
-            this.In_Patient_Report_No.HeaderText = "In Patient Report No";
-            this.In_Patient_Report_No.MinimumWidth = 6;
-            this.In_Patient_Report_No.Name = "In_Patient_Report_No";
-            this.In_Patient_Report_No.ReadOnly = true;
-            // 
-            // Report
-            // 
-            this.Report.DataPropertyName = "Report";
-            this.Report.FillWeight = 94.31937F;
-            this.Report.HeaderText = "Report";
-            this.Report.MinimumWidth = 6;
-            this.Report.Name = "Report";
-            this.Report.ReadOnly = true;
-            this.Report.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.Report.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // Issue_Date
-            // 
-            this.Issue_Date.DataPropertyName = "Issue_Date";
-            this.Issue_Date.FillWeight = 94.31937F;
-            this.Issue_Date.HeaderText = "Issue Date";
-            this.Issue_Date.MinimumWidth = 6;
-            this.Issue_Date.Name = "Issue_Date";
-            this.Issue_Date.ReadOnly = true;
-            // 
-            // Issue_Time
-            // 
-            this.Issue_Time.DataPropertyName = "Issue_Time";
-            this.Issue_Time.FillWeight = 94.31937F;
-            this.Issue_Time.HeaderText = "Issue Time";
-            this.Issue_Time.MinimumWidth = 6;
-            this.Issue_Time.Name = "Issue_Time";
-            this.Issue_Time.ReadOnly = true;
-            // 
             // frmPatientDetails
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gainsboro;
+            this.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.ClientSize = new System.Drawing.Size(1392, 754);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.gunaGroupBox2);

@@ -31,6 +31,8 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBilAdd));
             this.elips = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
+            this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.pnlTheme = new Guna.UI.WinForms.GunaPanel();
             this.btnClose = new Guna.UI.WinForms.GunaControlBox();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
@@ -55,8 +57,6 @@
             this.lblTime = new Guna.UI.WinForms.GunaLabel();
             this.lblDate = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
-            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
-            this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.pnlTheme.SuspendLayout();
             this.gunaGroupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -65,6 +65,16 @@
             // 
             this.elips.Radius = 0;
             this.elips.TargetControl = this;
+            // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
+            // 
+            // Animate
+            // 
+            this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
+            this.Animate.Interval = 800;
+            this.Animate.TargetControl = this;
             // 
             // pnlTheme
             // 
@@ -86,6 +96,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.AnimationHoverSpeed = 0.07F;
             this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconSize = 15F;
             this.btnClose.Location = new System.Drawing.Point(683, 0);
@@ -100,8 +111,9 @@
             // gunaLabel18
             // 
             this.gunaLabel18.AutoSize = true;
+            this.gunaLabel18.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaLabel18.Location = new System.Drawing.Point(30, 27);
             this.gunaLabel18.Name = "gunaLabel18";
             this.gunaLabel18.Size = new System.Drawing.Size(377, 67);
@@ -416,16 +428,6 @@
             this.gunaLabel14.Size = new System.Drawing.Size(55, 23);
             this.gunaLabel14.TabIndex = 1;
             this.gunaLabel14.Text = "Time:";
-            // 
-            // tmrDateTime
-            // 
-            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
-            // 
-            // Animate
-            // 
-            this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
-            this.Animate.Interval = 800;
-            this.Animate.TargetControl = this;
             // 
             // frmBilAdd
             // 

@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddmitionOfficer));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.dragPhr = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlPhr = new Guna.UI2.WinForms.Guna2Panel();
             this.pnlPhrChild = new Guna.UI.WinForms.GunaElipsePanel();
             this.pnlPhrLeft = new Guna.UI2.WinForms.Guna2Panel();
@@ -45,7 +46,6 @@
             this.btnMinimize = new Guna.UI.WinForms.GunaControlBox();
             this.btnClose = new Guna.UI.WinForms.GunaControlBox();
             this.btnMaximize = new Guna.UI.WinForms.GunaControlBox();
-            this.dragPhr = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.pnlPhr.SuspendLayout();
             this.pnlPhrLeft.SuspendLayout();
             this.pnlCmm.SuspendLayout();
@@ -58,9 +58,17 @@
             this.bunifuElipse1.ElipseRadius = 4;
             this.bunifuElipse1.TargetControl = this;
             // 
+            // dragPhr
+            // 
+            this.dragPhr.Fixed = true;
+            this.dragPhr.Horizontal = true;
+            this.dragPhr.TargetControl = this.pnlPhr;
+            this.dragPhr.Vertical = true;
+            // 
             // pnlPhr
             // 
             this.pnlPhr.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(28)))), ((int)(((byte)(32)))), ((int)(((byte)(39)))));
+            this.pnlPhr.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPhr.BackgroundImage")));
             this.pnlPhr.Controls.Add(this.pnlPhrChild);
             this.pnlPhr.Controls.Add(this.pnlPhrLeft);
             this.pnlPhr.Controls.Add(this.btnMinimize);
@@ -87,6 +95,7 @@
             // 
             // pnlPhrLeft
             // 
+            this.pnlPhrLeft.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPhrLeft.BackgroundImage")));
             this.pnlPhrLeft.Controls.Add(this.btnLogout);
             this.pnlPhrLeft.Controls.Add(this.pnlCmm);
             this.pnlPhrLeft.Controls.Add(this.pnlPhrLogo);
@@ -103,6 +112,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogout.AnimationHoverSpeed = 0.07F;
             this.btnLogout.AnimationSpeed = 0.03F;
+            this.btnLogout.BackColor = System.Drawing.Color.Transparent;
             this.btnLogout.BaseColor = System.Drawing.Color.Transparent;
             this.btnLogout.BorderColor = System.Drawing.Color.Transparent;
             this.btnLogout.CheckedBaseColor = System.Drawing.Color.Transparent;
@@ -114,11 +124,11 @@
             this.btnLogout.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnLogout.FocusedColor = System.Drawing.Color.Empty;
             this.btnLogout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.btnLogout.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnLogout.ForeColor = System.Drawing.Color.Red;
             this.btnLogout.Image = ((System.Drawing.Image)(resources.GetObject("btnLogout.Image")));
             this.btnLogout.ImageSize = new System.Drawing.Size(23, 23);
             this.btnLogout.LineColor = System.Drawing.Color.Transparent;
-            this.btnLogout.Location = new System.Drawing.Point(71, 806);
+            this.btnLogout.Location = new System.Drawing.Point(59, 751);
             this.btnLogout.Name = "btnLogout";
             this.btnLogout.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.btnLogout.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -126,7 +136,7 @@
             this.btnLogout.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnLogout.OnHoverImage")));
             this.btnLogout.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnLogout.OnPressedColor = System.Drawing.Color.Transparent;
-            this.btnLogout.Size = new System.Drawing.Size(180, 48);
+            this.btnLogout.Size = new System.Drawing.Size(205, 70);
             this.btnLogout.TabIndex = 5;
             this.btnLogout.Text = "Log Out";
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
@@ -284,6 +294,7 @@
             // 
             // pnlPhrLogo
             // 
+            this.pnlPhrLogo.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlPhrLogo.BackgroundImage")));
             this.pnlPhrLogo.Controls.Add(this.guna2PictureBox1);
             this.pnlPhrLogo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlPhrLogo.Location = new System.Drawing.Point(0, 0);
@@ -294,11 +305,12 @@
             // 
             // guna2PictureBox1
             // 
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
-            this.guna2PictureBox1.Location = new System.Drawing.Point(29, 28);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(12, 3);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(266, 250);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(292, 176);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -308,6 +320,7 @@
             this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.AnimationHoverSpeed = 0.07F;
             this.btnMinimize.AnimationSpeed = 0.03F;
+            this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
             this.btnMinimize.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MinimizeBox;
             this.btnMinimize.IconColor = System.Drawing.Color.Black;
             this.btnMinimize.IconSize = 15F;
@@ -325,6 +338,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.AnimationHoverSpeed = 0.07F;
             this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconSize = 15F;
             this.btnClose.Location = new System.Drawing.Point(1431, -1);
@@ -341,6 +355,7 @@
             this.btnMaximize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMaximize.AnimationHoverSpeed = 0.07F;
             this.btnMaximize.AnimationSpeed = 0.03F;
+            this.btnMaximize.BackColor = System.Drawing.Color.Transparent;
             this.btnMaximize.ControlBoxType = Guna.UI.WinForms.FormControlBoxType.MaximizeBox;
             this.btnMaximize.IconColor = System.Drawing.Color.Black;
             this.btnMaximize.IconSize = 15F;
@@ -352,13 +367,6 @@
             this.btnMaximize.Size = new System.Drawing.Size(59, 43);
             this.btnMaximize.TabIndex = 4;
             this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
-            // 
-            // dragPhr
-            // 
-            this.dragPhr.Fixed = true;
-            this.dragPhr.Horizontal = true;
-            this.dragPhr.TargetControl = this.pnlPhr;
-            this.dragPhr.Vertical = true;
             // 
             // frmAddmitionOfficer
             // 

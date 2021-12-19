@@ -216,6 +216,7 @@
             this.btnEdit.OnHoverImage = null;
             this.btnEdit.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnEdit.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnEdit.Radius = 15;
             this.btnEdit.Size = new System.Drawing.Size(249, 87);
             this.btnEdit.TabIndex = 2;
             this.btnEdit.Text = "Edit";
@@ -455,6 +456,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.ClientSize = new System.Drawing.Size(1677, 589);
             this.Controls.Add(this.gunaGroupBox3);
             this.Controls.Add(this.gunaGroupBox2);

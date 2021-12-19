@@ -91,6 +91,11 @@ namespace HealthCare
 
         }
 
+        private void lblPatient_Click(object sender, EventArgs e)
+        {
+
+        }
+
         private void btnDelete_Click(object sender, EventArgs e)
         {
             foreach (DataGridViewRow dgr in dgvPatient.Rows)

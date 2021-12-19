@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddOrganization));
             this.elips = new Guna.UI.WinForms.GunaElipse(this.components);
+            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
+            this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.pnlTheme = new Guna.UI.WinForms.GunaPanel();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
@@ -54,8 +57,6 @@
             this.txtOrganixationName = new Guna.UI.WinForms.GunaTextBox();
             this.txtOrgAddress = new Guna.UI.WinForms.GunaTextBox();
             this.txtRegisterName = new Guna.UI.WinForms.GunaTextBox();
-            this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
-            this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
             this.pnlTheme.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -65,10 +66,21 @@
             this.elips.Radius = 0;
             this.elips.TargetControl = this;
             // 
+            // tmrDateTime
+            // 
+            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
+            // 
+            // Animate
+            // 
+            this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
+            this.Animate.Interval = 800;
+            this.Animate.TargetControl = this;
+            // 
             // pnlTheme
             // 
             this.pnlTheme.AutoScroll = true;
             this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.pnlTheme.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlTheme.BackgroundImage")));
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.gunaLabel18);
             this.pnlTheme.Controls.Add(this.gunaGroupBox1);
@@ -81,11 +93,12 @@
             // gunaLabel18
             // 
             this.gunaLabel18.AutoSize = true;
-            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.gunaLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaLabel18.Location = new System.Drawing.Point(30, 27);
             this.gunaLabel18.Name = "gunaLabel18";
-            this.gunaLabel18.Size = new System.Drawing.Size(445, 67);
+            this.gunaLabel18.Size = new System.Drawing.Size(526, 78);
             this.gunaLabel18.TabIndex = 1;
             this.gunaLabel18.Text = "Add Organization";
             // 
@@ -430,16 +443,6 @@
             this.txtRegisterName.Size = new System.Drawing.Size(237, 39);
             this.txtRegisterName.TabIndex = 0;
             this.txtRegisterName.TextChanged += new System.EventHandler(this.txtFirstname_TextChanged);
-            // 
-            // tmrDateTime
-            // 
-            this.tmrDateTime.Tick += new System.EventHandler(this.tmrDateTime_Tick);
-            // 
-            // Animate
-            // 
-            this.Animate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_HOR_POSITIVE;
-            this.Animate.Interval = 800;
-            this.Animate.TargetControl = this;
             // 
             // frmAddOrganization
             // 

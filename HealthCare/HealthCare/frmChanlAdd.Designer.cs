@@ -75,6 +75,7 @@
             // 
             this.pnlTheme.AutoScroll = true;
             this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.pnlTheme.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -90,6 +91,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.AnimationHoverSpeed = 0.07F;
             this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconSize = 15F;
             this.btnClose.Location = new System.Drawing.Point(814, 0);
@@ -104,11 +106,12 @@
             // gunaLabel18
             // 
             this.gunaLabel18.AutoSize = true;
-            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            this.gunaLabel18.Location = new System.Drawing.Point(30, 27);
+            this.gunaLabel18.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaLabel18.Location = new System.Drawing.Point(31, 52);
             this.gunaLabel18.Name = "gunaLabel18";
-            this.gunaLabel18.Size = new System.Drawing.Size(388, 67);
+            this.gunaLabel18.Size = new System.Drawing.Size(457, 78);
             this.gunaLabel18.TabIndex = 1;
             this.gunaLabel18.Text = "Add Customers";
             // 
@@ -148,9 +151,9 @@
             this.gunaGroupBox1.ForeColor = System.Drawing.Color.White;
             this.gunaGroupBox1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaGroupBox1.LineTop = 40;
-            this.gunaGroupBox1.Location = new System.Drawing.Point(43, 335);
+            this.gunaGroupBox1.Location = new System.Drawing.Point(43, 164);
             this.gunaGroupBox1.Name = "gunaGroupBox1";
-            this.gunaGroupBox1.Size = new System.Drawing.Size(800, 539);
+            this.gunaGroupBox1.Size = new System.Drawing.Size(800, 710);
             this.gunaGroupBox1.TabIndex = 0;
             this.gunaGroupBox1.Text = "Add Customers";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
@@ -174,7 +177,7 @@
             this.btnPSave.Image = null;
             this.btnPSave.ImageSize = new System.Drawing.Size(20, 20);
             this.btnPSave.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnPSave.Location = new System.Drawing.Point(609, 443);
+            this.btnPSave.Location = new System.Drawing.Point(275, 598);
             this.btnPSave.Name = "btnPSave";
             this.btnPSave.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.btnPSave.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -405,11 +408,11 @@
             this.txtHsptlFee.FocusedForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtHsptlFee.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtHsptlFee.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtHsptlFee.Location = new System.Drawing.Point(368, 281);
+            this.txtHsptlFee.Location = new System.Drawing.Point(372, 280);
             this.txtHsptlFee.Name = "txtHsptlFee";
             this.txtHsptlFee.PasswordChar = '\0';
             this.txtHsptlFee.SelectedText = "";
-            this.txtHsptlFee.Size = new System.Drawing.Size(280, 39);
+            this.txtHsptlFee.Size = new System.Drawing.Size(322, 39);
             this.txtHsptlFee.TabIndex = 0;
             this.txtHsptlFee.TextChanged += new System.EventHandler(this.txtHsptlFee_TextChanged);
             // 
@@ -440,7 +443,7 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold);
             this.gunaLabel3.ForeColor = System.Drawing.Color.DimGray;
-            this.gunaLabel3.Location = new System.Drawing.Point(428, 71);
+            this.gunaLabel3.Location = new System.Drawing.Point(371, 71);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(119, 23);
             this.gunaLabel3.TabIndex = 1;
@@ -467,11 +470,11 @@
             this.txtPatientName.FocusedForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.txtPatientName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtPatientName.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.txtPatientName.Location = new System.Drawing.Point(432, 97);
+            this.txtPatientName.Location = new System.Drawing.Point(368, 97);
             this.txtPatientName.Name = "txtPatientName";
             this.txtPatientName.PasswordChar = '\0';
             this.txtPatientName.SelectedText = "";
-            this.txtPatientName.Size = new System.Drawing.Size(332, 39);
+            this.txtPatientName.Size = new System.Drawing.Size(326, 39);
             this.txtPatientName.TabIndex = 0;
             this.txtPatientName.TextChanged += new System.EventHandler(this.txtSurname_TextChanged);
             // 
@@ -507,7 +510,7 @@
             this.txtApNumber.Name = "txtApNumber";
             this.txtApNumber.PasswordChar = '\0';
             this.txtApNumber.SelectedText = "";
-            this.txtApNumber.Size = new System.Drawing.Size(374, 39);
+            this.txtApNumber.Size = new System.Drawing.Size(277, 39);
             this.txtApNumber.TabIndex = 0;
             this.txtApNumber.TextChanged += new System.EventHandler(this.txtApNumber_TextChanged);
             // 

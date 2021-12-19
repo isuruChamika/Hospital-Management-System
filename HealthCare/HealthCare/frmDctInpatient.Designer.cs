@@ -69,7 +69,7 @@
             // 
             this.gunaPanel1.AutoScroll = true;
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
-            this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
+            this.gunaPanel1.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel1.Controls.Add(this.gunaPictureBox1);
             this.gunaPanel1.Controls.Add(this.lblGuardians);
@@ -84,11 +84,12 @@
             // 
             // gunaPictureBox1
             // 
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(36, 6);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(893, 12);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(111, 105);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(261, 155);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 5;
             this.gunaPictureBox1.TabStop = false;
@@ -96,10 +97,11 @@
             // lblGuardians
             // 
             this.lblGuardians.AutoSize = true;
+            this.lblGuardians.BackColor = System.Drawing.Color.Transparent;
             this.lblGuardians.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblGuardians.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
             this.lblGuardians.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.lblGuardians.Location = new System.Drawing.Point(153, 14);
+            this.lblGuardians.Location = new System.Drawing.Point(27, 9);
             this.lblGuardians.Name = "lblGuardians";
             this.lblGuardians.Size = new System.Drawing.Size(328, 78);
             this.lblGuardians.TabIndex = 4;

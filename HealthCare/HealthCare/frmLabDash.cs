@@ -76,5 +76,10 @@ namespace HealthCare
         {
 
         }
+
+        private void lblInpatient_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -96,5 +96,10 @@ namespace HealthCare
             btnYes.Region = Region.FromHrgn(CreateRoundRectRgn(0,0,btnYes.Width,btnYes.Height,21,21));
             btnNo.Region = Region.FromHrgn(CreateRoundRectRgn(0, 0, btnNo.Width, btnNo.Height, 21, 21));
         }
+
+        private void pnlDrag_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

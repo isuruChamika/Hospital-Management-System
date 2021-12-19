@@ -34,17 +34,17 @@
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.pnlDctSettingsChild = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaPanel2 = new Guna.UI.WinForms.GunaPanel();
-            this.pbIcon = new Guna.UI.WinForms.GunaPictureBox();
-            this.lblSubSetings = new Guna.UI.WinForms.GunaLabel();
-            this.lblSetings = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel3 = new Guna.UI.WinForms.GunaPanel();
+            this.lblSubSetings = new Guna.UI.WinForms.GunaLabel();
+            this.pbIcon = new Guna.UI.WinForms.GunaPictureBox();
+            this.lblSetings = new Guna.UI.WinForms.GunaLabel();
             this.btnAccount = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnContactUs = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnStngLogin = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaPanel1.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.gunaPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).BeginInit();
             this.SuspendLayout();
             // 
             // elips
@@ -56,7 +56,7 @@
             // 
             this.gunaPanel1.AutoScroll = true;
             this.gunaPanel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
-            this.gunaPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaPanel1.BackgroundImage")));
+            this.gunaPanel1.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.gunaPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.gunaPanel1.Controls.Add(this.pnlDctSettingsChild);
             this.gunaPanel1.Controls.Add(this.gunaPanel2);
@@ -81,39 +81,56 @@
             // 
             // gunaPanel2
             // 
-            this.gunaPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
-            this.gunaPanel2.Controls.Add(this.pbIcon);
-            this.gunaPanel2.Controls.Add(this.lblSubSetings);
-            this.gunaPanel2.Controls.Add(this.lblSetings);
+            this.gunaPanel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaPanel2.Controls.Add(this.gunaPanel3);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(1330, 198);
+            this.gunaPanel2.Size = new System.Drawing.Size(1330, 193);
             this.gunaPanel2.TabIndex = 0;
+            this.gunaPanel2.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel2_Paint);
+            // 
+            // gunaPanel3
+            // 
+            this.gunaPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaPanel3.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
+            this.gunaPanel3.Controls.Add(this.lblSubSetings);
+            this.gunaPanel3.Controls.Add(this.pbIcon);
+            this.gunaPanel3.Controls.Add(this.lblSetings);
+            this.gunaPanel3.Controls.Add(this.btnAccount);
+            this.gunaPanel3.Controls.Add(this.btnContactUs);
+            this.gunaPanel3.Controls.Add(this.btnStngLogin);
+            this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gunaPanel3.Location = new System.Drawing.Point(0, 76);
+            this.gunaPanel3.Name = "gunaPanel3";
+            this.gunaPanel3.Size = new System.Drawing.Size(1330, 117);
+            this.gunaPanel3.TabIndex = 0;
+            // 
+            // lblSubSetings
+            // 
+            this.lblSubSetings.AutoSize = true;
+            this.lblSubSetings.BackColor = System.Drawing.Color.Transparent;
+            this.lblSubSetings.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
+            this.lblSubSetings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.lblSubSetings.Location = new System.Drawing.Point(274, 0);
+            this.lblSubSetings.Name = "lblSubSetings";
+            this.lblSubSetings.Size = new System.Drawing.Size(157, 78);
+            this.lblSubSetings.TabIndex = 2;
+            this.lblSubSetings.Text = "User";
             // 
             // pbIcon
             // 
             this.pbIcon.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pbIcon.BackColor = System.Drawing.Color.Transparent;
             this.pbIcon.BaseColor = System.Drawing.Color.Transparent;
-            this.pbIcon.Location = new System.Drawing.Point(93, 32);
+            this.pbIcon.Image = ((System.Drawing.Image)(resources.GetObject("pbIcon.Image")));
+            this.pbIcon.Location = new System.Drawing.Point(1170, 15);
             this.pbIcon.Name = "pbIcon";
-            this.pbIcon.Size = new System.Drawing.Size(99, 85);
+            this.pbIcon.Size = new System.Drawing.Size(99, 99);
             this.pbIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbIcon.TabIndex = 3;
             this.pbIcon.TabStop = false;
-            // 
-            // lblSubSetings
-            // 
-            this.lblSubSetings.AutoSize = true;
-            this.lblSubSetings.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
-            this.lblSubSetings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(80)))), ((int)(((byte)(119)))));
-            this.lblSubSetings.Location = new System.Drawing.Point(409, 39);
-            this.lblSubSetings.Name = "lblSubSetings";
-            this.lblSubSetings.Size = new System.Drawing.Size(157, 78);
-            this.lblSubSetings.TabIndex = 2;
-            this.lblSubSetings.Text = "User";
+            this.pbIcon.Click += new System.EventHandler(this.pbIcon_Click);
             // 
             // lblSetings
             // 
@@ -121,22 +138,11 @@
             this.lblSetings.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.lblSetings.Font = new System.Drawing.Font("Segoe UI", 35F, System.Drawing.FontStyle.Bold);
             this.lblSetings.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
-            this.lblSetings.Location = new System.Drawing.Point(198, 39);
+            this.lblSetings.Location = new System.Drawing.Point(24, 0);
             this.lblSetings.Name = "lblSetings";
             this.lblSetings.Size = new System.Drawing.Size(260, 78);
             this.lblSetings.TabIndex = 1;
             this.lblSetings.Text = "Settings";
-            // 
-            // gunaPanel3
-            // 
-            this.gunaPanel3.Controls.Add(this.btnAccount);
-            this.gunaPanel3.Controls.Add(this.btnContactUs);
-            this.gunaPanel3.Controls.Add(this.btnStngLogin);
-            this.gunaPanel3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaPanel3.Location = new System.Drawing.Point(0, 81);
-            this.gunaPanel3.Name = "gunaPanel3";
-            this.gunaPanel3.Size = new System.Drawing.Size(1330, 117);
-            this.gunaPanel3.TabIndex = 0;
             // 
             // btnAccount
             // 
@@ -259,9 +265,9 @@
             this.Load += new System.EventHandler(this.frmDctSettings_Load);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel2.ResumeLayout(false);
-            this.gunaPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.gunaPanel3.ResumeLayout(false);
+            this.gunaPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -270,14 +276,14 @@
 
         private Bunifu.Framework.UI.BunifuElipse elips;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
+        private Guna.UI.WinForms.GunaShadowPanel pnlDctSettingsChild;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
-        private Guna.UI.WinForms.GunaAdvenceButton btnStngLogin;
-        private Guna.UI.WinForms.GunaAdvenceButton btnAccount;
-        private Guna.UI.WinForms.GunaAdvenceButton btnContactUs;
-        private Guna.UI.WinForms.GunaShadowPanel pnlDctSettingsChild;
-        private Guna.UI.WinForms.GunaLabel lblSetings;
         private Guna.UI.WinForms.GunaLabel lblSubSetings;
         private Guna.UI.WinForms.GunaPictureBox pbIcon;
+        private Guna.UI.WinForms.GunaLabel lblSetings;
+        private Guna.UI.WinForms.GunaAdvenceButton btnAccount;
+        private Guna.UI.WinForms.GunaAdvenceButton btnContactUs;
+        private Guna.UI.WinForms.GunaAdvenceButton btnStngLogin;
     }
 }

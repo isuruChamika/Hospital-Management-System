@@ -29,12 +29,9 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAddOutPatients));
             this.elips = new Guna.UI.WinForms.GunaElipse(this.components);
             this.drag = new Guna.UI.WinForms.GunaDragControl(this.components);
-            this.pbTheme = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             this.frmChngAnimate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.lblReason = new Guna.UI.WinForms.GunaLabel();
             this.lblAge = new Guna.UI.WinForms.GunaLabel();
             this.lblTPNumber = new Guna.UI.WinForms.GunaLabel();
@@ -43,18 +40,18 @@
             this.gunaLabel5 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
             this.txtReason = new Guna.UI.WinForms.GunaTextBox();
             this.txtAge = new Guna.UI.WinForms.GunaTextBox();
-            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
             this.txtGuardianTP = new Guna.UI.WinForms.GunaTextBox();
             this.txtGuardianNic = new Guna.UI.WinForms.GunaTextBox();
             this.txtPatientName = new Guna.UI.WinForms.GunaTextBox();
             this.btnSave = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnCancel = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
+            this.gunaLabel1 = new Guna.UI.WinForms.GunaLabel();
+            this.pbTheme = new Guna.UI.WinForms.GunaTransfarantPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbTheme)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // elips
@@ -66,36 +63,11 @@
             // 
             this.drag.TargetControl = this.pbTheme;
             // 
-            // pbTheme
-            // 
-            this.pbTheme.BackColor = System.Drawing.Color.Transparent;
-            this.pbTheme.BaseColor = System.Drawing.Color.Black;
-            this.pbTheme.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbTheme.Image = ((System.Drawing.Image)(resources.GetObject("pbTheme.Image")));
-            this.pbTheme.Location = new System.Drawing.Point(0, 0);
-            this.pbTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.pbTheme.Name = "pbTheme";
-            this.pbTheme.Size = new System.Drawing.Size(645, 936);
-            this.pbTheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbTheme.TabIndex = 5;
-            this.pbTheme.TabStop = false;
-            // 
             // frmChngAnimate
             // 
             this.frmChngAnimate.AnimationType = Guna.UI.WinForms.GunaAnimateWindow.AnimateWindowType.AW_CENTER;
             this.frmChngAnimate.Interval = 600;
             this.frmChngAnimate.TargetControl = this;
-            // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel7.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel7.Location = new System.Drawing.Point(37, 243);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(249, 114);
-            this.gunaLabel7.TabIndex = 11;
-            this.gunaLabel7.Text = "  Add New \r\n       Patient";
             // 
             // lblReason
             // 
@@ -152,7 +124,7 @@
             this.gunaLabel5.AutoSize = true;
             this.gunaLabel5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.gunaLabel5.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel5.Location = new System.Drawing.Point(42, 597);
+            this.gunaLabel5.Location = new System.Drawing.Point(42, 534);
             this.gunaLabel5.Name = "gunaLabel5";
             this.gunaLabel5.Size = new System.Drawing.Size(76, 25);
             this.gunaLabel5.TabIndex = 8;
@@ -163,7 +135,7 @@
             this.gunaLabel4.AutoSize = true;
             this.gunaLabel4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.gunaLabel4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel4.Location = new System.Drawing.Point(340, 494);
+            this.gunaLabel4.Location = new System.Drawing.Point(342, 427);
             this.gunaLabel4.Name = "gunaLabel4";
             this.gunaLabel4.Size = new System.Drawing.Size(47, 25);
             this.gunaLabel4.TabIndex = 8;
@@ -174,22 +146,11 @@
             this.gunaLabel3.AutoSize = true;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
             this.gunaLabel3.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel3.Location = new System.Drawing.Point(24, 494);
+            this.gunaLabel3.Location = new System.Drawing.Point(42, 427);
             this.gunaLabel3.Name = "gunaLabel3";
             this.gunaLabel3.Size = new System.Drawing.Size(160, 25);
             this.gunaLabel3.TabIndex = 8;
             this.gunaLabel3.Text = "Guardian TP No.";
-            // 
-            // gunaLabel2
-            // 
-            this.gunaLabel2.AutoSize = true;
-            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel2.Location = new System.Drawing.Point(339, 385);
-            this.gunaLabel2.Name = "gunaLabel2";
-            this.gunaLabel2.Size = new System.Drawing.Size(133, 25);
-            this.gunaLabel2.TabIndex = 8;
-            this.gunaLabel2.Text = "Guardian NIC";
             // 
             // txtReason
             // 
@@ -202,14 +163,14 @@
             this.txtReason.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtReason.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtReason.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtReason.Location = new System.Drawing.Point(29, 624);
+            this.txtReason.Location = new System.Drawing.Point(47, 561);
             this.txtReason.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtReason.Multiline = true;
             this.txtReason.Name = "txtReason";
             this.txtReason.PasswordChar = '\0';
-            this.txtReason.Radius = 16;
+            this.txtReason.Radius = 2;
             this.txtReason.SelectedText = "";
-            this.txtReason.Size = new System.Drawing.Size(443, 121);
+            this.txtReason.Size = new System.Drawing.Size(558, 121);
             this.txtReason.TabIndex = 7;
             this.txtReason.UseSystemPasswordChar = true;
             this.txtReason.TextChanged += new System.EventHandler(this.txtReason_TextChanged);
@@ -225,26 +186,15 @@
             this.txtAge.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtAge.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtAge.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtAge.Location = new System.Drawing.Point(344, 527);
+            this.txtAge.Location = new System.Drawing.Point(324, 454);
             this.txtAge.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAge.Name = "txtAge";
             this.txtAge.PasswordChar = '\0';
-            this.txtAge.Radius = 16;
+            this.txtAge.Radius = 2;
             this.txtAge.SelectedText = "";
             this.txtAge.Size = new System.Drawing.Size(281, 44);
             this.txtAge.TabIndex = 7;
             this.txtAge.TextChanged += new System.EventHandler(this.txtAge_TextChanged);
-            // 
-            // gunaLabel1
-            // 
-            this.gunaLabel1.AutoSize = true;
-            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.gunaLabel1.Location = new System.Drawing.Point(24, 385);
-            this.gunaLabel1.Name = "gunaLabel1";
-            this.gunaLabel1.Size = new System.Drawing.Size(132, 25);
-            this.gunaLabel1.TabIndex = 8;
-            this.gunaLabel1.Text = "Patient Name";
             // 
             // txtGuardianTP
             // 
@@ -257,13 +207,13 @@
             this.txtGuardianTP.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtGuardianTP.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtGuardianTP.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtGuardianTP.Location = new System.Drawing.Point(28, 527);
+            this.txtGuardianTP.Location = new System.Drawing.Point(47, 454);
             this.txtGuardianTP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGuardianTP.Name = "txtGuardianTP";
             this.txtGuardianTP.PasswordChar = '\0';
-            this.txtGuardianTP.Radius = 16;
+            this.txtGuardianTP.Radius = 2;
             this.txtGuardianTP.SelectedText = "";
-            this.txtGuardianTP.Size = new System.Drawing.Size(284, 44);
+            this.txtGuardianTP.Size = new System.Drawing.Size(261, 44);
             this.txtGuardianTP.TabIndex = 7;
             this.txtGuardianTP.TextChanged += new System.EventHandler(this.txtGuardianTP_TextChanged);
             // 
@@ -278,13 +228,13 @@
             this.txtGuardianNic.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtGuardianNic.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtGuardianNic.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtGuardianNic.Location = new System.Drawing.Point(341, 418);
+            this.txtGuardianNic.Location = new System.Drawing.Point(324, 339);
             this.txtGuardianNic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtGuardianNic.Name = "txtGuardianNic";
             this.txtGuardianNic.PasswordChar = '\0';
-            this.txtGuardianNic.Radius = 16;
+            this.txtGuardianNic.Radius = 2;
             this.txtGuardianNic.SelectedText = "";
-            this.txtGuardianNic.Size = new System.Drawing.Size(284, 44);
+            this.txtGuardianNic.Size = new System.Drawing.Size(281, 44);
             this.txtGuardianNic.TabIndex = 7;
             this.txtGuardianNic.TextChanged += new System.EventHandler(this.txtGuardianNic_TextChanged);
             // 
@@ -299,13 +249,13 @@
             this.txtPatientName.FocusedForeColor = System.Drawing.SystemColors.GrayText;
             this.txtPatientName.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.txtPatientName.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.txtPatientName.Location = new System.Drawing.Point(28, 418);
+            this.txtPatientName.Location = new System.Drawing.Point(47, 339);
             this.txtPatientName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPatientName.Name = "txtPatientName";
             this.txtPatientName.PasswordChar = '\0';
-            this.txtPatientName.Radius = 16;
+            this.txtPatientName.Radius = 2;
             this.txtPatientName.SelectedText = "";
-            this.txtPatientName.Size = new System.Drawing.Size(284, 44);
+            this.txtPatientName.Size = new System.Drawing.Size(261, 44);
             this.txtPatientName.TabIndex = 7;
             this.txtPatientName.TextChanged += new System.EventHandler(this.txtPatientName_TextChanged);
             // 
@@ -315,31 +265,31 @@
             this.btnSave.AnimationHoverSpeed = 0.07F;
             this.btnSave.AnimationSpeed = 0.03F;
             this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BaseColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnSave.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnSave.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.btnSave.BorderSize = 2;
             this.btnSave.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnSave.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnSave.CheckedBorderColor = System.Drawing.Color.White;
             this.btnSave.CheckedForeColor = System.Drawing.Color.White;
             this.btnSave.CheckedImage = null;
             this.btnSave.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnSave.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnSave.FocusedColor = System.Drawing.Color.Empty;
-            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnSave.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.Image = null;
             this.btnSave.ImageSize = new System.Drawing.Size(20, 20);
             this.btnSave.LineColor = System.Drawing.Color.Transparent;
-            this.btnSave.Location = new System.Drawing.Point(47, 793);
+            this.btnSave.Location = new System.Drawing.Point(87, 743);
             this.btnSave.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSave.Name = "btnSave";
             this.btnSave.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
             this.btnSave.OnHoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
-            this.btnSave.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnSave.OnHoverForeColor = System.Drawing.Color.Transparent;
             this.btnSave.OnHoverImage = null;
             this.btnSave.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnSave.OnPressedColor = System.Drawing.Color.Black;
-            this.btnSave.Radius = 25;
+            this.btnSave.Radius = 30;
             this.btnSave.Size = new System.Drawing.Size(199, 78);
             this.btnSave.TabIndex = 4;
             this.btnSave.Text = "Save";
@@ -352,22 +302,22 @@
             this.btnCancel.AnimationHoverSpeed = 0.07F;
             this.btnCancel.AnimationSpeed = 0.03F;
             this.btnCancel.BackColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BaseColor = System.Drawing.Color.Transparent;
-            this.btnCancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnCancel.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnCancel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.btnCancel.BorderSize = 2;
             this.btnCancel.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnCancel.CheckedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.btnCancel.CheckedBorderColor = System.Drawing.Color.White;
             this.btnCancel.CheckedForeColor = System.Drawing.Color.White;
             this.btnCancel.CheckedImage = null;
             this.btnCancel.CheckedLineColor = System.Drawing.Color.DimGray;
             this.btnCancel.DialogResult = System.Windows.Forms.DialogResult.None;
             this.btnCancel.FocusedColor = System.Drawing.Color.Empty;
-            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnCancel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnCancel.Font = new System.Drawing.Font("Segoe UI", 15F);
+            this.btnCancel.ForeColor = System.Drawing.Color.White;
             this.btnCancel.Image = null;
             this.btnCancel.ImageSize = new System.Drawing.Size(20, 20);
             this.btnCancel.LineColor = System.Drawing.Color.Transparent;
-            this.btnCancel.Location = new System.Drawing.Point(363, 793);
+            this.btnCancel.Location = new System.Drawing.Point(345, 743);
             this.btnCancel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
@@ -376,24 +326,60 @@
             this.btnCancel.OnHoverImage = null;
             this.btnCancel.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnCancel.OnPressedColor = System.Drawing.Color.Black;
-            this.btnCancel.Radius = 25;
+            this.btnCancel.Radius = 30;
             this.btnCancel.Size = new System.Drawing.Size(199, 78);
             this.btnCancel.TabIndex = 4;
             this.btnCancel.Text = "Cancel";
             this.btnCancel.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // gunaPictureBox1
+            // gunaLabel7
             // 
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
-            this.gunaPictureBox1.Location = new System.Drawing.Point(439, 217);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(159, 156);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 12;
-            this.gunaPictureBox1.TabStop = false;
+            this.gunaLabel7.AutoSize = true;
+            this.gunaLabel7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 25F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
+            this.gunaLabel7.Location = new System.Drawing.Point(37, 82);
+            this.gunaLabel7.Name = "gunaLabel7";
+            this.gunaLabel7.Size = new System.Drawing.Size(408, 57);
+            this.gunaLabel7.TabIndex = 11;
+            this.gunaLabel7.Text = "  Add  New  Patient";
+            this.gunaLabel7.Click += new System.EventHandler(this.gunaLabel7_Click);
+            // 
+            // gunaLabel2
+            // 
+            this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel2.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.gunaLabel2.Location = new System.Drawing.Point(340, 312);
+            this.gunaLabel2.Name = "gunaLabel2";
+            this.gunaLabel2.Size = new System.Drawing.Size(133, 25);
+            this.gunaLabel2.TabIndex = 8;
+            this.gunaLabel2.Text = "Guardian NIC";
+            // 
+            // gunaLabel1
+            // 
+            this.gunaLabel1.AutoSize = true;
+            this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold);
+            this.gunaLabel1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.gunaLabel1.Location = new System.Drawing.Point(42, 312);
+            this.gunaLabel1.Name = "gunaLabel1";
+            this.gunaLabel1.Size = new System.Drawing.Size(132, 25);
+            this.gunaLabel1.TabIndex = 8;
+            this.gunaLabel1.Text = "Patient Name";
+            // 
+            // pbTheme
+            // 
+            this.pbTheme.BackColor = System.Drawing.Color.Transparent;
+            this.pbTheme.BaseColor = System.Drawing.Color.Black;
+            this.pbTheme.Location = new System.Drawing.Point(29, -40);
+            this.pbTheme.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pbTheme.Name = "pbTheme";
+            this.pbTheme.Size = new System.Drawing.Size(120, 120);
+            this.pbTheme.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbTheme.TabIndex = 5;
+            this.pbTheme.TabStop = false;
             // 
             // frmAddOutPatients
             // 
@@ -401,7 +387,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
             this.ClientSize = new System.Drawing.Size(645, 936);
-            this.Controls.Add(this.gunaPictureBox1);
             this.Controls.Add(this.gunaLabel7);
             this.Controls.Add(this.lblReason);
             this.Controls.Add(this.lblAge);
@@ -428,7 +413,6 @@
             this.Text = "frmChangePassword";
             this.Load += new System.EventHandler(this.frmChangePassword_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbTheme)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -440,7 +424,6 @@
         private Guna.UI.WinForms.GunaDragControl drag;
         private Guna.UI.WinForms.GunaAnimateWindow frmChngAnimate;
         private Guna.UI.WinForms.GunaAdvenceButton btnCancel;
-        private Guna.UI.WinForms.GunaTransfarantPictureBox pbTheme;
         private Guna.UI.WinForms.GunaLabel gunaLabel5;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaLabel gunaLabel3;
@@ -458,6 +441,6 @@
         private Guna.UI.WinForms.GunaLabel lblName;
         private Guna.UI.WinForms.GunaAdvenceButton btnSave;
         private Guna.UI.WinForms.GunaLabel gunaLabel7;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaTransfarantPictureBox pbTheme;
     }
 }

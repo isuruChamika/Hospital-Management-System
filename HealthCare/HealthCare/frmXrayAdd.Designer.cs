@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmXrayAdd));
             this.elips = new Guna.UI.WinForms.GunaElipse(this.components);
             this.pnlTheme = new Guna.UI.WinForms.GunaPanel();
             this.btnClose = new Guna.UI.WinForms.GunaControlBox();
             this.gunaLabel18 = new Guna.UI.WinForms.GunaLabel();
             this.gunaGroupBox1 = new Guna.UI.WinForms.GunaGroupBox();
-            this.pctbXray = new Guna.UI.WinForms.GunaPictureBox();
             this.btnAddPic = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnPSave = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
@@ -56,6 +56,7 @@
             this.txtADNumber = new Guna.UI.WinForms.GunaTextBox();
             this.tmrDateTime = new System.Windows.Forms.Timer(this.components);
             this.Animate = new Guna.UI.WinForms.GunaAnimateWindow(this.components);
+            this.pctbXray = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlTheme.SuspendLayout();
             this.gunaGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pctbXray)).BeginInit();
@@ -70,6 +71,7 @@
             // 
             this.pnlTheme.AutoScroll = true;
             this.pnlTheme.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.pnlTheme.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlTheme.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pnlTheme.Controls.Add(this.btnClose);
             this.pnlTheme.Controls.Add(this.gunaLabel18);
@@ -85,6 +87,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.AnimationHoverSpeed = 0.07F;
             this.btnClose.AnimationSpeed = 0.03F;
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.IconColor = System.Drawing.Color.Black;
             this.btnClose.IconSize = 15F;
             this.btnClose.Location = new System.Drawing.Point(814, 0);
@@ -99,8 +102,9 @@
             // gunaLabel18
             // 
             this.gunaLabel18.AutoSize = true;
+            this.gunaLabel18.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel18.Font = new System.Drawing.Font("Segoe UI", 30F, System.Drawing.FontStyle.Bold);
-            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.gunaLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.gunaLabel18.Location = new System.Drawing.Point(30, 27);
             this.gunaLabel18.Name = "gunaLabel18";
             this.gunaLabel18.Size = new System.Drawing.Size(507, 67);
@@ -143,16 +147,6 @@
             this.gunaGroupBox1.TabIndex = 0;
             this.gunaGroupBox1.Text = "Add X-Ray";
             this.gunaGroupBox1.TextLocation = new System.Drawing.Point(10, 8);
-            // 
-            // pctbXray
-            // 
-            this.pctbXray.BaseColor = System.Drawing.Color.White;
-            this.pctbXray.Location = new System.Drawing.Point(414, 97);
-            this.pctbXray.Name = "pctbXray";
-            this.pctbXray.Size = new System.Drawing.Size(367, 278);
-            this.pctbXray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pctbXray.TabIndex = 7;
-            this.pctbXray.TabStop = false;
             // 
             // btnAddPic
             // 
@@ -453,6 +447,18 @@
             this.Animate.Interval = 800;
             this.Animate.TargetControl = this;
             // 
+            // pctbXray
+            // 
+            this.pctbXray.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pctbXray.BackgroundImage")));
+            this.pctbXray.BaseColor = System.Drawing.Color.White;
+            this.pctbXray.Image = ((System.Drawing.Image)(resources.GetObject("pctbXray.Image")));
+            this.pctbXray.Location = new System.Drawing.Point(414, 97);
+            this.pctbXray.Name = "pctbXray";
+            this.pctbXray.Size = new System.Drawing.Size(367, 309);
+            this.pctbXray.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pctbXray.TabIndex = 7;
+            this.pctbXray.TabStop = false;
+            // 
             // frmXrayAdd
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -490,7 +496,6 @@
         private Guna.UI.WinForms.GunaAnimateWindow Animate;
         private Guna.UI.WinForms.GunaLabel gunaLabel18;
         private Guna.UI.WinForms.GunaControlBox btnClose;
-        private Guna.UI.WinForms.GunaPictureBox pctbXray;
         private Guna.UI.WinForms.GunaAdvenceButton btnAddPic;
         private Guna.UI.WinForms.GunaLabel gunaLabel6;
         private Guna.UI.WinForms.GunaLabel gunaLabel2;
@@ -502,5 +507,6 @@
         private Guna.UI.WinForms.GunaTextBox txtWardNo;
         private Guna.UI.WinForms.GunaTextBox txtDctName;
         private Guna.UI.WinForms.GunaLabel lblXrayPath;
+        private Guna.UI.WinForms.GunaPictureBox pctbXray;
     }
 }

@@ -39,7 +39,6 @@
             this.chkbxRememberMe = new Guna.UI.WinForms.GunaCheckBox();
             this.lnkLblForgotPw = new Guna.UI.WinForms.GunaLinkLabel();
             this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.gunaLabel3 = new Guna.UI.WinForms.GunaLabel();
             this.gunaLabel2 = new Guna.UI.WinForms.GunaLabel();
@@ -53,7 +52,6 @@
             this.pnlRight.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // elips
@@ -63,22 +61,23 @@
             // 
             // pnlLeft
             // 
-            this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.pnlLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
             this.pnlLeft.Controls.Add(this.gunaPictureBox4);
             this.pnlLeft.Controls.Add(this.gunaLabel1);
             this.pnlLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnlLeft.Location = new System.Drawing.Point(0, 0);
             this.pnlLeft.Name = "pnlLeft";
             this.pnlLeft.ShadowDecoration.Parent = this.pnlLeft;
-            this.pnlLeft.Size = new System.Drawing.Size(543, 827);
+            this.pnlLeft.Size = new System.Drawing.Size(527, 827);
             this.pnlLeft.TabIndex = 0;
             this.pnlLeft.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlLeft_Paint);
             // 
             // gunaPictureBox4
             // 
+            this.gunaPictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox4.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox4.Image")));
-            this.gunaPictureBox4.Location = new System.Drawing.Point(32, 405);
+            this.gunaPictureBox4.Location = new System.Drawing.Point(12, 316);
             this.gunaPictureBox4.Name = "gunaPictureBox4";
             this.gunaPictureBox4.Size = new System.Drawing.Size(478, 428);
             this.gunaPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -88,8 +87,8 @@
             // gunaLabel1
             // 
             this.gunaLabel1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.gunaLabel1.ForeColor = System.Drawing.Color.LightGray;
-            this.gunaLabel1.Location = new System.Drawing.Point(54, 186);
+            this.gunaLabel1.ForeColor = System.Drawing.Color.White;
+            this.gunaLabel1.Location = new System.Drawing.Point(40, 144);
             this.gunaLabel1.Name = "gunaLabel1";
             this.gunaLabel1.Size = new System.Drawing.Size(435, 183);
             this.gunaLabel1.TabIndex = 0;
@@ -98,11 +97,11 @@
             // 
             // pnlRight
             // 
+            this.pnlRight.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.pnlRight.Controls.Add(this.btnShwPass);
             this.pnlRight.Controls.Add(this.chkbxRememberMe);
             this.pnlRight.Controls.Add(this.lnkLblForgotPw);
             this.pnlRight.Controls.Add(this.gunaPictureBox1);
-            this.pnlRight.Controls.Add(this.gunaPictureBox2);
             this.pnlRight.Controls.Add(this.btnLogin);
             this.pnlRight.Controls.Add(this.gunaLabel3);
             this.pnlRight.Controls.Add(this.gunaLabel2);
@@ -110,10 +109,10 @@
             this.pnlRight.Controls.Add(this.txtUsername);
             this.pnlRight.Controls.Add(this.btnClose);
             this.pnlRight.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlRight.Location = new System.Drawing.Point(543, 0);
+            this.pnlRight.Location = new System.Drawing.Point(527, 0);
             this.pnlRight.Name = "pnlRight";
             this.pnlRight.ShadowDecoration.Parent = this.pnlRight;
-            this.pnlRight.Size = new System.Drawing.Size(524, 827);
+            this.pnlRight.Size = new System.Drawing.Size(540, 827);
             this.pnlRight.TabIndex = 1;
             // 
             // btnShwPass
@@ -136,6 +135,7 @@
             // 
             // chkbxRememberMe
             // 
+            this.chkbxRememberMe.BackColor = System.Drawing.Color.Transparent;
             this.chkbxRememberMe.BaseColor = System.Drawing.Color.White;
             this.chkbxRememberMe.CheckedOffColor = System.Drawing.Color.Gray;
             this.chkbxRememberMe.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(184)))), ((int)(((byte)(184)))));
@@ -153,6 +153,7 @@
             // 
             this.lnkLblForgotPw.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(6)))), ((int)(((byte)(191)))), ((int)(((byte)(184)))));
             this.lnkLblForgotPw.AutoSize = true;
+            this.lnkLblForgotPw.BackColor = System.Drawing.Color.Transparent;
             this.lnkLblForgotPw.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.lnkLblForgotPw.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(4)))), ((int)(((byte)(127)))), ((int)(((byte)(122)))));
             this.lnkLblForgotPw.Location = new System.Drawing.Point(297, 647);
@@ -165,32 +166,23 @@
             // 
             // gunaPictureBox1
             // 
+            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox1.Image")));
             this.gunaPictureBox1.Location = new System.Drawing.Point(155, 144);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(241, 180);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(300, 200);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 7;
             this.gunaPictureBox1.TabStop = false;
             // 
-            // gunaPictureBox2
-            // 
-            this.gunaPictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox2.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
-            this.gunaPictureBox2.Location = new System.Drawing.Point(215, 310);
-            this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(120, 120);
-            this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox2.TabIndex = 8;
-            this.gunaPictureBox2.TabStop = false;
-            // 
             // btnLogin
             // 
-            this.btnLogin.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.btnLogin.BorderRadius = 17;
-            this.btnLogin.BorderThickness = 2;
+            this.btnLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btnLogin.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
+            this.btnLogin.BorderColor = System.Drawing.Color.Transparent;
+            this.btnLogin.BorderRadius = 30;
+            this.btnLogin.BorderThickness = 6;
             this.btnLogin.CheckedState.Parent = this.btnLogin;
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.CustomImages.Parent = this.btnLogin;
@@ -211,6 +203,7 @@
             // gunaLabel3
             // 
             this.gunaLabel3.AutoSize = true;
+            this.gunaLabel3.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel3.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunaLabel3.ForeColor = System.Drawing.Color.Silver;
             this.gunaLabel3.Location = new System.Drawing.Point(134, 546);
@@ -222,6 +215,7 @@
             // gunaLabel2
             // 
             this.gunaLabel2.AutoSize = true;
+            this.gunaLabel2.BackColor = System.Drawing.Color.Transparent;
             this.gunaLabel2.Font = new System.Drawing.Font("Segoe UI", 10F);
             this.gunaLabel2.ForeColor = System.Drawing.Color.Silver;
             this.gunaLabel2.Location = new System.Drawing.Point(134, 443);
@@ -233,14 +227,14 @@
             // txtPassword
             // 
             this.txtPassword.BackColor = System.Drawing.Color.Transparent;
-            this.txtPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.txtPassword.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
+            this.txtPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
             this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.txtPassword.FocusedForeColor = System.Drawing.SystemColors.Control;
+            this.txtPassword.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
+            this.txtPassword.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
+            this.txtPassword.FocusedForeColor = System.Drawing.Color.Black;
             this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtPassword.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtPassword.ForeColor = System.Drawing.Color.Black;
             this.txtPassword.Location = new System.Drawing.Point(122, 580);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '●';
@@ -253,14 +247,14 @@
             // txtUsername
             // 
             this.txtUsername.BackColor = System.Drawing.Color.Transparent;
-            this.txtUsername.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
+            this.txtUsername.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
+            this.txtUsername.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
             this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.txtUsername.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.txtUsername.FocusedForeColor = System.Drawing.SystemColors.Control;
+            this.txtUsername.FocusedBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
+            this.txtUsername.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(75)))), ((int)(((byte)(194)))), ((int)(((byte)(245)))));
+            this.txtUsername.FocusedForeColor = System.Drawing.Color.Black;
             this.txtUsername.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txtUsername.ForeColor = System.Drawing.Color.Gainsboro;
+            this.txtUsername.ForeColor = System.Drawing.Color.Black;
             this.txtUsername.Location = new System.Drawing.Point(122, 477);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.PasswordChar = '\0';
@@ -273,14 +267,15 @@
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnClose.BackColor = System.Drawing.Color.Transparent;
             this.btnClose.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
             this.btnClose.BorderStyle = System.Drawing.Drawing2D.DashStyle.Custom;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.btnClose.FillColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.FillColor = System.Drawing.Color.Transparent;
             this.btnClose.HoverState.Parent = this.btnClose;
             this.btnClose.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
-            this.btnClose.Location = new System.Drawing.Point(445, 0);
+            this.btnClose.Location = new System.Drawing.Point(461, 0);
             this.btnClose.Name = "btnClose";
             this.btnClose.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(13)))), ((int)(((byte)(145)))), ((int)(((byte)(136)))));
             this.btnClose.ShadowDecoration.Parent = this.btnClose;
@@ -321,7 +316,6 @@
             this.pnlRight.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnShwPass)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -341,7 +335,6 @@
         private Bunifu.Framework.UI.BunifuDragControl drag1;
         private Bunifu.Framework.UI.BunifuDragControl drag2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox2;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox4;
         private Guna.UI.WinForms.GunaLinkLabel lnkLblForgotPw;
         private Guna.UI.WinForms.GunaCheckBox chkbxRememberMe;

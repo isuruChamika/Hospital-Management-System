@@ -153,6 +153,7 @@
             this.btnCancel.OnHoverImage = null;
             this.btnCancel.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnCancel.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnCancel.Radius = 15;
             this.btnCancel.Size = new System.Drawing.Size(249, 87);
             this.btnCancel.TabIndex = 2;
             this.btnCancel.Text = "Cancel";
@@ -185,6 +186,7 @@
             this.btnSave.OnHoverImage = null;
             this.btnSave.OnHoverLineColor = System.Drawing.Color.Transparent;
             this.btnSave.OnPressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(96)))), ((int)(((byte)(104)))));
+            this.btnSave.Radius = 15;
             this.btnSave.Size = new System.Drawing.Size(249, 87);
             this.btnSave.TabIndex = 2;
             this.btnSave.Text = "Save";
@@ -332,7 +334,7 @@
             this.txtSurname.FocusedForeColor = System.Drawing.Color.DimGray;
             this.txtSurname.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtSurname.ForeColor = System.Drawing.Color.DimGray;
-            this.txtSurname.Location = new System.Drawing.Point(663, 77);
+            this.txtSurname.Location = new System.Drawing.Point(653, 77);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.PasswordChar = '\0';
             this.txtSurname.SelectedText = "";
@@ -716,6 +718,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(42)))), ((int)(((byte)(49)))), ((int)(((byte)(59)))));
+            this.BackgroundImage = global::HealthCare.Properties.Resources._0NxcDA1;
             this.ClientSize = new System.Drawing.Size(1330, 589);
             this.Controls.Add(this.gunaGroupBox3);
             this.Controls.Add(this.gunaGroupBox2);

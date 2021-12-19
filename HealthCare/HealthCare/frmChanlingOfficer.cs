@@ -123,5 +123,15 @@ namespace HealthCare
         {
 
         }
+
+        private void btnLogout_Click_1(object sender, EventArgs e)
+        {
+
+            if (HSMessageBox.Show("ARE YOU SURE TO EXIT?", "QUESTION", MessageBoxButtons.YesNo, MessageBoxIcon.Error) != DialogResult.No)
+            {
+                this.Hide();
+                new frmLogin().Show();
+            }
+        }
     }
 }
